@@ -15,13 +15,12 @@ const Contact = () => {
     const onSubmit = async data => {
         emailjs.send('service_6ioyfyn','template_vcxutb8', data, 'O14vl6cRB93Me-2ZS')
         .then((response) => {
-            if(response.status == 200){
-                toast.success('Email send successfully')
+            if(response.status === 200){
+                toast.success('Contact successfully')
                 reset();
             }
-        console.log('SUCCESS!', response.status, response.text);
         }, (err) => {
-        console.log('FAILED...', err);
+        toast.failed('FAILED to Contact...', err);
         });
     }
     
@@ -30,43 +29,43 @@ const Contact = () => {
 
     return (
         <section id='contact my-20 px-20'>
-             <h1 class="text-4xl font-bold text-center mt-10">Hire Me</h1>
+             <h1 class="text-4xl font-bold text-center mt-10">Hire <span className='text-primary'> Me</span></h1>
 
-            <div className='lg:flex sm:flex-reverse mt-14 px-20 '>
+            <div className='lg:flex sm:flex-reverse mt-14 px-20 justify-center'>
 
 
-                <div className='lg:w-1/2 mb-10 flex-col justify-center'>
-                    <h1 class="text-3xl font-semibold text-center">Contact Info</h1>
-                    <div className='flex justify-start max-w-sm items-center mt-8'>
+                <div className='lg:w-1/2 mb-10 flex-col justify-center items-center'>
+                    <h1 class="text-3xl font-semibold text-center">Contact <span className='text-primary'> Info</span></h1>
+                    <div className='flex justify-start max-w-sm items-center mt-12'>
                         <div>
-                           <FcManager className='w-10 h-10 mr-8'></FcManager>
+                           <FcManager className='w-10 h-10 mr-8 text-primary'></FcManager>
                         </div>
                         <div>
                             <h2 className='font-bold'>Name</h2>
                             <h2 className='text-primary font-semibold'>Md Mobassher Hossain</h2>
                         </div>
                     </div>
-                    <div className='flex justify-start max-w-sm items-center mt-5'>
+                    <div className='flex justify-start max-w-sm items-center mt-7'>
                         <div>
-                           <GoLocation className='w-10 h-10 mr-8'></GoLocation>
+                           <GoLocation className='w-10 h-10 mr-8  text-primary'></GoLocation>
                         </div>
                         <div>
                             <h2 className='font-bold'>Location</h2>
                             <h2 className='text-primary font-semibold'>Rajarhat, Kurigram, Bangladesh.</h2>
                         </div>
                     </div>
-                    <div className='flex justify-start max-w-sm items-center mt-5'>
+                    <div className='flex justify-start max-w-sm items-center mt-7'>
                         <div>
-                           <TbPhoneCall className='w-10 h-10 mr-8'></TbPhoneCall>
+                           <TbPhoneCall className='w-10 h-10 mr-8 text-primary'></TbPhoneCall>
                         </div>
                         <div>
                             <h2 className='font-bold'>Call Me</h2>
                             <h2 className='text-primary font-semibold'>+88 01773381807</h2>
                         </div>
                     </div>
-                    <div className='flex justify-start max-w-sm items-center mt-5'>
+                    <div className='flex justify-start max-w-sm items-center mt-7'>
                         <div>
-                           <HiOutlineMailOpen className='w-10 h-10 mr-8'></HiOutlineMailOpen>
+                           <HiOutlineMailOpen className='w-10 h-10 mr-8 text-primary'></HiOutlineMailOpen>
                         </div>
                         <div>
                             <h2 className='font-bold'>Email</h2>
@@ -77,7 +76,7 @@ const Contact = () => {
 
 
                 <div className='lg:w-1/2'>
-                    <h1 class="text-3xl font-semibold text-center ">Contact Me</h1>
+                    <h1 class="text-3xl font-semibold text-center ">Contact <span className='text-primary'> Me</span></h1>
                     <div className='flex justify-center items-center mt-5'>
                         
                         <div className="card w-96 bg-base-100 ">
@@ -159,7 +158,7 @@ const Contact = () => {
                                         </label>
                                     </div>
 
-                                    <input className='btn w-full max-w-xs text-white' type="submit" value="Contact" />
+                                    <input className='btn w-1/2 mx-auto bg-primary border-0 max-w-xs text-white' type="submit" value="Contact" />
                                 </form>
                                 
                             </div>

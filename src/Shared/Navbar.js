@@ -6,10 +6,10 @@ const Navbar = ({children}) => {
 
 
     const navItems = <>
-        <li><Link to='/'  className='rounded-lg'>Home</Link></li>
-        <li><Link activeClass="active" smooth spy to="about" className='rounded-lg'>About</Link></li>
-        <li><Link to="/projects" className='rounded-lg'>Projects</Link></li>
-        <li><NavLink to='/contact' className='rounded-lg'>Contact</NavLink></li>
+        <li><NavLink to='/'  className='rounded-lg font-bold '>Home</NavLink></li>
+        <li><NavLink activeClass="active" smooth spy to="about" className='rounded-lg font-bold '>About Me</NavLink></li>
+        <li><NavLink to="/blogs" className='rounded-lg font-bold '>Blogs</NavLink></li>
+        <li><NavLink to='/contact' className='rounded-lg font-bold '>Contact</NavLink></li>
       
     </>
 
@@ -21,7 +21,7 @@ const Navbar = ({children}) => {
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
                 <div className="drawer-content flex flex-col">
                  
-                    <div className="w-full navbar lg:px-20 bg-base-100 sticky top-0 z-50 ">
+                    <div className="w-full navbar bg-base-100 lg:px-20  sticky top-0 z-50 ">
                          <Link to='/' className="flex-1 px-2 mx-2 text-2xl font-semibold ">Mobassher</Link>
                         <div className="flex-none lg:hidden">
                             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -40,7 +40,7 @@ const Navbar = ({children}) => {
                 </div> 
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
-                    <ul className="menu p-4 overflow-y-auto w-60 bg-base-100">
+                    <ul className="menu p-4 overflow-y-auto w-60 bg-base-100 ">
                          {navItems}
                     </ul>
                     
