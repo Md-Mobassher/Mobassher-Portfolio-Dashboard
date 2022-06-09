@@ -15,7 +15,7 @@ const Contact = () => {
 
     return (
         <section id='contact my-20 px-20'>
-             <h1 class="text-4xl font-bold text-center">Hire Me</h1>
+             <h1 class="text-4xl font-bold text-center mt-10">Hire Me</h1>
 
             <div className='lg:flex sm:flex-reverse mt-14 px-20 '>
 

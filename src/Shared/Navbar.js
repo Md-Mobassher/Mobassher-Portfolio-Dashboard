@@ -9,7 +9,6 @@ const Navbar = ({children}) => {
         <li><Link to='/'  className='rounded-lg'>Home</Link></li>
         <li><Link activeClass="active" smooth spy to="about" className='rounded-lg'>About</Link></li>
         <li><Link to="/projects" className='rounded-lg'>Projects</Link></li>
-        <li><Link  to='https://drive.google.com/file/d/10ddbEN2GdmqRIquzDahxM07-nJ3rU3ox/view?usp=sharing' download className='rounded-lg'>Resume</Link></li>
         <li><NavLink to='/contact' className='rounded-lg'>Contact</NavLink></li>
       
     </>
