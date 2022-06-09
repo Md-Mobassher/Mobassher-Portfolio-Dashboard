@@ -4,13 +4,28 @@ import { FcManager } from 'react-icons/fc';
 import { GoLocation } from 'react-icons/go';
 import { TbPhoneCall } from 'react-icons/tb';
 import { HiOutlineMailOpen } from 'react-icons/hi';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+
 
 const Contact = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
 
     const onSubmit = async data => {
-        
+        emailjs.send('service_6ioyfyn','template_vcxutb8', data, 'O14vl6cRB93Me-2ZS')
+        .then((response) => {
+            if(response.status == 200){
+                toast.success('Email send successfully')
+                reset();
+            }
+        console.log('SUCCESS!', response.status, response.text);
+        }, (err) => {
+        console.log('FAILED...', err);
+        });
     }
+    
+    
 
 
     return (
@@ -20,7 +35,7 @@ const Contact = () => {
             <div className='lg:flex sm:flex-reverse mt-14 px-20 '>
 
 
-                <div className='lg:w-1/2 mb-10 flex-col justify-start'>
+                <div className='lg:w-1/2 mb-10 flex-col justify-center'>
                     <h1 class="text-3xl font-semibold text-center">Contact Info</h1>
                     <div className='flex justify-start max-w-sm items-center mt-8'>
                         <div>

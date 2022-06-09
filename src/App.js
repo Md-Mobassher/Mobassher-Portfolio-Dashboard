@@ -7,6 +7,10 @@ import Contact from './Pages/Contact/Contact';
 import Footer from './Shared/Footer';
 import Navbar from './Shared/Navbar';
 import NotFound from './Shared/NotFound';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function App() {
   return (
@@ -24,7 +28,7 @@ function App() {
           <Footer></Footer>
       </Navbar>
       
-
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
