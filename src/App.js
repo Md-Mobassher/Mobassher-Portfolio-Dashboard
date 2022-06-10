@@ -9,6 +9,7 @@ import Navbar from './Shared/Navbar';
 import NotFound from './Shared/NotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ProjectDetails from './Pages/Projects/ProjectDetails';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
             <Route path='/' element={<Home></Home>}></Route>
             <Route path='about' element={<About></About>}></Route>
+            <Route path='/projects/:projectName' element={<ProjectDetails></ProjectDetails>}></Route>
             <Route path='projects' element={<Projects></Projects>}></Route>
             <Route path='contact' element={<Contact></Contact>}></Route>
            

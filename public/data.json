@@ -1,0 +1,27 @@
+[
+    {
+        "_id": 1,
+        "name": "Groca-Grocery",
+        "type": "Grocery stock website (Full-Stack)",
+
+        "description": "If the jaws and teeth do not develop properly, malocclusion can result. The teeth will be crooked and misaligned, and the bottom and top sets of teeth may not line up. ",
+        "img": "https://i.ibb.co/x5TK4Mh/service1.png"
+    },
+    {
+        "_id": 2,
+        "name": "Motor-Parts",
+        "type": "Motor parts manufacturer website (Full-Stack)",
+
+        "description": "Find the lowest  for Dentist Los Angeles today! Now on sale at GigaPromo. GigaPromo is the website to compare Dentist Los Angeles. Search and save now! Always Sale.",
+        "img": "https://i.ibb.co/bRgnb1G/service3.png"
+    },
+    {
+        "_id": 3,
+        "name": "Dentist-Rita",
+        "type": "Independent service provider (Front-end)",
+
+        "description": "Technically, a dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or br_idge. However, when most people use the term “dental implants.",
+        "img": "https://i.ibb.co/TmwRGqz/service2.png"
+    }
+  
+]

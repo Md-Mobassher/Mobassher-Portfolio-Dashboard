@@ -25,7 +25,7 @@ const Banner = () => {
                     Most of the time I work with React, but some technologies I enjoy working with include JavaScript as well as WordPress.</p>
 
                     <div>
-                        <button className='btn btn-primary px-8 mt-8 mr-5' onClick={saveFile}>Download Resume</button>
+                        <button className='btn btn-primary px-8 mt-8 mr-5 text-white' onClick={saveFile}>Download Resume</button>
                         <Link to='/contact' className='btn btn-outline btn-primary px-8 mt-8 hover:text-white' >Hire Me</Link>
                     </div>
 
