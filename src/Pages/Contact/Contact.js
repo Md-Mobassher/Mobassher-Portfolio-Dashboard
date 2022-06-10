@@ -28,13 +28,13 @@ const Contact = () => {
 
 
     return (
-        <section id='contact my-20 px-20'>
+        <section id='contact my-20 lg:px-20'>
              <h1 class="text-4xl font-bold text-center mt-10">Hire <span className='text-primary'> Me</span></h1>
 
-            <div className='lg:flex sm:flex-reverse mt-14 px-20 justify-center'>
+            <div className='lg:flex sm:flex-reverse mt-14 justify-center'>
 
 
-                <div className='lg:w-1/2 mb-10 flex-col justify-center items-center'>
+                <div className='lg:w-1/2 w-full mb-10 flex-col sm:px-5 pl-5 lg:pl-20'>
                     <h1 class="text-3xl font-semibold text-center">Contact <span className='text-primary'> Info</span></h1>
                     <div className='flex justify-start max-w-sm items-center mt-12'>
                         <div>
