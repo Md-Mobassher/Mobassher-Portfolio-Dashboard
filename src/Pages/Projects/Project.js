@@ -2,16 +2,18 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Project = ({project}) => {
-    const {img, name, type, description} = project;
+    const {img1, name, type, description} = project;
     const navigate = useNavigate();
 
     const navigateToProjectDetail = (name) => {
-        navigate(`/projects/${name}`);
+        navigate(`/${name}`);
     }
 
     return (
         <div className="card bg-base-100 border border-1 border-primary">
-            <figure><img className='p-4' src={img} alt="tool" /></figure>
+            <div className='h-60 overflow-x-scroll'>
+               <figure><img className='p-4' src={img1} alt="tool" /></figure>
+            </div>
              <div className="card-body p-4 justify-between  items-between">
                     <div>
                         <h2 className="text-2xl mb-3 font-semibold text-primary">{name}</h2>

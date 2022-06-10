@@ -2,7 +2,7 @@ import React from 'react';
 
 const PersonalInfo = () => {
     return (
-        <div className='lg:max-w-2/3 my-5' >
+        <div className='lg:max-w-2/3 mt-14' >
                      <h2 className='text-4xl font-bold  text-center lg:mb-12'>Personal <span className='text-primary'>Informations</span></h2>
                      <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 p-5 justify-center items-center'>
                          <div className=' justify-start mr-10'>

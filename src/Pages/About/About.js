@@ -8,7 +8,7 @@ import UseIcon from '../../Shared/UseIcon';
 const About = () => {
     return (
         <section id='about' className='my-16 lg:px-20'>
-             <h2 className='text-4xl font-bold  text-center mb-5 lg:mb-12'>About <span className='text-primary'>Me</span></h2>
+             <h2 className='text-4xl font-bold  text-center mb-5 lg:mb-8'>About <span className='text-primary'>Me</span></h2>
              <div class="hero-content w-full flex-col lg:flex-row-reverse justify-center items-center ">
                 <div className='w-full lg:w-2/5  flex justify-center p-5'>
                     <img className=" p-5" src={mobassher} class=" rounded-lg shadow-2xl" alt=''/>

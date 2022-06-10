@@ -4,24 +4,65 @@
         "name": "Groca-Grocery",
         "type": "Grocery stock website (Full-Stack)",
 
-        "description": "If the jaws and teeth do not develop properly, malocclusion can result. The teeth will be crooked and misaligned, and the bottom and top sets of teeth may not line up. ",
-        "img": "https://i.ibb.co/x5TK4Mh/service1.png"
+        "description": "Developed a project where users can Sign up, Log in, order products, restock products, etc. ",
+
+        "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
+        "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
+        "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
+
+        "technology": "React, React-bootstrap, React-router, Node, Express, MongoDB, Firebase, Heroku.",
+
+        "img1": "https://i.ibb.co/1qYvsvn/groca1.png ",
+        "img2": "https://i.ibb.co/8XFsWzL/groca-2.png",
+        "img3": "https://i.ibb.co/y0k5F7D/groca-3.png",
+
+        "live": "https://groca-grocery.web.app/",
+        "client": "https://github.com/Md-Mobassher/groca-grocery-client",
+        "server": "https://github.com/Md-Mobassher/groca-grocery-server"
     },
+
     {
         "_id": 2,
         "name": "Motor-Parts",
         "type": "Motor parts manufacturer website (Full-Stack)",
 
-        "description": "Find the lowest  for Dentist Los Angeles today! Now on sale at GigaPromo. GigaPromo is the website to compare Dentist Los Angeles. Search and save now! Always Sale.",
-        "img": "https://i.ibb.co/bRgnb1G/service3.png"
+        "description": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
+
+        "details1": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
+        "details2": "Integrated Admin role, admin can manage or remove a user, make the user an admin, add a product, or delete products.",
+        "details3": "Used firebase, JWT for authentication.",
+
+        "technology": "React, Tailwind, Daisy UI, JWT, React-router, Node, Express, MongoDB, Firebase, Heroku.",
+
+        "img1": "https://i.ibb.co/bRgnb1G/service3.png",
+        "img2": "https://i.ibb.co/bRgnb1G/service3.png",
+        "img3": "https://i.ibb.co/bRgnb1G/service3.png",
+
+        "live": "https://motor-parts-bd.web.app/",
+        "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
+        "server": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-server"
     },
+
     {
         "_id": 3,
         "name": "Dentist-Rita",
         "type": "Independent service provider (Front-end)",
 
-        "description": "Technically, a dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or br_idge. However, when most people use the term “dental implants.",
-        "img": "https://i.ibb.co/TmwRGqz/service2.png"
+        "description": "Developed a small independent service provider website using JavaScript, React and Bootstrap.",
+
+        "details1": "Developed a small independent service provider website using JavaScript, React and Bootstrap.",
+        "details2": "Users can see the provided services and Sign up or Log in to Check out the appointment.",
+        "details3": "Used firebase for hosting. . Backend is not included now.",
+
+        "technology": "React, React-bootstrap, React-router, Firebase, Heroku.",
+
+        "img1": "https://i.ibb.co/TmwRGqz/service2.png",
+        "img2": "https://i.ibb.co/TmwRGqz/service2.png",
+        "img3": "https://i.ibb.co/TmwRGqz/service2.png",
+
+        "live": "https://dentist-rita.firebaseapp.com/",
+        "client": "https://github.com/Md-Mobassher/independent-service-provider",
+        "server": "https://github.com/Md-Mobassher/groca-grocery-server"
     }
   
 ]
