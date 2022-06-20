@@ -6,7 +6,7 @@ const Project = ({project}) => {
     const navigate = useNavigate();
 
     const navigateToProjectDetail = (name) => {
-        navigate(`/${name}`);
+        navigate(`/${name}`, {state: project});
     }
 
     return (

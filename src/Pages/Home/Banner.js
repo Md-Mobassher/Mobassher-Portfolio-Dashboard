@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Banner = () => {
     const saveFile = () => {
         saveAs(
-          'https://drive.google.com/file/d/10ddbEN2GdmqRIquzDahxM07-nJ3rU3ox/view?usp=sharing'
+          'https://drive.google.com/file/d/1NJRtUZJ2qwh-X2O4f8goa9vlBHmHz0oR/view?usp=sharing'
         );
       };
 

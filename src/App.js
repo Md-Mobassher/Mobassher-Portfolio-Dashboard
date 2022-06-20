@@ -10,6 +10,7 @@ import NotFound from './Shared/NotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ProjectDetails from './Pages/Projects/ProjectDetails';
+import Blogs from './Pages/Blogs/Blogs';
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/:projectName' element={<ProjectDetails></ProjectDetails>}></Route>
             <Route path='projects' element={<Projects></Projects>}></Route>
             <Route path='contact' element={<Contact></Contact>}></Route>
+            <Route path='blogs' element={<Blogs></Blogs>}></Route>
            
 
             <Route path='*' element={<NotFound></NotFound>}></Route>
