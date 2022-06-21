@@ -11,7 +11,7 @@ const About = () => {
              <h2 className='text-4xl font-bold  text-center mb-5 lg:mb-8'>About <span className='text-primary'>Me</span></h2>
              <div class="hero-content w-full flex-col lg:flex-row-reverse justify-center items-center ">
                 <div className='w-full lg:w-2/5  flex justify-center p-5'>
-                    <img className=" p-5" src={mobassher} class=" rounded-lg shadow-2xl" alt=''/>
+                    <img className=" p-5" src={mobassher} class=" rounded-lg" alt=''/>
                 </div>
                 <div className='w-full lgw-3/5  p-5 '>
                     <h1 className='text-2xl font-semibold'>Who am <span className='text-primary'>I </span>?</h1>
