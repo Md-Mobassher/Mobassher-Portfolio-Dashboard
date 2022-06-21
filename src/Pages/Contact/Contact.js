@@ -31,7 +31,7 @@ const Contact = () => {
         <section id='contact my-20 lg:px-20'>
              <h1 class="text-4xl font-bold text-center mt-10">Hire <span className='text-primary'> Me</span></h1>
 
-            <div className='lg:flex sm:flex-reverse mt-14 justify-center'>
+            <div className='lg:flex sm:flex-reverse mt-10 justify-center'>
 
 
                 <div className='lg:w-1/2 w-full mb-10 flex-col sm:px-5 pl-5 lg:pl-20'>

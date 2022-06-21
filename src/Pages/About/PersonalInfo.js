@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PersonalInfo = () => {
     return (
-        <div className='lg:max-w-2/3 mt-14' >
+        <section className='lg:max-w-2/3 mt-14' >
                      <h2 className='text-4xl font-bold  text-center lg:mb-12'>Personal <span className='text-primary'>Informations</span></h2>
                      <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 p-5 justify-center items-center'>
                          <div className=' justify-start mr-10'>
@@ -14,15 +15,21 @@ const PersonalInfo = () => {
                          </div>
 
                          <div className='justify-start'>
-                            <p className='mb-3 font-semibold '>Phone: <span className='text-primary'>+88 01773381807</span></p>
-                            <p className='mb-3 font-semibold '>Email: <span className='text-primary'>mdmobassherhossain1@gmail.com</span></p>
-                            <p className='mb-3 font-semibold '>Github: <span className='text-primary'>https://github.com/Md-Mobassher</span></p>
-                            <p className='mb-3 font-semibold '>Linkedin: <span className='text-primary'>https://www.linkedin.com/in/md-mobassher</span></p>
-                            <p className='mb-3 font-semibold '>Facebook: <span className='text-primary'>https://www.facebook.com/mdmobassherf</span></p>
+
+                            <p className='mb-3 font-semibold '>Phone:  <a as={Link}   href='tell:+8801773381807' className=' text-primary ml-2 '>+88-01773381807</a></p>
+
+                            <p className='mb-3 font-semibold '>Email:  <a as={Link} target='_black'  href='mailto:mdmobassherhossain1@gmail.com' className=' text-primary ml-2 '>mdmobassherhossain1@gmail.com</a></p>
+
+                            <p className='mb-3 font-semibold '>Github:  <a as={Link} target='_black' href='https://github.com/Md-Mobassher' className=' text-primary ml-2 '>https://github.com/Md-Mobassher </a></p>
+
+                            <p className='mb-3 font-semibold '>Linkedin:  <a as={Link} target='_black' href='https://www.linkedin.com/in/md-mobassher' className=' text-primary ml-2 '>https://www.linkedin.com/in/md-mobassher </a></p>
+
+                            <p className='mb-3 font-semibold '>Facebook:  <a as={Link} target='_black' href='https://www.facebook.com/mdmobassherf' className=' text-primary ml-2 '>https://www.facebook.com/mdmobassherf </a></p>
+
                          </div>
                        
                      </div>
-                </div>
+                </section>
     );
 };
 
