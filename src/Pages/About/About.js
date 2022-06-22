@@ -20,8 +20,7 @@ const About = () => {
                     <h2 class="text-3xl mb-3  font-semibold ">Full stack Developer from Bangladesh</h2>
                     
                     <p className=''>I'm a Full-stack Developer who is passionate about making error-free websites with 100% client satisfaction. 
-                    I love to solve real-world problems. I am strategic, goal-oriented and always work with an end goal in mind. Over the past years, I created the 10s of websites for my clients. I pride myself on doing quality work. 
-                    Most of the time I work with React, but some technologies I enjoy working with include JavaScript as well as WordPress.</p>
+                    When I discovered web design in my University life, I realized it would be the perfect fit for me. I could use my creative side to design and my logical side to code. As a bonus, being both designer and developer.</p>
 
                     <div>
                         

@@ -11,10 +11,10 @@ const Project = ({project}) => {
 
     return (
         <div className="card bg-base-100 border border-1 border-primary">
-            <div className='h-60 overflow-x-scroll'>
-               <figure><img className='p-4' src={img1} alt="tool" /></figure>
+            <div className='h-60 overflow-y-scroll'>
+               <figure><img className='' src={img1} alt="tool" /></figure>
             </div>
-             <div className="card-body p-4 justify-between  items-between">
+             <div className="card-body p-4 justify-between items-between">
                     <div>
                         <h2 className="text-2xl mb-3 font-semibold text-primary">{name}</h2>
                         <h2 className="mb-4 font-semibold">{type}</h2>

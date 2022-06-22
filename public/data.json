@@ -34,9 +34,9 @@
 
         "technology": "React, Tailwind, Daisy UI, JWT, React-router, Node, Express, MongoDB, Firebase, Heroku.",
 
-        "img1": "https://i.ibb.co/bRgnb1G/service3.png",
-        "img2": "https://i.ibb.co/bRgnb1G/service3.png",
-        "img3": "https://i.ibb.co/bRgnb1G/service3.png",
+        "img1": " ",
+        "img2": " ",
+        "img3": " ",
 
         "live": "https://motor-parts-bd.web.app/",
         "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
@@ -56,13 +56,16 @@
 
         "technology": "React, React-bootstrap, React-router, Firebase, Heroku.",
 
-        "img1": "https://i.ibb.co/TmwRGqz/service2.png",
-        "img2": "https://i.ibb.co/TmwRGqz/service2.png",
-        "img3": "https://i.ibb.co/TmwRGqz/service2.png",
+        "img1": "https://i.ibb.co/PZ6mTpJ/dentist1.png",
+        "img2": "https://i.ibb.co/QmZfLRF/dentist2.png",
+        "img3": "https://i.ibb.co/3YSxLkf/dentist3.png",
 
         "live": "https://dentist-rita.firebaseapp.com/",
         "client": "https://github.com/Md-Mobassher/independent-service-provider",
-        "server": "https://github.com/Md-Mobassher/groca-grocery-server"
+        "server": "https://github.com/Md-Mobassher/independent-service-provider"
     }
   
 ]
+
+
+
