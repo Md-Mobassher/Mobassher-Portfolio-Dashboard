@@ -2,6 +2,7 @@ import React from 'react';
 import { saveAs } from "file-saver";
 import mobassher from '../../Assets/Images/mobassher.png'
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion"
 
 const Banner = () => {
     const saveFile = () => {

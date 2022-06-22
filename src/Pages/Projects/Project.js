@@ -10,8 +10,8 @@ const Project = ({project}) => {
     }
 
     return (
-        <div className="card bg-base-100 border border-1 border-primary">
-            <div className='h-60 overflow-y-scroll'>
+        <div className="card bg-base-100 border border-1 border-primary ">
+            <div className='h-60 overflow-y-scroll shadow '>
                <figure><img className='' src={img1} alt="tool" /></figure>
             </div>
              <div className="card-body p-4 justify-between items-between">

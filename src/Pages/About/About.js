@@ -15,11 +15,11 @@ const About = () => {
                     <img className="flex" src={mobassher} class=" rounded-lg" alt=''/>
                 </div>
                 <div className='w-full lgw-3/5  p-3 '>
-                    <h1 className='text-2xl font-semibold'>Who am <span className='text-primary'>I </span>?</h1>
-                    <h1 class="text-3xl font-semibold mb-2">I am <span className='text-primary'>Md Mobassher Hossain</span> </h1>
-                    <h2 class="text-3xl mb-3  font-semibold ">Full stack Developer from Bangladesh</h2>
+                    <h1 className='text-xl lg:text-2xl font-semibold mb-3'>Who am <span className='text-primary'>I </span>?</h1>
+                    <h1 class="text-2xl lg:text-3xl font-semibold mb-3">I am <span className='text-primary text-3xl lg:text-4xl'>Md Mobassher Hossain</span> </h1>
+                    <h2 class="text-xl lg:text-2xl mb-3 text-secondary font-semibold ">Full stack Developer from Bangladesh</h2>
                     
-                    <p className=''>I'm a Full-stack Developer who is passionate about making error-free websites with 100% client satisfaction. 
+                    <p className='font-semibold'>I'm a Full-stack Developer who is passionate about making error-free websites with 100% client satisfaction. 
                     When I discovered web design in my University life, I realized it would be the perfect fit for me. I could use my creative side to design and my logical side to code. As a bonus, being both designer and developer.</p>
 
                     <div>
