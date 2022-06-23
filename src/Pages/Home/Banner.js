@@ -2,7 +2,7 @@ import React from 'react';
 import { saveAs } from "file-saver";
 import mobassher from '../../Assets/Images/mobassher.png'
 import { Link } from 'react-router-dom';
-import { motion } from "framer-motion"
+
 
 const Banner = () => {
     const saveFile = () => {
@@ -13,7 +13,7 @@ const Banner = () => {
 
 
     return (
-        <section class="hero min-h-screen bg-base-100 lg:-mt-10">
+        <section class="hero min-h-screen bg-base-100 lg:-mt-8">
             <div class="hero-content flex-col lg:flex-row-reverse lg:px-20 justify-center items-center ">
                 <div className='w-full lg:w-1/2 flex justify-center items-center'>
                     <img className=" flex " src={mobassher} class=" rounded-lg size-cover" alt=''/>

@@ -34,10 +34,12 @@
 
         "technology": "React, Tailwind, Daisy UI, JWT, React-router, Node, Express, MongoDB, Firebase, Heroku.",
 
-        "img1": " ",
-        "img2": " ",
-        "img3": " ",
-
+        "img1": " https://i.ibb.co/7j3HGfJ/motor1.png ",
+        "img2": " https://i.ibb.co/jRgwgw9/motor2.png",
+        "img3": " https://i.ibb.co/FYQt24j/motor3.png",
+       
+      
+       
         "live": "https://motor-parts-bd.web.app/",
         "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
         "server": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-server"
