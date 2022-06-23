@@ -10,43 +10,43 @@ const Skills = () => {
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Html</p>
-                        <progress class="progress progress-primary" value="90" max="100"></progress>
+                        <progress className="progress progress-primary" value="90" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>CSS</p>
-                        <progress class="progress progress-primary" value="80" max="100"></progress>
+                        <progress className="progress progress-primary" value="80" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>JavaScript</p>
-                        <progress class="progress progress-primary" value="75" max="100"></progress>
+                        <progress className="progress progress-primary" value="75" max="100"></progress>
                     </div>
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>React</p>
-                        <progress class="progress progress-primary" value="75" max="100"></progress>
+                        <progress className="progress progress-primary" value="75" max="100"></progress>
                     </div>
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Node JS</p>
-                        <progress class="progress progress-primary" value="70" max="100"></progress>
+                        <progress className="progress progress-primary" value="70" max="100"></progress>
                     </div>
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Express JS</p>
-                        <progress class="progress progress-primary" value="70" max="100"></progress>
+                        <progress className="progress progress-primary" value="70" max="100"></progress>
                     </div>
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>MongoDB</p>
-                        <progress class="progress progress-primary" value="65" max="100"></progress>
+                        <progress className="progress progress-primary" value="65" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Bootstrap</p>
-                        <progress class="progress progress-primary" value="100" max="100"></progress>
+                        <progress className="progress progress-primary" value="100" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Tailwind</p>
-                        <progress class="progress progress-primary" value="95" max="100"></progress>
+                        <progress className="progress progress-primary" value="95" max="100"></progress>
                     </div>
    
                 </div>
@@ -55,46 +55,46 @@ const Skills = () => {
                 <div className='card bg-base-100 shadow-xl p-10'>
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>WordPress</p>
-                        <progress class="progress progress-primary" value="90" max="100"></progress>
+                        <progress className="progress progress-primary" value="90" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Git</p>
-                        <progress class="progress progress-primary" value="75" max="100"></progress>
+                        <progress className="progress progress-primary" value="75" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Github</p>
-                        <progress class="progress progress-primary" value="70" max="100"></progress>
+                        <progress className="progress progress-primary" value="70" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Firebase</p>
-                        <progress class="progress progress-primary" value="100" max="100"></progress>
+                        <progress className="progress progress-primary" value="100" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Heroku</p>
-                        <progress class="progress progress-primary" value="90" max="100"></progress>
+                        <progress className="progress progress-primary" value="90" max="100"></progress>
                     </div> 
 
                      <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Netlify</p>
-                        <progress class="progress progress-primary" value="90" max="100"></progress>
+                        <progress className="progress progress-primary" value="90" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>VS Code</p>
-                        <progress class="progress progress-primary" value="95" max="100"></progress>
+                        <progress className="progress progress-primary" value="95" max="100"></progress>
                     </div> 
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Photoshop</p>
-                        <progress class="progress progress-primary" value="60" max="100"></progress>
+                        <progress className="progress progress-primary" value="60" max="100"></progress>
                     </div> 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Figma</p>
-                        <progress class="progress progress-primary" value="80" max="100"></progress>
+                        <progress className="progress progress-primary" value="80" max="100"></progress>
                     </div> 
 
                 </div>

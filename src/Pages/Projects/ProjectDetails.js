@@ -15,13 +15,13 @@ const ProjectDetails = () => {
              <div className=''>
                 <div className='w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  mb-10 rounded-lg p-5'>
                     <div className='h-80 overflow-x-auto p-5'>
-                        <img className="  w-full " src={img1} class=" rounded-lg shadow-2xl" alt=''/>
+                        <img className="  w-full " src={img1} className=" rounded-lg shadow-2xl" alt=''/>
                     </div>
                     <div className='h-80 overflow-x-auto p-5'>
-                        <img className="  w-full " src={img2} class=" rounded-lg shadow-2xl" alt=''/>
+                        <img className="  w-full " src={img2} className=" rounded-lg shadow-2xl" alt=''/>
                     </div>
                     <div className='h-80 overflow-x-auto p-5'>
-                        <img className="  w-full " src={img3} class=" rounded-lg shadow-2xl" alt=''/>
+                        <img className="  w-full " src={img3} className=" rounded-lg shadow-2xl" alt=''/>
                     </div>
                 </div>
 

@@ -6,7 +6,7 @@ const Navbar = ({children}) => {
 
     const navItems = <>
         <li><NavLink to='/'  className='rounded-lg font-bold '>Home</NavLink></li>
-        <li><NavLink activeClass="active" smooth spy to="about" className='rounded-lg font-bold '>About Me</NavLink></li>
+        <li><NavLink activeclassname="active" to="about" className='rounded-lg font-bold '>About Me</NavLink></li>
         <li><NavLink to="/blogs" className='rounded-lg font-bold '>Blogs</NavLink></li>
         <li><NavLink to='/contact' className='rounded-lg font-bold '>Contact</NavLink></li>
       

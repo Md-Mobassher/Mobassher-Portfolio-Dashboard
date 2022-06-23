@@ -29,13 +29,13 @@ const Contact = () => {
 
     return (
         <section id='contact my-20 lg:px-20'>
-             <h1 class="text-4xl font-bold text-center mt-10">Hire <span className='text-primary'> Me</span></h1>
+             <h1 className="text-4xl font-bold text-center mt-10">Hire <span className='text-primary'> Me</span></h1>
 
             <div className='lg:flex sm:flex-reverse mt-10 justify-center'>
 
 
                 <div className='lg:w-1/2 w-full mb-10 flex-col sm:px-5 pl-5 lg:pl-20'>
-                    <h1 class="text-3xl font-semibold text-center">Contact <span className='text-primary'> Info</span></h1>
+                    <h1 className="text-3xl font-semibold text-center">Contact <span className='text-primary'> Info</span></h1>
                     <div className='flex justify-start max-w-sm items-center mt-12'>
                         <div>
                            <FcManager className='w-10 h-10 mr-8 text-primary'></FcManager>
@@ -76,7 +76,7 @@ const Contact = () => {
 
 
                 <div className='lg:w-1/2'>
-                    <h1 class="text-3xl font-semibold text-center ">Contact <span className='text-primary'> Me</span></h1>
+                    <h1 className="text-3xl font-semibold text-center ">Contact <span className='text-primary'> Me</span></h1>
                     <div className='flex justify-center items-center mt-5'>
                         
                         <div className="card w-96 bg-base-100 ">
