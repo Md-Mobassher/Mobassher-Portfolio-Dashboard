@@ -12,7 +12,7 @@ const About = () => {
              <h2 className='text-4xl font-bold  text-center lg:mb-8'>About <span className='text-primary'>Me</span></h2>
              <div className="hero-content w-full flex-col lg:flex-row-reverse justify-center items-center ">
                 <div className='w-full lg:w-2/5  flex justify-center p-5'>
-                    <img className="flex" src={mobassher} className=" rounded-lg" alt=''/>
+                    <img className="flex rounded-lg" src={mobassher}  alt='mobassher'/>
                 </div>
                 <div className='w-full lgw-3/5  p-3 '>
                     <h1 className='text-xl lg:text-2xl font-semibold mb-3'>Who am <span className='text-primary'>I </span>?</h1>

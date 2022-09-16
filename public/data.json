@@ -11,7 +11,8 @@
         "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
 
         "technology": "React, React-bootstrap, React-router, Node, Express, MongoDB, Firebase, Heroku.",
-
+  
+        "img": "yes",
         "img1": "https://i.ibb.co/1qYvsvn/groca1.png ",
         "img2": "https://i.ibb.co/8XFsWzL/groca-2.png",
         "img3": "https://i.ibb.co/y0k5F7D/groca-3.png",
@@ -33,7 +34,8 @@
         "details3": "Used firebase, JWT for authentication.",
 
         "technology": "React, Tailwind, Daisy UI, JWT, React-router, Node, Express, MongoDB, Firebase, Heroku.",
-
+  
+        "img": "yes",
         "img1": " https://i.ibb.co/7j3HGfJ/motor1.png ",
         "img2": " https://i.ibb.co/jRgwgw9/motor2.png",
         "img3": " https://i.ibb.co/FYQt24j/motor3.png",
@@ -57,7 +59,8 @@
         "details3": "Used firebase for hosting. . Backend is not included now.",
 
         "technology": "React, React-bootstrap, React-router, Firebase, Heroku.",
-
+  
+        "img": "yes",
         "img1": "https://i.ibb.co/PZ6mTpJ/dentist1.png",
         "img2": "https://i.ibb.co/QmZfLRF/dentist2.png",
         "img3": "https://i.ibb.co/3YSxLkf/dentist3.png",
@@ -65,6 +68,49 @@
         "live": "https://dentist-rita.firebaseapp.com/",
         "client": "https://github.com/Md-Mobassher/independent-service-provider",
         "server": "https://github.com/Md-Mobassher/independent-service-provider"
+    },
+
+    {
+        "_id": 4,
+        "name": "Integrated-Rural-Development-Foundation",
+        "type": "Charity Foundation (Full-stack)",
+
+        "description": "Developed Charity foundation website using Wordpress with Divi theme.",
+
+        "details1": "",
+        "details2": "",
+        "details3": "",
+
+        "technology": "Wordpress, Divi, Divi Builder",
+
+        "img": "",
+        "img1": " ",
+        "img2": " ",
+        "img3": " ",
+
+        "live": " https://irdfbd.com/"
+        
+    },
+
+    {
+        "_id": 5,
+        "name": "Syed-Abul-Hasan-Ali-Nadwi-University-Trust",
+        "type": "University Trust (Full-stack)",
+
+        "description": "Developed a University Trust website using Wordpress, Phlox theme, Elementor",
+
+        "details1": "",
+        "details2": "",
+        "details3": "",
+
+        "technology": "Wordpress, Elementor, Phlox Theme.",
+
+        "img": "",
+        "img1": " ",
+        "img2": " ",
+        "img3": " ",
+
+        "live": "https://sahanutrust.org/"    
     }
   
 ]
