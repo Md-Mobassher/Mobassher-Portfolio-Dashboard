@@ -15,27 +15,26 @@ const ProjectDetails = () => {
              <div className=''>
                 {
                     img &&
-                    <div className='w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  mb-10 rounded-lg p-5'>
+                    <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mb-10 rounded-lg p-5'>
                     {
                         img1 && 
-                        <div className='h-80 overflow-x-auto p-5'>
-                            <img src={img1} className=" w-full rounded-lg shadow-2xl" alt=''/>
+                        <div className=' h-56 overflow-auto p-5 rounded-lg shadow-xl'>
+                            <img src={img1} className=" w-full rounded-lg " alt=''/>
                         </div>
                     }
                     {
-                        img1 && 
-                        <div className='h-80 overflow-x-auto p-5'>
-                            <img src={img2} className=" w-full rounded-lg shadow-2xl" alt=''/>
+                        img2 && 
+                        <div className='h-56 overflow-auto p-5 rounded-lg shadow-xl'>
+                            <img src={img2} className=" w-full rounded-lg " alt=''/>
                         </div>
                     }
                     {
-                        img1 && 
-                        <div className='h-80 overflow-x-auto p-5'>
-                            <img src={img3} className=" w-full rounded-lg shadow-2xl" alt=''/>
+                        img3 && 
+                        <div className='h-56 overflow-auto p-5 rounded-lg shadow-xl'>
+                            <img src={img3} className=" w-full rounded-lg " alt=''/>
                         </div>
-                    }
-                    
-                </div>
+                    }                    
+                    </div>
                 }
 
                 
@@ -43,15 +42,18 @@ const ProjectDetails = () => {
                     {
                         name && 
                         <div className='flex'>
-                            <p className='mb-3 font-bold text-xl'>Project Name:</p> 
-                            <p className=' ml-2 text-primary font-semibold text-xl'>{ name }</p>
+                            <p className='mb-3 font-bold text-xl'>Project Name:
+                                <span className=' ml-2 text-primary font-semibold text-xl'>{ name }</span>
+                            </p> 
+                            
                         </div>
                     }
                     {
                         type &&
                         <div className='flex'>
-                            <p className='mb-3 font-bold text-xl'>Project Type: </p> 
-                            <p className=' ml-2 text-primary font-semibold text-xl'>{ type }</p>
+                            <p className='mb-3 font-bold text-xl'>Project Type:
+                                <span className=' ml-2 text-primary font-semibold text-xl'>{ type }</span>
+                            </p>                            
                         </div>
                     }
                     {
@@ -73,8 +75,8 @@ const ProjectDetails = () => {
                     {
                         technology && 
                         <div className='flex'>
-                            <p className='mb-3 font-bold text-xl '>Technology: </p> 
-                            <p className=' ml-2 font-semibold text-lg'>{ technology }</p>
+                            <p className='mb-3 font-bold text-xl '>Technology: <span className=' ml-2 font-semibold text-lg'>{ technology }</span> </p> 
+                            
                         </div>
                     }
 

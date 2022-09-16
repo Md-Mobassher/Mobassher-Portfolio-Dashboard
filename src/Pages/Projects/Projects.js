@@ -12,8 +12,8 @@ const Projects = () => {
 
 
     return (
-        <section id='projects' className='mt-28 '>
-            <h2 className='text-3xl font-bold text-primary text-center mb-12'>Projects</h2>
+        <section id='projects' className='my-12 '>
+            <h2 className='text-4xl font-bold text-primary text-center mb-12'>Projects</h2>
             <div className='lg:px-20 sm:p-5 mx-auto'>
             <div className='grid grid-cols-1  lg:grid-cols-3 gap-6 px-5'>
                 {

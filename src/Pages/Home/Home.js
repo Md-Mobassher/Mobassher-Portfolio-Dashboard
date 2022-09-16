@@ -6,10 +6,16 @@ import Services from './Services';
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <Services></Services>
-            <Projects></Projects>
-                    
+            <div>
+                <Banner></Banner>
+            </div>
+            <div>
+                <Services></Services>
+            </div>
+            <div className='mt-28'>
+                <Projects></Projects>
+            </div>
+                
         </div>
     );
 };

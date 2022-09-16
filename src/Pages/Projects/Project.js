@@ -11,8 +11,8 @@ const Project = ({project}) => {
 
     return (
         <div className="card bg-base-100 border border-1 border-primary ">
-            <div className='h-60  overflow-auto shadow '>
-               <figure><img className='' src={img1} alt="tool" /></figure>
+            <div className='h-40  overflow-auto shadow '>
+               <figure><img className='h-full' src={img1} alt="tool" /></figure>
             </div>
              <div className="card-body p-4 justify-between items-between">
                     <div>

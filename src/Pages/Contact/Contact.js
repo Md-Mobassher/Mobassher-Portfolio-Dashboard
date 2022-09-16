@@ -29,7 +29,7 @@ const Contact = () => {
 
     return (
         <section id='contact my-20 lg:px-20'>
-             <h1 className="text-4xl font-bold text-center mt-10">Hire <span className='text-primary'> Me</span></h1>
+             <h1 className="text-4xl font-bold text-center mt-12">Hire <span className='text-primary'> Me</span></h1>
 
             <div className='lg:flex sm:flex-reverse mt-10 justify-center'>
 

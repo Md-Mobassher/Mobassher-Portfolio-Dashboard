@@ -25,7 +25,7 @@
     {
         "_id": 2,
         "name": "Motor-Parts",
-        "type": "Motor parts manufacturer website (Full-Stack)",
+        "type": "Parts manufacture (Full-Stack)",
 
         "description": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
 
@@ -50,7 +50,7 @@
     {
         "_id": 3,
         "name": "Dentist-Rita",
-        "type": "Independent service provider (Front-end)",
+        "type": "Service provider (Front-end)",
 
         "description": "Developed a small independent service provider website using JavaScript, React and Bootstrap.",
 
@@ -83,8 +83,8 @@
 
         "technology": "Wordpress, Divi, Divi Builder",
 
-        "img": "",
-        "img1": " ",
+        "img": "Yes",
+        "img1": " https://i.ibb.co/3ykSgQf/irdf.png",
         "img2": " ",
         "img3": " ",
 
@@ -105,8 +105,8 @@
 
         "technology": "Wordpress, Elementor, Phlox Theme.",
 
-        "img": "",
-        "img1": " ",
+        "img": "Yes",
+        "img1": " https://i.ibb.co/0mXJqPq/sahanu.png",
         "img2": " ",
         "img3": " ",
 

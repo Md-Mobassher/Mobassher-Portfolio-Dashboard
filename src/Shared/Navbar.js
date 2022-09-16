@@ -21,7 +21,7 @@ const Navbar = ({children}) => {
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
                 <div className="drawer-content flex flex-col">
                  
-                    <div className="w-full navbar bg-base-100  lg:px-20  sticky top-0 z-50 ">
+                    <div className="w-full navbar bg-base-100 py-10 lg:px-20  sticky top-0 z-50 ">
                          <Link to='/' className="flex-1 px-2 mx-2 text-2xl font-semibold "><img src={logo} alt="logo" /></Link>
                         <div className="flex-none lg:hidden">
                             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
