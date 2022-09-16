@@ -12,19 +12,18 @@ const Projects = () => {
 
 
     return (
-        <section id='projects' className='my-12 '>
-            <h2 className='text-4xl font-bold text-primary text-center mb-12'>Projects</h2>
+        <section id='projects' className='my-10 '>
+            <h2 className='text-4xl font-bold text-primary text-center mb-8'>Projects</h2>
             <div className='lg:px-20 sm:p-5 mx-auto'>
-            <div className='grid grid-cols-1  lg:grid-cols-3 gap-6 px-5'>
-                {
-                    projects.map(project => <Project
-                        key={project._id}
-                        project={project}
-                    ></Project>)
-                }
+                <div className='grid grid-cols-1  lg:grid-cols-3 gap-8 px-5'>
+                    {
+                        projects.map(project => <Project
+                            key={project._id}
+                            project={project}
+                        ></Project>)
+                    }
+                </div>           
             </div>
-            
-        </div>
         </section>
     );
 };

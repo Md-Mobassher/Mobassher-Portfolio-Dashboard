@@ -40,12 +40,17 @@ const Skills = () => {
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
-                        <p className='w-40 font-semibold'>Bootstrap</p>
+                        <p className='w-40 font-semibold'>WordPress</p>
+                        <progress className="progress progress-primary" value="90" max="100"></progress>
+                    </div>
+
+                    <div className='flex justify-center items-center mb-5'>
+                        <p className='w-40 font-semibold'>Elementor</p>
                         <progress className="progress progress-primary" value="100" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>
-                        <p className='w-40 font-semibold'>Tailwind</p>
+                        <p className='w-40 font-semibold'>Divi</p>
                         <progress className="progress progress-primary" value="95" max="100"></progress>
                     </div>
    
@@ -53,9 +58,15 @@ const Skills = () => {
 
 
                 <div className='card bg-base-100 shadow-xl p-10'>
+                    
+                   <div className='flex justify-center items-center mb-5'>
+                        <p className='w-40 font-semibold'>Bootstrap</p>
+                        <progress className="progress progress-primary" value="100" max="100"></progress>
+                    </div>
+
                     <div className='flex justify-center items-center mb-5'>
-                        <p className='w-40 font-semibold'>WordPress</p>
-                        <progress className="progress progress-primary" value="90" max="100"></progress>
+                        <p className='w-40 font-semibold'>Tailwind</p>
+                        <progress className="progress progress-primary" value="95" max="100"></progress>
                     </div>
 
                     <div className='flex justify-center items-center mb-5'>

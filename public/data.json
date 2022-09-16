@@ -73,7 +73,7 @@
     {
         "_id": 4,
         "name": "Integrated-Rural-Development-Foundation",
-        "type": "Charity Foundation (Full-stack)",
+        "type": "Charity Foundation (WordPress Full-stack)",
 
         "description": "Developed Charity foundation website using Wordpress with Divi theme.",
 
@@ -85,8 +85,8 @@
 
         "img": "Yes",
         "img1": " https://i.ibb.co/3ykSgQf/irdf.png",
-        "img2": " ",
-        "img3": " ",
+        "img2": "",
+        "img3": "",
 
         "live": " https://irdfbd.com/"
         
@@ -95,7 +95,7 @@
     {
         "_id": 5,
         "name": "Syed-Abul-Hasan-Ali-Nadwi-University-Trust",
-        "type": "University Trust (Full-stack)",
+        "type": "University Trust (WordPress Full-stack)",
 
         "description": "Developed a University Trust website using Wordpress, Phlox theme, Elementor",
 
@@ -107,8 +107,8 @@
 
         "img": "Yes",
         "img1": " https://i.ibb.co/0mXJqPq/sahanu.png",
-        "img2": " ",
-        "img3": " ",
+        "img2": "",
+        "img3": "",
 
         "live": "https://sahanutrust.org/"    
     }

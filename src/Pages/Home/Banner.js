@@ -23,9 +23,9 @@ const Banner = () => {
                     <h1 className="lg:text-5xl text-4xl  font-bold mb-3">I am <span className='text-primary'>MOBASSHER</span></h1>
                     <h2 className="mb-3 lg:text-4xl text-3xl font-bold text-secondary ">Full-Stack Developer</h2>
                     
-                    <p className='font-semibold'>I'm a Full-stack Developer who is passionate about making error-free websites with 100% client satisfaction. 
-                    I love to solve real-world problems. I am strategic, goal-oriented and always work with an end goal in mind. Over the past years, I created the 10s of websites for my clients. I pride myself on doing quality work. 
-                    Most of the time I work with React, but some technologies I enjoy working with include JavaScript as well as WordPress.</p>
+                    <p className='text-justify lg:text-left font-semibold'>I'm a Full-stack Developer and WordPress Expert who is passionate about making error-free websites with 100% client satisfaction. 
+                    I love to solve real-world problems. I am strategic, goal-oriented and always work with an end goal in mind. Over the past years, I created the 15s of websites for my clients. I pride myself on doing quality work. 
+                    Most of the time I work with React, but some technologies I enjoy working with WordPress.</p>
 
                     <div>
                         <button className='btn btn-primary px-8 mt-6 mr-5 text-white' onClick={saveFile}>Download Resume</button>

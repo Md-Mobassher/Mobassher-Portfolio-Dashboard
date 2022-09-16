@@ -3,7 +3,7 @@ import comingSoon from '../../Assets/Images/coming-soon.gif'
 
 const Blogs = () => {
     return (
-        <section className='my-12 h-full'>
+        <section className='my-10 h-full'>
             <h2 className='text-4xl font-bold  text-center '>Personal <span className='text-primary'>Blogs</span></h2>
             <div className='text-center h-full flex justify-center items-center'>
                 <img src={comingSoon} alt="comming soon" />
