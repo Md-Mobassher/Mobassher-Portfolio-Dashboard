@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PersonalInfo = () => {
     return (
         <section className='lg:max-w-2/3 mt-14' >
-                     <h2 className='text-4xl font-bold  text-center lg:mb-12'>Personal <span className='text-primary'>Informations</span></h2>
+                     <h2 className='lg:text-4xl text-3xl font-bold  text-center lg:mb-12'>Personal <span className='text-primary'>Informations</span></h2>
                      <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 p-5 justify-center items-center'>
                          <div className=' justify-start mr-10'>
                             <p className='mb-3 font-semibold '>Name: <span className='text-primary'>Md Mobassher Hossain</span></p>
@@ -16,7 +16,7 @@ const PersonalInfo = () => {
 
                          <div className='justify-start'>
 
-                            <p className='mb-3 font-semibold '>Phone:  <a as={Link}   href='tell:+8801773381807' className=' text-primary ml-2 '>+88-01773381807</a></p>
+                            <p className='mb-3 font-semibold '>Phone:  <a as={Link}   href='tell:+8801773381807' className=' text-primary ml-2 '>+88-01706060647</a></p>
 
                             <p className='mb-3 font-semibold '>Email:  <a as={Link} target='_black'  href='mailto:mdmobassherhossain1@gmail.com' className=' text-primary ml-2 '>mdmobassherhossain1@gmail.com</a></p>
 

@@ -3,10 +3,10 @@ import React from 'react';
 const Skills = () => {
     return (
         <section className='lg:max-w-2/3 mt-24 mb-28' >
-            <h2 className='text-4xl font-bold  text-center lg:mb-12'> <span className='text-primary'>Skills</span></h2>
+            <h2 className='lg:text-4xl text-3xl font-bold  text-center lg:mb-12'> <span className='text-primary'>Skills</span></h2>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 px-5'>
-                <div className='card bg-base-100 shadow-xl p-10 '>
+                <div className='card shadow-xl p-10 '>
 
                     <div className='flex justify-center items-center mb-5'>
                         <p className='w-40 font-semibold'>Html</p>

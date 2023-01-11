@@ -39,9 +39,7 @@
         "img1": " https://i.ibb.co/7j3HGfJ/motor1.png ",
         "img2": " https://i.ibb.co/jRgwgw9/motor2.png",
         "img3": " https://i.ibb.co/FYQt24j/motor3.png",
-       
       
-       
         "live": "https://motor-parts-bd.web.app/",
         "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
         "server": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-server"
@@ -73,7 +71,7 @@
     {
         "_id": 4,
         "name": "Integrated-Rural-Development-Foundation",
-        "type": "Charity Foundation (WordPress Full-stack)",
+        "type": "Charity Foundation (WordPress)",
 
         "description": "Developed Charity foundation website using Wordpress with Divi theme.",
 
@@ -95,7 +93,7 @@
     {
         "_id": 5,
         "name": "Syed-Abul-Hasan-Ali-Nadwi-University-Trust",
-        "type": "University Trust (WordPress Full-stack)",
+        "type": "University Trust (WordPress)",
 
         "description": "Developed a University Trust website using Wordpress, Phlox theme, Elementor",
 
@@ -111,6 +109,48 @@
         "img3": "",
 
         "live": "https://sahanutrust.org/"    
+    },
+    {
+        "_id": 6,
+        "name": "Ad-doha Institute",
+        "type": "Dawah Institute (WordPress)",
+
+        "description": "Developed a Dawah Institute website using Wordpress, Astra theme, Elementor",
+
+        "details1": "",
+        "details2": "",
+        "details3": "",
+
+        "technology": "Wordpress, Elementor, Astra Theme.",
+
+        "img": "Yes",
+        "img1": " https://i.ibb.co/0mXJqPq/sahanu.png",
+        "img2": "",
+        "img3": "",
+
+        "live": "https://ad-doha.org/"    
+    },
+
+    {
+        "_id": 7,
+        "name": "Mobile-App",
+        "type": "Mobile app website (Front-End)",
+
+        "description": "Developed a bootstrap front end project. ",
+
+        "details1": "",
+        "details2": "",
+        "details3": "",
+
+        "technology": "HTML, CSS, Bootstrap.",
+  
+        "img": "yes",
+        "img1": "https://i.ibb.co/8XFsWzL/groca-2.png",
+        "img2": "",
+        "img3": "",
+
+        "live": "https://mobile-app-mobassher.netlify.app/",
+        "client": "https://github.com/Md-Mobassher/mobile-app"
     }
   
 ]

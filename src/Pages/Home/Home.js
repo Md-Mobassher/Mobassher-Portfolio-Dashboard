@@ -5,14 +5,14 @@ import Services from './Services';
 
 const Home = () => {
     return (
-        <div>
+        <div className='lg:-mt-12'>
             <div>
                 <Banner></Banner>
             </div>
             <div>
                 <Services></Services>
             </div>
-            <div className='mt-28'>
+            <div className='lg:mt-28 mt-10'>
                 <Projects></Projects>
             </div>
                 

@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ProjectDetails from './Pages/Projects/ProjectDetails';
 import Blogs from './Pages/Blogs/Blogs';
+import Testimonial from './Pages/Testimonial/Testimonial';
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path='about' element={<About></About>}></Route>
             <Route path='/:projectName' element={<ProjectDetails></ProjectDetails>}></Route>
             <Route path='projects' element={<Projects></Projects>}></Route>
+            <Route path='testimonial' element={<Testimonial></Testimonial>}></Route>
             <Route path='contact' element={<Contact></Contact>}></Route>
             <Route path='blogs' element={<Blogs></Blogs>}></Route>
            

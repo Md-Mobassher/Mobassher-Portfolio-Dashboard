@@ -5,8 +5,8 @@ import { BsCodeSquare } from 'react-icons/bs';
 
 const Services = () => {
     return (
-        <section id='projects' className='my-16 lg:px-20'>
-            <h2 className='text-4xl font-bold text-primary text-center mb-12'>Services</h2>
+        <section id='projects' className='pt-10 lg:px-20'>
+            <h2 className='lg:text-4xl text-3xl font-bold text-primary text-center mb-12'>Services</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 px-5'>
                 <div className=' max-w-sm mx-auto flex-col justify-center items-center shadow-2xl rounded-lg border-x-rose-600 p-5'>
                     <FaLaptopCode className='w-10 h-10 block mx-auto mt-4 mb-6'></FaLaptopCode>
