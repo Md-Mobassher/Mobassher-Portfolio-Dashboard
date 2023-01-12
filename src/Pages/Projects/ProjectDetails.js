@@ -20,7 +20,7 @@ const ProjectDetails = () => {
                      
                 </button>                      
          
-                <div tabindex="0" class="dropdown-content bg-base-300 w-full border rounded-lg">
+                <div tabindex="0" class="dropdown-content bg-base-300 w-full border rounded-lg mt-1">
                    <div className='items-center text-justify justify-start  lg:pt-10 p-5 lg:pl-20'>
                         {
                             name && 

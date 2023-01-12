@@ -6,6 +6,7 @@ import { TbPhoneCall } from 'react-icons/tb';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
@@ -28,10 +29,10 @@ const Contact = () => {
 
 
     return (
-        <section id='contact py-20 lg:px-20'>
-             <h1 className="lg:text-4xl text-3xl font-bold text-center pt-10">Hire <span className='text-primary'> Me</span></h1>
+        <section id='contact' className=' py-6 lg:px-20'>
+             <h1 className="lg:text-4xl text-3xl font-bold text-center">Hire <span className='text-primary'> Me</span></h1>
 
-            <div className='lg:flex sm:flex-reverse mt-10 justify-center'>
+            <div className='lg:flex sm:flex-reverse mt-8 justify-center'>
 
 
                 <div className='lg:w-1/2  mb-10 flex-col sm:px-5 pl-5 lg:pl-20'>
@@ -61,7 +62,9 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h2 className='font-bold'>Call Me</h2>
-                                    <h2 className='text-primary font-semibold'>+88 01706060647</h2>
+                                    <h2 className='text-primary font-semibold'>
+                                        <a as={Link}   href='tell:+8801706060647' className=' text-primary'>+88-01706060647</a>
+                                    </h2>
                                 </div>
                             </div>
                             <div className='flex justify-start max-w-sm items-center mt-7'>
@@ -70,7 +73,9 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h2 className='font-bold'>Email</h2>
-                                    <h2 className='text-primary font-semibold'>mdmobassherhossain1@gmail.com</h2>
+                                    <h2 className='text-primary font-semibold'>
+                                        <a as={Link} target='_black'  href='mailto:mdmobassherhossain1@gmail.com' className=' text-primary'>mdmobassherhossain1@gmail.com</a>
+                                    </h2>
                                 </div>
                             </div>
                     </div>

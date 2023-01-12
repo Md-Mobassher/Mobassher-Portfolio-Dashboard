@@ -8,7 +8,6 @@ const Navbar = ({children}) => {
         <li><NavLink to='/'  className='rounded-lg font-semibold '>Home</NavLink></li>
         <li><NavLink activeClassName="active" to="about" className='rounded-lg font-semibold '>About</NavLink></li>
         <li><NavLink activeClassName="active" to="projects" className='rounded-lg font-semibold '>Projects</NavLink></li>
-        <li><NavLink to="/testimonial" className='rounded-lg font-semibold '>Testimonial</NavLink></li>
         <li><NavLink to='/contact' className='rounded-lg font-semibold '>Contact</NavLink></li>
         
 

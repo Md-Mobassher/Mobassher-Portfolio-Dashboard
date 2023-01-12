@@ -16,7 +16,7 @@ const PersonalInfo = () => {
 
                          <div className='justify-start'>
 
-                            <p className='mb-3 font-semibold '>Phone:  <a as={Link}   href='tell:+8801773381807' className=' text-primary ml-2 '>+88-01706060647</a></p>
+                            <p className='mb-3 font-semibold '>Phone:  <a as={Link}   href='tell:+8801706060647' className=' text-primary ml-2 '>+88-01706060647</a></p>
 
                             <p className='mb-3 font-semibold '>Email:  <a as={Link} target='_black'  href='mailto:mdmobassherhossain1@gmail.com' className=' text-primary ml-2 '>mdmobassherhossain1@gmail.com</a></p>
 
