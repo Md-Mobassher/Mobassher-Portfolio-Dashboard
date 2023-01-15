@@ -16,7 +16,7 @@ const Banner = () => {
         <section className="hero min-h-screen  lg:px-20">
             <div className="hero-content flex-col lg:flex-row-reverse justify-center items-center ">
                 <div className='w-full lg:w-1/2 flex justify-center items-center'>
-                    <img src={mobassher} className=" flex rounded-lg size-cover" alt=''/>
+                    <img src={mobassher} className=" flex rounded-lg size-cover" alt='Mobassher'/>
                 </div>
                 <div className='w-full lg:w-2/3 pt-5 lg:pt-0 '>
                     <h1 className="lg:text-3xl text-2xl text-secondary font-bold mb-3 lg:mb-4">Hi,</h1>

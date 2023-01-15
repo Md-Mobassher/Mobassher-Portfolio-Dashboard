@@ -108,7 +108,7 @@
     },
     {
         "_id": 6,
-        "name": "Ad-doha Institute",
+        "name": "Ad-doha-Institute",
         "type": "Dawah Institute (WordPress)",
 
         "description": "Developed a Dawah Institute website using Wordpress, Astra theme, Elementor",
@@ -147,8 +147,8 @@
     },
     {
         "_id": 8,
-        "name": "Dhaka University Alumni Association of Malaysia",
-        "type": "Alumni Association",
+        "name": "DUAAM",
+        "type": "Blog website",
 
         "description": "Developed Dhaka University Alumni Association of Malaysia website. ",
         "details1": "",
