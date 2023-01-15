@@ -23,7 +23,7 @@ const Navbar = ({children}) => {
                 <div className="drawer-content flex flex-col">
                  
                     <div className="w-full navbar bg-base-100 py-10 lg:px-20  sticky top-0 z-50 shadow ">
-                         <Link to='/' className="flex-1 px-2 mx-2 text-2xl font-semibold "><img src={logo} alt="logo" /></Link>
+                         <Link to='/' className="flex-1 px-2 mx-2 text-2xl font-semibold "><img src={logo} alt="logo" className='lg:w-auto md:w-1/3 w-2/3  '/></Link>
                         <div className="flex-none lg:hidden">
                             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>

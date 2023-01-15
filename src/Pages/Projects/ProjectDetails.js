@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 const ProjectDetails = () => {
 
     const {state } = useLocation()
-    const { name, type, details1,details2,details3,details4,details5, live, server,client, technology,img1, img2, img3, img4, img5 } = state
+    const { name, type, details1,details2,details3,details4,details5, live, server,client, technology,img1} = state
 
 
     //const [current, setCurrent]= useState(0);
