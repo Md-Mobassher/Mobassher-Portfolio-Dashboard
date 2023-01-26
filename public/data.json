@@ -67,29 +67,29 @@
 
     {
         "_id": 4,
-        "name": "Integrated-Rural-Development-Foundation",
+        "name": "IRDF-Bangladesh",
         "type": "Charity Foundation (WordPress)",
 
-        "description": "Developed Charity foundation website using Wordpress with Divi theme.",
+        "description": "Developed Charity foundation website using WordPress with Divi theme.",
         "details1": "",
         "details2": "",
         "details3": "",
 
-        "technology": "Wordpress, Divi, Divi Builder",
+        "technology": "WordPress, Divi, Divi Builder",
 
         "img": "Yes",
-        "img1": " https://i.ibb.co/HtkC4Vz/irdf.png",
+        "img1": "https://i.ibb.co/HtkC4Vz/irdf.png",
         "img2": "https://i.ibb.co/Z2NZ0d8/about.png",
         "img3": "https://i.ibb.co/7vkSf0S/committee.png",
         "img4": "https://i.ibb.co/x3GKm7C/contact.png",
         "img5": "https://i.ibb.co/VLfWzd9/donate.png",
 
-        "live": " https://irdfbd.com/"       
+        "live": "https://irdfbd.com/"       
     },
 
     {
         "_id": 5,
-        "name": "Syed-Abul-Hasan-Ali-Nadwi-University-Trust",
+        "name": "SAHANU-Trust",
         "type": "University Trust (WordPress)",
 
         "description": "Developed a University Trust website using Wordpress, Phlox theme, Elementor",
@@ -100,9 +100,9 @@
         "technology": "Wordpress, Elementor, Phlox Theme.",
       
         "img": "Yes",
-        "img1": " https://i.ibb.co/VmJ2yYD/home.png",
-        "img2": " https://i.ibb.co/r6rpz48/about.png",
-        "img3": " https://i.ibb.co/6nv53gB/project.png",
+        "img1": "https://i.ibb.co/VmJ2yYD/home.png",
+        "img2": "https://i.ibb.co/r6rpz48/about.png",
+        "img3": "https://i.ibb.co/6nv53gB/project.png",
 
         "live": "https://sahanutrust.org/"    
     },
@@ -119,7 +119,7 @@
         "technology": "Wordpress, Elementor, Astra Theme.",
 
         "img": "Yes",
-        "img1": " https://i.ibb.co/rwbbwHv/home.png",
+        "img1": "https://i.ibb.co/rwbbwHv/home.png",
         "img2": "https://i.ibb.co/0fq7L94/about.png",
         "img3": "",
 
@@ -178,10 +178,10 @@
         "technology": "HTML, CSS, Ghost.",
        
         "img": "yes",
-        "img1": " https://i.ibb.co/PjkGsYN/duaam.png",
-        "img2": " https://i.ibb.co/RNMnG63/about.png",
-        "img3": " https://i.ibb.co/xjSX19x/scholarship.png",
-        "img4": " https://i.ibb.co/fkX5fct/login.png",
+        "img1": "https://i.ibb.co/PjkGsYN/duaam.png",
+        "img2": "https://i.ibb.co/RNMnG63/about.png",
+        "img3": "https://i.ibb.co/xjSX19x/scholarship.png",
+        "img4": "https://i.ibb.co/fkX5fct/login.png",
 
         "live": "https://www.duaam.org/"
     }
