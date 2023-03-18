@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-
 const ProjectDetails = () => {
 
     const {state } = useLocation()
-    const { name, type, details1,details2,details3,details4,details5, live, server,client, technology,img1} = state
+    const { name, type, details1,details2,details3,details4,details5, live, server,client, technology,img2} = state
 
 
     //const [current, setCurrent]= useState(0);
@@ -25,6 +24,8 @@ const ProjectDetails = () => {
     // if(!Array.isArray(slides) || slides.length <= 0 ){
     //     return null
     // }
+
+
 
     return (
         <section id='details' className='py-10 '>
@@ -100,7 +101,7 @@ const ProjectDetails = () => {
 
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src={img1} class="w-full" alt={img1}/>
+                    <img src={img2} class="w-full" alt={img2}/>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                       <p onClick={prevSlide} class="btn btn-primary text-white btn-circle">❮</p> 
                       <p onClick={nextSlide} class="btn btn-primary text-white btn-circle">❯</p> 

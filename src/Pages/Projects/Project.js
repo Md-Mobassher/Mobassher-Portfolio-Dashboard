@@ -10,9 +10,9 @@ const Project = ({project}) => {
     }
 
     return (
-        <div className="card bg-white border border-1 border-primary ">
-            <div className='h-40  overflow-auto shadow '>
-               <figure><img className='h-full' src={img1} alt="tool" /></figure>
+        <div className="card rounded-lg bg-white border border-1 border-primary max-w-sm mx-auto">
+            <div className='h-40 border-b '>
+               <figure><img className='w-full h-full object-cover object-center' src={img1} alt={img1} /></figure>
             </div>
              <div className="card-body bg-base-100 px-3 pb-3 pt-3 justify-between items-between">
                     <div className='bg-base-100'>
