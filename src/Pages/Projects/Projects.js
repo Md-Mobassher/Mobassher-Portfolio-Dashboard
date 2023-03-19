@@ -39,10 +39,10 @@ const Projects = () => {
             <h2 className='lg:text-4xl md:text-3xl text-2xl font-bold text-primary text-center mb-5'>Projects</h2>
 
             <div className='mb-8 form-control mx-auto max-w-xs'>
-                <div  className="input-group justify-center">
-                    <button onClick={handleAllProjects} className='btn btn-primary text-white hover:text-b'> All</button>
+                <div  className="input-group justify-center ">
+                    <button onClick={handleAllProjects} className='btn btn-primary hover:btn-secondary text-white '> All</button>
 
-                    <select  onChange={handleCategoryChange} class="select select-primary">
+                    <select  onChange={handleCategoryChange} class="select select-primary ">
                         <option disabled selected>Select Technology</option>
                         <option value="react">React JS</option>
                         <option value="node">Node JS</option>

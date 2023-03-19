@@ -24,7 +24,7 @@ const About = () => {
 
                     <div>
                         
-                        <Link to='/contact' className='btn btn-outline btn-primary px-8 mt-8 hover:text-white' >Hire Me</Link>
+                        <Link to='/contact' className='btn btn-outline btn-primary hover:btn-secondary px-8 mt-8 transition duration-500' >Hire Me</Link>
                     </div>
 
                 </div>

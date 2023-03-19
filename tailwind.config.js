@@ -1,14 +1,19 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        '0': '0ms',
+        '2000': '2000ms',
+      }
+    }
   },
   daisyui: {
     themes: [
       {
         mytheme: {
-          primary: "#fe651c",
-          secondary: "#448fff",
+          primary: "#1b9637",
+          secondary: "#e81b1b",
           accent: "#37cdbe",
           neutral: "#3d4451",
           "base-100": "#ffffff",

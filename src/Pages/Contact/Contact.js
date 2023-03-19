@@ -165,7 +165,7 @@ const Contact = () => {
                                         </label>
                                     </div>
 
-                                    <input className='btn w-1/2 mx-auto bg-primary border-0 max-w-xs text-white' type="submit" value="Contact" />
+                                    <input className='btn w-1/2 mx-auto btn-primary hover:btn-secondary border-0 max-w-xs text-white' type="submit" value="Contact" />
                                 </form>
                                 
                             </div>

@@ -8,11 +8,13 @@ const Services = () => {
         <section id='projects' className='pt-10 lg:px-20'>
             <h2 className='lg:text-4xl md:text-3xl text-2xl font-bold text-primary text-center lg:mb-12 mb-8'>Services</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 justify-center items-center px-5'>
-                <div className=' max-w-sm mx-auto flex-col justify-center items-center shadow-2xl rounded-lg border-x-rose-600 p-5'>
-                    <FaLaptopCode className='w-10 h-10 block mx-auto mt-4 mb-6'></FaLaptopCode>
+                <div className=' max-w-sm mx-auto flex-col justify-center items-center shadow-2xl rounded-lg border-x-rose-600 p-5 '>
+                    <FaLaptopCode className='w-10 h-10 block mx-auto mt-4 mb-6 '></FaLaptopCode>
                     <div >
                         <h2 className='text-primary font-semibold lg:text-2xl text-xl text-center mb-4'>Web Design</h2>
-                        <p className='text-center p-2'>As a web designer, I always provide the quality work and always try to satisfy my clients and make a good relationship with them. </p>
+                        <div>
+                            <p className='text-center p-2 text-black'>As a web designer, I always provide the quality work and always try to satisfy my clients and make a good relationship with them. </p>
+                        </div>
                     </div>
                 </div>
                 <div className=' max-w-sm mx-auto  flex-col justify-center items-center shadow-2xl rounded-lg border-x-rose-600 p-5'>
