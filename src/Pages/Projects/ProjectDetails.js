@@ -74,7 +74,7 @@ const ProjectDetails = () => {
                         {
                             technology && 
                             <div className='flex'>
-                                <p className='mb-3 font-bold lg:text-xl '>Technology: <span className=' ml-2 font-semibold lg:text-lg'>{ technology }</span> </p> 
+                                <p className='mb-3 font-bold lg:text-xl '>Technology: <span className=' ml-2 font-semibold text-primary lg:text-lg'>{ technology }</span> </p> 
                                 
                             </div>
                         }
@@ -97,7 +97,7 @@ const ProjectDetails = () => {
 
             </div>
 
-            <div className="carousel w-full">
+            <div className="carousel border-t shadow-t w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={img2} className="w-full" alt={img2}/>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
