@@ -32,11 +32,9 @@ const ProjectDetails = () => {
              
              <div className="dropdown lg:px-20 px-5 w-full mb-10 mx-auto ">
                 
-                 <button tabindex="0" className=" btn btn-outline btn-primary gap-4 flex justify-center 
-                  lg:px-10  lg:text-xl " >Project Details 
+                 <button tabindex="0" className=" btn btn-outline btn-primary hover:btn-secondary transition duration-500 gap-4 flex justify-center lg:px-10  lg:text-xl text-white" >Project Details 
 
-                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                     
+                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>                   
                 </button>                      
          
                 <div tabindex="0" className="dropdown-content bg-base-200 border border-primary rounded-lg mt-1">
@@ -83,15 +81,15 @@ const ProjectDetails = () => {
 
                         {
                             live &&
-                            <p className='mb-3 mt-5 font-bold  lg:text-xl'>Go to Live site - <a as={Link} target='_black' href={live} className='btn  btn-primary ml-auto] text-white'>Click here </a></p>
+                            <p className='mb-3 mt-5 font-bold  lg:text-xl'>Go to Live site - <a as={Link} target='_black' href={live} className='btn  btn-primary hover:btn-secondary transition duration-500 ml-auto] text-white'>Click here </a></p>
                         }
                         {
                             client &&
-                            <p className='mb-3 mt-5 font-bold  lg:text-xl'>Client-Side code - <a as={Link} target='_black' href={client} className='btn btn-primary ml-auto text-white'>Click here </a></p>
+                            <p className='mb-3 mt-5 font-bold  lg:text-xl'>Client-Side code - <a as={Link} target='_black' href={client} className='btn btn-primary hover:btn-secondary transition duration-500 ml-auto text-white'>Click here </a></p>
                         }
                         {
                             server && 
-                            <p className='mb-3 mt-5 font-bold  lg:text-xl'>Server-Side code - <a as={Link} target='_black' href={server} className='btn  btn-primary ml-auto text-white'>Click here </a></p>
+                            <p className='mb-3 mt-5 font-bold  lg:text-xl'>Server-Side code - <a as={Link} target='_black' href={server} className='btn  btn-primary hover:btn-secondary transition duration-500 ml-auto text-white'>Click here </a></p>
                         }
                     
                     </div>
