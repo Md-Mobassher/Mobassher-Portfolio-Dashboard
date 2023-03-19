@@ -30,16 +30,16 @@ const ProjectDetails = () => {
     return (
         <section id='details' className='py-10 '>
              
-             <div class="dropdown lg:px-20 px-5 w-full mb-10 mx-auto ">
+             <div className="dropdown lg:px-20 px-5 w-full mb-10 mx-auto ">
                 
-                 <button tabindex="0" class=" btn btn-outline btn-primary gap-4 flex justify-center 
+                 <button tabindex="0" className=" btn btn-outline btn-primary gap-4 flex justify-center 
                   lg:px-10  lg:text-xl " >Project Details 
 
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                      
                 </button>                      
          
-                <div tabindex="0" class="dropdown-content bg-base-200 border border-primary rounded-lg mt-1">
+                <div tabindex="0" className="dropdown-content bg-base-200 border border-primary rounded-lg mt-1">
                    <div className='items-center text-justify justify-start  lg:pt-10 p-5 lg:px-20 '>
                         {
                             name && 
@@ -99,12 +99,12 @@ const ProjectDetails = () => {
 
             </div>
 
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src={img2} class="w-full" alt={img2}/>
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <p onClick={prevSlide} class="btn btn-primary text-white btn-circle">❮</p> 
-                      <p onClick={nextSlide} class="btn btn-primary text-white btn-circle">❯</p> 
+            <div className="carousel w-full">
+                <div id="slide1" className="carousel-item relative w-full">
+                    <img src={img2} className="w-full" alt={img2}/>
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <p onClick={prevSlide} className="btn btn-primary text-white btn-circle">❮</p> 
+                      <p onClick={nextSlide} className="btn btn-primary text-white btn-circle">❯</p> 
                     </div>
                 </div> 
                 

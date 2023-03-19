@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 mt-14">
+        <footer className="footer footer-center bg-base-200 text-base-content rounded p-12 mt-14">
 
             <div>
                
-                <p class="font-bold">
-                    <img src={logo} alt={logo} />
+                <p className="font-bold">
+                    <Link to='/' className=" "><img src={logo} alt="logo" className=' mx-auto '/></Link>
                 <br/>Providing reliable tech since 2021
                 </p> 
 
