@@ -35,9 +35,9 @@ const Contact = () => {
             <div className='lg:flex sm:flex-reverse mt-8 justify-center'>
 
 
-                <div className='lg:w-1/2  mb-10 flex-col sm:px-5 pl-5 lg:pl-20'>
+                <div className='lg:w-1/2  mb-10 flex-col sm:px-5 pl-5'>
                     <h1 className="lg:text-3xl text-2xl font-semibold text-center">Contact <span className='text-primary'> Info</span></h1>
-                    <div className='w-96 mx-auto'>
+                    <div className='max-w-sm mx-auto'>
                             <div className='flex justify-start max-w-sm items-center mt-12'>
                                 <div>
                                 <FcManager className='w-10 h-10 mr-8 text-primary'></FcManager>
@@ -84,18 +84,18 @@ const Contact = () => {
 
                 <div className='lg:w-1/2'>
                     <h1 className="lg:text-3xl text-2xl font-semibold text-center ">Contact <span className='text-primary'> Me</span></h1>
-                    <div className='flex justify-center items-center mt-5'>
+                    <div className=' max-w-sm mx-auto mt-6'>
                         
-                        <div className="card w-96 bg-base-100 ">
+                        <div className=" bg-base-100 ">
                       
-                            <div className="card-body">
+                            <div className="">
                                 <form onSubmit={handleSubmit(onSubmit)}>
 
-                                    <div className="form-control w-full max-w-xs">
+                                    <div className="form-control">
                                         <input
                                             type="text"
                                             placeholder="Your Name"
-                                            className="input input-bordered w-full max-w-xs"
+                                            className="input input-bordered input-primary w-full "
                                             {...register("name", {
                                                 required: {
                                                     value: true,
@@ -108,11 +108,11 @@ const Contact = () => {
                                         </label>
                                     </div>
 
-                                    <div className="form-control w-full max-w-xs">
+                                    <div className="form-control w-full ">
                                         <input
                                             type="email"
                                             placeholder="Your Email"
-                                            className="input input-bordered w-full max-w-xs"
+                                            className="input input-bordered input-primary w-full "
                                             {...register("email", {
                                                 required: {
                                                     value: true,
@@ -130,11 +130,11 @@ const Contact = () => {
                                         </label>
                                     </div>
 
-                                    <div className="form-control w-full max-w-xs">
+                                    <div className="form-control w-full ">
                                         <input
                                             type="text"
                                             placeholder="Subject"
-                                            className="input input-bordered w-full max-w-xs"
+                                            className="input input-bordered input-primary w-full "
                                             {...register("subject", {
                                                 required: {
                                                     value: true,
@@ -147,11 +147,11 @@ const Contact = () => {
                                         </label>
                                     </div>
 
-                                    <div className="form-control w-full max-w-xs">
+                                    <div className="form-control w-full ">
                                         <textarea
                                             type="textarea"
                                             placeholder="Message"
-                                            className="textarea textarea-bordered h-24 w-full max-w-xs"
+                                            className="textarea textarea-bordered textarea-primary h-24 w-full "
                                             {...register("message", {
                                                 required: {
                                                     value: true,
