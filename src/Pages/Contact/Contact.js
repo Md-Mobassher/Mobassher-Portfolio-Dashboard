@@ -32,15 +32,15 @@ const Contact = () => {
         <section id='contact' className=' py-6 lg:px-20'>
              <h1 className="lg:text-4xl text-3xl font-bold text-center">Hire <span className='text-primary'> Me</span></h1>
 
-            <div className='lg:flex sm:flex-reverse mt-8 justify-center'>
+            <div className='lg:flex flex-reverse lg:mt-8 mt-5 justify-center justify-items-center'>
 
 
-                <div className='lg:w-1/2  mb-10 flex-col sm:px-5 pl-5'>
+                <div className='lg:w-1/2 px-2 lg:mb-10 mb-8 flex-col '>
                     <h1 className="lg:text-3xl text-2xl font-semibold text-center">Contact <span className='text-primary'> Info</span></h1>
                     <div className='max-w-sm mx-auto'>
-                            <div className='flex justify-start max-w-sm items-center mt-12'>
+                            <div className='flex justify-start max-w-sm items-center lg:mt-12 mt-6'>
                                 <div>
-                                <FcManager className='w-10 h-10 mr-8 text-primary'></FcManager>
+                                <FcManager className='w-10 h-10 mr-6 text-primary'></FcManager>
                                 </div>
                                 <div>
                                     <h2 className='font-bold'>Name</h2>
@@ -49,7 +49,7 @@ const Contact = () => {
                             </div>
                             <div className='flex justify-start max-w-sm items-center mt-7'>
                                 <div>
-                                <GoLocation className='w-10 h-10 mr-8  text-primary'></GoLocation>
+                                <GoLocation className='w-10 h-10 mr-6  text-primary'></GoLocation>
                                 </div>
                                 <div>
                                     <h2 className='font-bold'>Location</h2>
@@ -58,7 +58,7 @@ const Contact = () => {
                             </div>
                             <div className='flex justify-start max-w-sm items-center mt-7'>
                                 <div>
-                                <TbPhoneCall className='w-10 h-10 mr-8 text-primary'></TbPhoneCall>
+                                <TbPhoneCall className='w-10 h-10 mr-6 text-primary'></TbPhoneCall>
                                 </div>
                                 <div>
                                     <h2 className='font-bold'>Call Me</h2>
@@ -69,7 +69,7 @@ const Contact = () => {
                             </div>
                             <div className='flex justify-start max-w-sm items-center mt-7'>
                                 <div>
-                                <HiOutlineMailOpen className='w-10 h-10 mr-8 text-primary'></HiOutlineMailOpen>
+                                <HiOutlineMailOpen className='w-10 h-10 mr-6 text-primary'></HiOutlineMailOpen>
                                 </div>
                                 <div>
                                     <h2 className='font-bold'>Email</h2>
@@ -82,7 +82,7 @@ const Contact = () => {
                 </div >
 
 
-                <div className='lg:w-1/2'>
+                <div className='lg:w-1/2 px-5'>
                     <h1 className="lg:text-3xl text-2xl font-semibold text-center ">Contact <span className='text-primary'> Me</span></h1>
                     <div className=' max-w-sm mx-auto mt-6'>
                         
