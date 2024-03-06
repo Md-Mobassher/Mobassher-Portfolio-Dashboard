@@ -5,7 +5,7 @@ const Project = ({ project }) => {
   const navigate = useNavigate();
 
   const navigateToProjectDetail = (name) => {
-    navigate(`/${name}`, { state: project });
+    navigate(`/portfolios/${name}`, { state: project });
   };
 
   return (

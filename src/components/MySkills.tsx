@@ -13,8 +13,8 @@ const MySkills = () => {
     <div id="myskills" className="lg:mt-28 mt-20  min-h-20">
       <Container>
         <Title title="My Skills" />
-        <div className="lg:px-20 md:px-14 lg:mt-12 mt-10">
-          <ul className="flex flex-wrap lg:justify-start md:justify-start justify-center lg:mb-10 mb-8 lg:gap-5 md:gap-4 gap-3">
+        <div className="lg:px-20 md:px-14 lg:mt-10 mt-8">
+          <ul className="flex flex-wrap lg:justify-start md:justify-start justify-center lg:mb-7 mb-5 lg:gap-5 md:gap-4 gap-3">
             {skillsName.map((name) => (
               <li
                 onClick={() => setSelectedSkill(name)}
@@ -30,7 +30,7 @@ const MySkills = () => {
             ))}
           </ul>
         </div>
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-7  gap-3 md:gap-5">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5  gap-3 md:gap-4">
           {selectedSkills.map(({ name, percent }) => (
             <div
               key={name}

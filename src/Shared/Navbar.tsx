@@ -1,32 +1,46 @@
 import { Link } from "react-router-dom";
-import Logo from "@/components/common/Logo";
-import Container from "@/components/common/Container";
+import Img from "../Assets/Images/logo.png";
 
 const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a href="#about" className="rounded-lg font-semibold ">
+        <a
+          href="#about"
+          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+        >
           About
         </a>
       </li>
       <li>
-        <a href="#myskills" className="rounded-lg font-semibold ">
+        <a
+          href="#myskills"
+          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth "
+        >
           Skills
         </a>
       </li>
       <li>
-        <a href="#portfolios" className="rounded-lg font-semibold ">
+        <a
+          href="#portfolios"
+          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+        >
           Portfolios
         </a>
       </li>
       <li>
-        <a href="#contact" className="rounded-lg font-semibold ">
+        <a
+          href="#contact"
+          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+        >
           Contact
         </a>
       </li>
       <li>
-        <a href="/" className="rounded-lg font-semibold ">
+        <a
+          href="/"
+          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+        >
           Resume
         </a>
       </li>
@@ -34,13 +48,13 @@ const Navbar = () => {
   );
 
   return (
-    <header className="relative">
-      <div className="drawer drawer-end">
+    <header className=" sticky top-0 z-10 bg-white shadow-md">
+      <div className="drawer drawer-end max-w-[1200px] mx-auto ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <nav className="drawer-content flex flex-col">
-          <div className="w-full h-20 navbar bg-base-100 py-10 lg:px-20  sticky top-0 z-50 shadow ">
+        <nav className="drawer-content lg:flex md:flex flex-col ">
+          <div className="w-full h-20 navbar bg-base-100 py-10 ">
             <Link to="/" className="flex-1 px-2 mx-2 text-2xl font-semibold ">
-              <Logo />
+              <img src={Img} alt="Img" />
             </Link>
             <div className="flex-none lg:hidden">
               <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -67,7 +81,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <div className="drawer-side">
+        <div className="drawer-side z-50 mt-50">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto w-60 bg-base-100 ">
             {navItems}
