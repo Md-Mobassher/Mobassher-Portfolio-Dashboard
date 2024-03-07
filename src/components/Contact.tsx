@@ -61,7 +61,7 @@ const Contact = () => {
                 <div>
                   <h2 className="font-bold">Location</h2>
                   <h2 className="text-primary font-semibold">
-                    Rajarhat, Kurigram, Bangladesh.
+                    Tograihat, Rajarhat, Kurigram, Bangladesh-5600.
                   </h2>
                 </div>
               </div>

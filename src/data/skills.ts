@@ -5,8 +5,6 @@ export type TSkills = {
 
 export const skills = {
   Web: [
-    { name: "HTML", percent: 90 },
-    { name: "CSS", percent: 90 },
     { name: "React", percent: 90 },
     { name: "Node JS", percent: 80 },
     { name: "Express JS", percent: 90 },

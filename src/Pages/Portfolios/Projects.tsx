@@ -2,15 +2,14 @@ import { useEffect, useMemo, useState } from "react";
 import Project from "./Project";
 import Container from "@/components/common/Container";
 import Title from "@/components/common/Title";
-import { useNavigate } from "react-router-dom";
+import { TProject } from "@/type/type";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
-  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("data.json")
+    fetch("portfolio.json")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
@@ -19,7 +18,7 @@ const Projects = () => {
     if (!selectedCategory) {
       return projects;
     }
-    return projects.filter((item) => {
+    return projects.filter((item: TProject) => {
       return item?.technology
         .toLowerCase()
         .match(selectedCategory.toLowerCase());
@@ -39,10 +38,6 @@ const Projects = () => {
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
-  };
-
-  const handleNavigateAllProjects = () => {
-    navigate("/portfolios");
   };
 
   return (
@@ -78,19 +73,11 @@ const Projects = () => {
         </div>
 
         <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProjects.map((project) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6">
+            {filteredProjects.slice(0, 9).map((project: TProject) => (
               <Project key={project?.name} project={project}></Project>
             ))}
           </div>
-        </div>
-        <div className=" lg:mt-10 mt-8 flex justify-center">
-          <button
-            className="btn btn-primary text-white lg:px-10 px-8"
-            onClick={handleNavigateAllProjects}
-          >
-            View all Projects
-          </button>
         </div>
       </Container>
     </div>

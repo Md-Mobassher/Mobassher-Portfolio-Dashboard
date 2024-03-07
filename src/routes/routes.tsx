@@ -1,7 +1,7 @@
 import App from "@/App";
 import Home from "@/Pages/Home/Home";
-import ProjectDetails from "@/Pages/Projects/ProjectDetails";
-import Projects from "@/Pages/Projects/Projects";
+import AllProjects from "@/Pages/Portfolios/AllProjects";
+import ProjectDetails from "@/Pages/Portfolios/ProjectDetails";
 import NotFound from "@/Shared/NotFound";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       },
       {
         path: "portfolios",
-        element: <Projects />,
+        element: <AllProjects />,
       },
       {
         path: "portfolios/:name",
