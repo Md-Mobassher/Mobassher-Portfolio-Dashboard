@@ -5,8 +5,10 @@ import Title from "@/components/common/Title";
 import { TProject } from "@/type/type";
 
 const AllProjects = () => {
-  const [projects, setProjects] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState();
+  const [projects, setProjects] = useState<TProject[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<
+    string | undefined
+  >();
 
   useEffect(() => {
     fetch("portfolio.json")
@@ -36,7 +38,9 @@ const AllProjects = () => {
     return projects;
   };
 
-  const handleCategoryChange = (event) => {
+  const handleCategoryChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     setSelectedCategory(event.target.value);
   };
 

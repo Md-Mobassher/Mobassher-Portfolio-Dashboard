@@ -12,11 +12,11 @@ const Button = ({
   margin,
   padding,
 }: any) => {
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const hash = e.target.hash;
-    const el = document.querySelector(hash);
-    const offsetTop = el.offsetTop;
+    const hash = e.currentTarget.hash;
+    const el = document.querySelector(hash) as HTMLElement;
+    const offsetTop = el?.offsetTop || 0;
     window.scrollTo({
       top: offsetTop,
       left: 0,

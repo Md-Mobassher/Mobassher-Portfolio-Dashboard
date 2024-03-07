@@ -33,7 +33,7 @@ Connect with me! Whether you have a project in mind, a job opportunity, or just 
 ## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript, React, TypeScript, Tailwind
-- **Deployment**: Netlify
+- **Deployment**: Firebase
 
 ## How to Use
 
@@ -47,4 +47,4 @@ While this portfolio primarily showcases my work, I welcome any feedback, sugges
 
 Thank you for visiting my portfolio!
 
-**[Md Mobassher Hossain]** [Portfolio Link] [https://dev-mobassher.web.app/]
+**[Md Mobassher Hossain]** [Portfolio Link] (https://dev-mobassher.web.app)

@@ -17,20 +17,23 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    emailjs
-      .send("service_6ioyfyn", "template_vcxutb8", data, "O14vl6cRB93Me-2ZS")
-      .then(
-        (response) => {
-          if (response.status === 200) {
-            toast.success("Contact successfully");
-            reset();
-          }
-        },
-        (err) => {
-          toast.error("FAILED to Contact...", err);
-        }
+  const onSubmit = async (data: Record<string, string>) => {
+    try {
+      await emailjs.send(
+        "service_6ioyfyn",
+        "template_vcxutb8",
+        data,
+        "O14vl6cRB93Me-2ZS"
       );
+      toast.success("Contact successfully");
+      reset();
+    } catch (err) {
+      if (err instanceof Error) {
+        toast.error(`FAILED to Contact... ${err.message}`);
+      } else {
+        toast.error("FAILED to Contact...");
+      }
+    }
   };
 
   return (
@@ -121,7 +124,7 @@ const Contact = () => {
                       <label className="label">
                         {errors?.name?.type === "required" && (
                           <span className="label-text-alt text-red-500">
-                            {errors?.name?.message}
+                            {"Name is Required"}
                           </span>
                         )}
                       </label>
@@ -146,12 +149,12 @@ const Contact = () => {
                       <label className="label">
                         {errors.email?.type === "required" && (
                           <span className="label-text-alt text-red-500">
-                            {errors?.email?.message}
+                            {"Email is Required"}
                           </span>
                         )}
                         {errors.email?.type === "pattern" && (
                           <span className="label-text-alt text-red-500">
-                            {errors?.email?.message}
+                            {"Provide a valid Email"}
                           </span>
                         )}
                       </label>
@@ -172,7 +175,7 @@ const Contact = () => {
                       <label className="label">
                         {errors.subject?.type === "required" && (
                           <span className="label-text-alt text-red-500">
-                            {errors?.subject?.message}
+                            {"Subject is Required"}
                           </span>
                         )}
                       </label>
@@ -180,7 +183,6 @@ const Contact = () => {
 
                     <div className="form-control w-full ">
                       <textarea
-                        type="textarea"
                         placeholder="Message"
                         className="textarea textarea-bordered textarea-primary h-24 w-full "
                         {...register("message", {
@@ -193,7 +195,7 @@ const Contact = () => {
                       <label className="label">
                         {errors.message?.type === "required" && (
                           <span className="label-text-alt text-red-500">
-                            {errors?.message?.message}
+                            {"Message is Required"}
                           </span>
                         )}
                       </label>

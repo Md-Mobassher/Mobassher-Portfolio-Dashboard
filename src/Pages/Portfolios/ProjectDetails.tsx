@@ -127,13 +127,7 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-
-        <div className="carousel border-t border-b shadow-t w-full border border-1 border-primary">
-          <div id="slide1" className="carousel-item relative w-full">
-            <img src={img2} className="w-full" alt={img2} />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
-          </div>
-        </div>
+        <img src={img2} className="w-full" alt={img2} />
       </Container>
     </section>
   );

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
 import { TProject } from "../../type/type";
 
-const Project = ({ project }) => {
+const Project = ({ project }: { project: TProject }) => {
   const { img1, name, live, client, server, technology, description } = project;
   const navigate = useNavigate();
 
@@ -67,7 +67,7 @@ const Project = ({ project }) => {
               )}
             </div>
             <div
-              onClick={() => navigateToProjectDetail(name)}
+              onClick={(name) => navigateToProjectDetail(name)}
               className="border-primary border px-2 rounded-sm transition text-md text-black font-bold hover:text-white hover:bg-primary duration-300 cursor-pointer"
             >
               Details

@@ -22,12 +22,12 @@
     "name": "Groca-Grocery",
     "type": "Grocery stock website (Full-Stack)",
 
-    "description": "Developed a project where users can Sign up, Log in, order products, restock products, etc. ",
+    "description": "A smart solution for effortless inventory management, ensuring a smoother and more organized grocery shopping experience.",
     "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
     "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
     "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
 
-    "technology": "React, React-bootstrap, React-router, Node, Express, MongoDB, Firebase, Heroku.",
+    "technology": "React, React-bootstrap, Node, Express, MongoDB, Firebase, Vercel.",
 
     "img": "yes",
     "img1": "https://i.ibb.co/qkZ7V8x/groca1.png",
@@ -56,6 +56,52 @@
     "live": "https://motor-parts-bd.web.app/",
     "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
     "server": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-server"
+  },
+  {
+    "name": "Watts Basketball",
+    "type": "Basketball Institute Website (Front-End)",
+
+    "description": "Dive into the basketball world with watts-basketball, a dynamic React JS and Tailwind CSS project offering an immersive experience with its standout design and user-friendly features.",
+
+    "technology": "React, Tailwind, Netlify.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/cL4KsGK/Watts-basketball.png",
+    "img2": " https://i.ibb.co/9vQxtzq/Watts-basketball-1.png",
+
+    "live": "https://wattsbasketball.netlify.app",
+    "client": "https://github.com/Md-Mobassher/wattsbasketball"
+  },
+  {
+    "name": "Outrival Media Tailwind",
+    "type": "Media Website (Front-End)",
+
+    "description": "Developed a website using Html, CSS, Tailwind CSS and DaisyUI. Backend is not included now. ",
+
+    "technology": "HTML, CSS, Tailwind, Daisyui.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/f2gWXdQ/media.jpg",
+    "img2": "https://i.ibb.co/Dt5sYbB/media.png",
+
+    "live": "https://outrival-media-tailwind.netlify.app/",
+    "client": "https://github.com/Md-Mobassher/Outrival-media-tailwind"
+  },
+
+  {
+    "name": "Mobile App Bootstrap",
+    "type": "Mobile app website (Front-End)",
+
+    "description": "Developed a website using Html, CSS, Bootstrap. It is a front end project. Backend is not included. ",
+
+    "technology": "HTML, CSS, Bootstrap.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/YDPKtL4/home1.png",
+    "img2": "https://i.ibb.co/6FSKTMF/home.png",
+
+    "live": "https://mobile-app-mobassher.netlify.app/",
+    "client": "https://github.com/Md-Mobassher/mobile-app"
   },
 
   {
@@ -135,44 +181,5 @@
     "img2": "https://i.ibb.co/VmJ2yYD/home.png",
 
     "live": "https://sahanutrust.org/"
-  },
-
-  {
-    "_id": 7,
-    "name": "Mobile App Bootstrap",
-    "type": "Mobile app website (Front-End)",
-
-    "description": "Developed a website using Html, CSS, Bootstrap. It is a front end project. Backend is not included. ",
-    "details1": "",
-    "details2": "",
-    "details3": "",
-
-    "technology": "HTML, CSS, Bootstrap, JavaScript.",
-
-    "img": "yes",
-    "img1": "https://i.ibb.co/YDPKtL4/home1.png",
-    "img2": "https://i.ibb.co/6FSKTMF/home.png",
-
-    "live": "https://mobile-app-mobassher.netlify.app/",
-    "client": "https://github.com/Md-Mobassher/mobile-app"
-  },
-  {
-    "_id": 8,
-    "name": "Outrival Media Tailwind",
-    "type": "Media Website (Front-End)",
-
-    "description": "Developed a website using Html, CSS, Tailwind CSS and DaisyUI. Backend is not included now. ",
-    "details1": "",
-    "details2": "",
-    "details3": "",
-
-    "technology": "HTML, CSS, Tailwind, Daisyui.",
-
-    "img": "yes",
-    "img1": "https://i.ibb.co/f2gWXdQ/media.jpg",
-    "img2": "https://i.ibb.co/Dt5sYbB/media.png",
-
-    "live": "https://outrival-media-tailwind.netlify.app/",
-    "client": "https://github.com/Md-Mobassher/Outrival-media-tailwind"
   }
 ]
