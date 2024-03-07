@@ -9,7 +9,7 @@ const Project = ({ project }) => {
   };
 
   return (
-    <div className="card rounded-lg bg-white border border-1 border-primary hover:border-secondary max-w-sm mx-auto shadow-lg">
+    <div className="card rounded-md bg-white border border-1  max-w-sm mx-auto shadow-lg">
       <div className="h-40 border-b">
         <figure className="h-full">
           <img
@@ -19,13 +19,10 @@ const Project = ({ project }) => {
           />
         </figure>
       </div>
-      <div className="card-body bg-base-100 px-3 pb-3 pt-3 justify-between items-between">
+      <div className="card-body bg-base-100 p-4 justify-between items-between">
         <div className="bg-base-100">
-          <h2 className="text-justify mb-1 font-semibold text-primary hover:text-secondary bg-base-100">
+          <h2 className="text-justify mb-1 text-xl font-bold text-primary hover:text-secondary bg-base-100">
             {name}
-          </h2>
-          <h2 className="text-justify mb-1 font-semibold bg-base-100">
-            {type}
           </h2>
           <p className="text-justify bg-base-100 text-sm">
             {" "}

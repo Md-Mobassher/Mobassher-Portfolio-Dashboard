@@ -10,7 +10,7 @@ const MySkills = () => {
   const selectedSkills: TSkills[] = skills[selectedSkill];
 
   return (
-    <div id="myskills" className="lg:mt-28 mt-20  min-h-20">
+    <div id="myskills" className="lg:my-28 my-20  min-h-20">
       <Container>
         <Title title="My Skills" />
         <div className="lg:px-20 md:px-14 lg:mt-10 mt-8">
@@ -30,20 +30,23 @@ const MySkills = () => {
             ))}
           </ul>
         </div>
+
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5  gap-3 md:gap-4">
           {selectedSkills.map(({ name, percent }) => (
             <div
               key={name}
-              className="bg-gray-200  rounded-md flex-col justify-between items-end"
+              className="bg-gray-200  rounded-md flex-col justify-between items-end p-0 m-0"
             >
-              <div className="flex justify-between p-4">
-                <h4 className="lg:text-xl text-lg font-bold ">{name}</h4>
-                <p className="lg:text-xl text-lg font-bold px-2 bg-primary rounded-md text-white">
+              <div className="flex justify-between lg:p-4 md:p-3 p-2">
+                <h4 className="lg:text-xl md:text-lg text-md font-bold ">
+                  {name}
+                </h4>
+                <p className="lg:text-xl md:text-lg text-md font-bold px-2 bg-primary rounded-md text-white">
                   {percent}%
                 </p>
               </div>
               <progress
-                className="progress progress-primary w-100 h-3 p-0 m-0"
+                className="progress progress-primary w-100 lg:h-3 md:h-2 h-2 p-0 m-0"
                 value={percent}
                 max="100"
               ></progress>

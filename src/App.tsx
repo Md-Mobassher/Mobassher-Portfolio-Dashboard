@@ -1,17 +1,19 @@
 import { ToastContainer } from "react-toastify";
-import Home from "./Pages/Home/Home";
 import Footer from "./Shared/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Shared/Navbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div className="">
       <Navbar />
-      <Home />
+
+      <Outlet />
       <Footer />
+
       <ToastContainer />
-    </>
+    </div>
   );
 }
 

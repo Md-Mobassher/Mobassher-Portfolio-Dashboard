@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const PersonalInfo = () => {
   return (
     <section className="lg:max-w-2/3 mt-14">
@@ -41,7 +39,6 @@ const PersonalInfo = () => {
           <p className="mb-3 font-semibold ">
             Phone:{" "}
             <a
-              as={Link}
               href="tell:+8801706060647"
               className=" text-primary hover:text-secondary ml-2 "
             >
@@ -52,7 +49,6 @@ const PersonalInfo = () => {
           <p className="mb-3 font-semibold ">
             Email:{" "}
             <a
-              as={Link}
               target="_black"
               href="mailto:mdmobassherhossain1@gmail.com"
               className=" text-primary hover:text-secondary ml-2 "
@@ -64,7 +60,6 @@ const PersonalInfo = () => {
           <p className="mb-3 font-semibold ">
             Github:{" "}
             <a
-              as={Link}
               target="_black"
               href="https://github.com/Md-Mobassher"
               className=" text-primary hover:text-secondary ml-2 "
@@ -76,7 +71,6 @@ const PersonalInfo = () => {
           <p className="mb-3 font-semibold ">
             Linkedin:{" "}
             <a
-              as={Link}
               target="_black"
               href="https://www.linkedin.com/in/md-mobassher"
               className=" text-primary hover:text-secondary ml-2 "
@@ -88,7 +82,6 @@ const PersonalInfo = () => {
           <p className="mb-3 font-semibold ">
             Facebook:{" "}
             <a
-              as={Link}
               target="_black"
               href="https://www.facebook.com/mdmobassherf"
               className=" text-primary hover:text-secondary ml-2 "

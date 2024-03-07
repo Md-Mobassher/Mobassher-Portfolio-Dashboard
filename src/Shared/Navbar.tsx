@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <li>
         <a
-          href="#about"
+          href="/#about"
           className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
         >
           About
@@ -14,7 +14,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
-          href="#myskills"
+          href="/#myskills"
           className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth "
         >
           Skills
@@ -22,7 +22,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
-          href="#portfolios"
+          href="/#portfolios"
           className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
         >
           Portfolios
@@ -30,7 +30,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
-          href="#contact"
+          href="/#contact"
           className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
         >
           Contact

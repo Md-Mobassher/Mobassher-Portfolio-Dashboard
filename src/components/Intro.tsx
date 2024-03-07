@@ -10,7 +10,7 @@ const Intro = () => {
           <p className="lg:text-2xl md:text-xl text-xl font-semibold text-[#00cf5d]">
             Hello! I am
           </p>
-          <h1 className="lg:text-[78px] md:text-[70px] text-[60px] font-extrabold mb-5">
+          <h1 className="lg:text-[78px] md:text-[70px] text-[60px] font-extrabold lg:mb-5 mb-2">
             Md Mobassher Hossain
           </h1>
           <h3 className="text-primary text-2xl font-semibold  text-[#00cf5d]">

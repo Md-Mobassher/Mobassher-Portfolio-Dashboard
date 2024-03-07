@@ -1,197 +1,151 @@
 [
-    {
-        "_id": 1,
-        "name": "Groca-Grocery",
-        "type": "Grocery stock website (Full-Stack)",
+  {
+    "name": "Bike Management System",
+    "type": "Full stack",
 
-        "description": "Developed a project where users can Sign up, Log in, order products, restock products, etc. ",
-        "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
-        "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
-        "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
+    "description": "Developed a project where users can Sign up, Log in, order products, restock products, etc. ",
+    "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
+    "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
+    "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
 
-        "technology": "React, React-bootstrap, React-router, Node, Express, MongoDB, Firebase, Heroku.",
-  
-        "img": "yes",
-        "img1": "https://i.ibb.co/qkZ7V8x/groca1.png",
-        "img2": "https://i.ibb.co/tcKx7Qh/groca.png",
-        "img3": "https://i.ibb.co/8XFsWzL/groca-2.png",
-        "img4": "https://i.ibb.co/y0k5F7D/groca-3.png",
+    "technology": "React, React-bootstrap, React-router, Node, Express, MongoDB, Firebase, Heroku.",
 
-        "live": "https://groca-grocery.web.app/",
-        "client": "https://github.com/Md-Mobassher/groca-grocery-client",
-        "server": "https://github.com/Md-Mobassher/groca-grocery-server"
-    },
+    "img": "yes",
+    "img1": "https://i.ibb.co/qkZ7V8x/groca1.png",
+    "img2": "https://i.ibb.co/tcKx7Qh/groca.png",
 
-    {
-        "_id": 2,
-        "name": "Motor-Parts",
-        "type": "Parts manufacture (Full-Stack)",
+    "live": "https://groca-grocery.web.app/",
+    "client": "https://github.com/Md-Mobassher/groca-grocery-client",
+    "server": "https://github.com/Md-Mobassher/groca-grocery-server"
+  },
+  {
+    "name": "Groca-Grocery",
+    "type": "Grocery stock website (Full-Stack)",
 
-        "description": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
-        "details1": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
-        "details2": "Integrated Admin role, admin can manage or remove a user, make the user an admin, add a product, or delete products.",
-        "details3": "Used firebase, JWT for authentication.",
+    "description": "Developed a project where users can Sign up, Log in, order products, restock products, etc. ",
+    "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
+    "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
+    "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
 
-        "technology": "React, Tailwind, Daisy UI, JWT, React-router, Node, Express, MongoDB, Firebase, Heroku.",
-  
-        "img": "yes",
-        "img1": "https://i.ibb.co/7j3HGfJ/motor1.png",
-        "img2": " https://i.ibb.co/7j3HGfJ/motor1.png ",
-        "img3": " https://i.ibb.co/jRgwgw9/motor2.png",
-        "img4": " https://i.ibb.co/FYQt24j/motor3.png",
-      
-        "live": "https://motor-parts-bd.web.app/",
-        "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
-        "server": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-server"
-    },
+    "technology": "React, React-bootstrap, React-router, Node, Express, MongoDB, Firebase, Heroku.",
 
-    {
-        "_id": 3,
-        "name": "Dentist-Rita",
-        "type": "Service provider (Front-end)",
+    "img": "yes",
+    "img1": "https://i.ibb.co/qkZ7V8x/groca1.png",
+    "img2": "https://i.ibb.co/tcKx7Qh/groca.png",
 
-        "description": "Developed a small independent service provider website using JavaScript, React and Bootstrap.",
-        "details1": "Developed a small independent service provider website using JavaScript, React and Bootstrap.",
-        "details2": "Users can see the provided services and Sign up or Log in to Check out the appointment.",
-        "details3": "Used firebase for hosting. . Backend is not included now.",
+    "live": "https://groca-grocery.web.app/",
+    "client": "https://github.com/Md-Mobassher/groca-grocery-client",
+    "server": "https://github.com/Md-Mobassher/groca-grocery-server"
+  },
 
-        "technology": "React, React-bootstrap, React-router, Firebase, Heroku.",
-  
-        "img": "yes",
-        "img1": "https://i.ibb.co/89372M2/dentist-1.png",
-        "img2": "https://i.ibb.co/PZ6mTpJ/dentist1.png",
-        "img3": "https://i.ibb.co/QmZfLRF/dentist2.png",
-        "img4": "https://i.ibb.co/3YSxLkf/dentist3.png",
+  {
+    "name": "Motor-Parts",
+    "type": "Parts manufacture (Full-Stack)",
 
-        "live": "https://dentist-rita.firebaseapp.com/",
-        "client": "https://github.com/Md-Mobassher/independent-service-provider",
-        "server": "https://github.com/Md-Mobassher/independent-service-provider"
-    },
+    "description": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
+    "details1": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
+    "details2": "Integrated Admin role, admin can manage or remove a user, make the user an admin, add a product, or delete products.",
+    "details3": "Used firebase, JWT for authentication.",
 
-    {
-        "_id": 4,
-        "name": "IRDF-Bangladesh",
-        "type": "Charity Foundation (WordPress)",
+    "technology": "React, Tailwind, Daisy UI, JWT, React-router, Node, Express, MongoDB, Firebase, Heroku.",
 
-        "description": "Developed Charity foundation website using WordPress with Divi theme.",
-        "details1": "",
-        "details2": "",
-        "details3": "",
+    "img": "yes",
+    "img1": "https://i.ibb.co/7j3HGfJ/motor1.png",
+    "img2": " https://i.ibb.co/7j3HGfJ/motor1.png ",
 
-        "technology": "WordPress, Divi, Divi Builder",
+    "live": "https://motor-parts-bd.web.app/",
+    "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
+    "server": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-server"
+  },
 
-        "img": "Yes",
-        "img1": "https://i.ibb.co/CzSGZvM/irdf1.jpg",
-        "img2": "https://i.ibb.co/HtkC4Vz/irdf.png",
-        "img3": "https://i.ibb.co/Z2NZ0d8/about.png",
-        "img4": "https://i.ibb.co/7vkSf0S/committee.png",
-        "img5": "https://i.ibb.co/x3GKm7C/contact.png",
-        "img6": "https://i.ibb.co/VLfWzd9/donate.png",
+  {
+    "name": "IRDF-Bangladesh",
+    "type": "Charity Foundation (WordPress)",
 
-        "live": "https://irdfbd.com/"       
-    },
+    "description": "Developed Charity foundation website using WordPress with Divi theme.",
+    "details1": "",
+    "details2": "",
+    "details3": "",
 
-    {
-        "_id": 5,
-        "name": "SAHANU-Trust",
-        "type": "University Trust (WordPress)",
+    "technology": "WordPress, Divi, Divi Builder",
 
-        "description": "Developed a University Trust website using Wordpress, Phlox theme, Elementor",
-        "details1": "",
-        "details2": "",
-        "details3": "",
+    "img": "Yes",
+    "img1": "https://i.ibb.co/CzSGZvM/irdf1.jpg",
+    "img2": "https://i.ibb.co/HtkC4Vz/irdf.png",
 
-        "technology": "Wordpress, Elementor, Phlox Theme.",
-      
-        "img": "Yes",
-        "img1": "https://i.ibb.co/dfjSpLy/home1.png",
-        "img2": "https://i.ibb.co/VmJ2yYD/home.png",
-        "img3": "https://i.ibb.co/r6rpz48/about.png",
-        "img4": "https://i.ibb.co/6nv53gB/project.png",
+    "live": "https://irdfbd.com/"
+  },
 
-        "live": "https://sahanutrust.org/"    
-    },
-    {
-        "_id": 6,
-        "name": "Ad-doha-Institute",
-        "type": "Dawah Institute (WordPress)",
+  {
+    "name": "SAHANU-Trust",
+    "type": "University Trust (WordPress)",
 
-        "description": "Developed a Dawah Institute website using Wordpress, Astra theme, Elementor",
-        "details1": "",
-        "details2": "",
-        "details3": "",
+    "description": "Developed a University Trust website using Wordpress, Phlox theme, Elementor",
+    "details1": "",
+    "details2": "",
+    "details3": "",
 
-        "technology": "Wordpress, Elementor, Astra Theme.",
+    "technology": "Wordpress, Elementor, Phlox Theme.",
 
-        "img": "Yes",
-        "img1": "https://i.ibb.co/sH26VdW/home1-1.png",
-        "img2": "https://i.ibb.co/rwbbwHv/home.png",
-        "img3": "https://i.ibb.co/0fq7L94/about.png",
-    
+    "img": "Yes",
+    "img1": "https://i.ibb.co/dfjSpLy/home1.png",
+    "img2": "https://i.ibb.co/VmJ2yYD/home.png",
 
-        "live": "https://ad-doha.org/"    
-    },
-    {
-        "_id": 7,
-        "name": "Mobile-App-Bootstrap",
-        "type": "Mobile app website (Front-End)",
+    "live": "https://sahanutrust.org/"
+  },
+  {
+    "name": "Ad-doha-Institute",
+    "type": "Dawah Institute (WordPress)",
 
-        "description": "Developed a website using Html, CSS, Bootstrap. It is a front end project. Backend is not included. ",
-        "details1": "",
-        "details2": "",
-        "details3": "",
+    "description": "Developed a Dawah Institute website using Wordpress, Astra theme, Elementor",
+    "details1": "",
+    "details2": "",
+    "details3": "",
 
-        "technology": "HTML, CSS, Bootstrap, JavaScript.",
-  
-        "img": "yes",
-        "img1": "https://i.ibb.co/YDPKtL4/home1.png",
-        "img2": "https://i.ibb.co/6FSKTMF/home.png",
+    "technology": "Wordpress, Elementor, Astra Theme.",
 
-        "live": "https://mobile-app-mobassher.netlify.app/",
-        "client": "https://github.com/Md-Mobassher/mobile-app"
-    },
-    {
-        "_id": 8,
-        "name": "Outrival-Media-Tailwind",
-        "type": "Media Website (Front-End)",
+    "img": "Yes",
+    "img1": "https://i.ibb.co/sH26VdW/home1-1.png",
+    "img2": "https://i.ibb.co/rwbbwHv/home.png",
 
-        "description": "Developed a website using Html, CSS, Tailwind CSS and DaisyUI. Backend is not included now. ",
-        "details1": "",
-        "details2": "",
-        "details3": "",
+    "live": "https://ad-doha.org/"
+  },
+  {
+    "_id": 7,
+    "name": "Mobile-App-Bootstrap",
+    "type": "Mobile app website (Front-End)",
 
-        "technology": "HTML, CSS, Tailwind, Daisyui.",
-  
-        "img": "yes",
-        "img1": "https://i.ibb.co/f2gWXdQ/media.jpg",
-        "img2": "https://i.ibb.co/Dt5sYbB/media.png",
+    "description": "Developed a website using Html, CSS, Bootstrap. It is a front end project. Backend is not included. ",
+    "details1": "",
+    "details2": "",
+    "details3": "",
 
-        "live": "https://outrival-media-tailwind.netlify.app/",
-        "client": "https://github.com/Md-Mobassher/Outrival-media-tailwind"
-    },
-    {
-        "_id": 9,
-        "name": "DUAAM",
-        "type": "Blog website",
+    "technology": "HTML, CSS, Bootstrap, JavaScript.",
 
-        "description": "Developed Dhaka University Alumni Association of Malaysia website using Ghost. ",
-        "details1": "",
-        "details2": "",
-        "details3": "",
+    "img": "yes",
+    "img1": "https://i.ibb.co/YDPKtL4/home1.png",
+    "img2": "https://i.ibb.co/6FSKTMF/home.png",
 
-        "technology": "HTML, CSS, Ghost.",
-       
-        "img": "yes",
-        "img1": "https://i.ibb.co/TBFd1rv/duaam1.jpg ",
-        "img2": "https://i.ibb.co/PjkGsYN/duaam.png",
-        "img3": "https://i.ibb.co/RNMnG63/about.png",
-        "img4": "https://i.ibb.co/xjSX19x/scholarship.png",
-        "img5": "https://i.ibb.co/fkX5fct/login.png",
+    "live": "https://mobile-app-mobassher.netlify.app/",
+    "client": "https://github.com/Md-Mobassher/mobile-app"
+  },
+  {
+    "_id": 8,
+    "name": "Outrival-Media-Tailwind",
+    "type": "Media Website (Front-End)",
 
-        "live": "https://www.duaam.org/"
-    }
-  
+    "description": "Developed a website using Html, CSS, Tailwind CSS and DaisyUI. Backend is not included now. ",
+    "details1": "",
+    "details2": "",
+    "details3": "",
+
+    "technology": "HTML, CSS, Tailwind, Daisyui.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/f2gWXdQ/media.jpg",
+    "img2": "https://i.ibb.co/Dt5sYbB/media.png",
+
+    "live": "https://outrival-media-tailwind.netlify.app/",
+    "client": "https://github.com/Md-Mobassher/Outrival-media-tailwind"
+  }
 ]
-
-
-
