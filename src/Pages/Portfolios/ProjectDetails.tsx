@@ -40,7 +40,7 @@ const ProjectDetails = () => {
             </svg>
           </button>
 
-          <div className="dropdown-content bg-base-200 border border-primary rounded-lg mt-1 z-10">
+          <div className="dropdown-content max-w-5xl bg-slate-200 border border-primary rounded-lg mt-1 z-0">
             <div className="items-center text-justify justify-start  lg:pt-10 p-5 lg:px-20 ">
               {name && (
                 <div className="flex">
@@ -65,7 +65,7 @@ const ProjectDetails = () => {
               {details1 && (
                 <div className="">
                   <p className="mb-1 font-bold lg:text-xl ">Project Details:</p>
-                  <p className="mb-3 font-semibold text-sm ">
+                  <p className="mb-3 ml-5 font-semibold text-md ">
                     <ul className="list-inside  list-disc mb-5">
                       {details1 && <li>{details1}</li>}
                       {details2 && <li>{details2}</li>}
@@ -127,7 +127,7 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-        <img src={img2} className="w-full" alt={img2} />
+        <img src={img2} className="w-full shadow-2xl" alt={img2} />
       </Container>
     </section>
   );

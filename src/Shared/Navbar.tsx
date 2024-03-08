@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Img from "../Assets/Images/logo.png";
+import Img from "../Assets/Images/MLogo.png";
 
 const Navbar = () => {
   const navItems = (
@@ -55,7 +55,7 @@ const Navbar = () => {
         <nav className="drawer-content lg:flex md:flex flex-col ">
           <div className="w-full h-20 navbar bg-base-100 py-10 ">
             <Link to="/" className="flex-1 px-2 mx-2 text-2xl font-semibold ">
-              <img src={Img} alt="Logo Mobassher" />
+              <img src={Img} className="w-14" alt="Logo Mobassher" />
             </Link>
             <div className="flex-none lg:hidden">
               <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
