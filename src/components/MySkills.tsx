@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import Container from "./common/Container";
 import Title from "./common/Title";
@@ -7,8 +8,7 @@ import { TSkills } from "../data/skills";
 const MySkills = () => {
   const skillsName: string[] = Object.keys(skills);
   const [selectedSkill, setSelectedSkill] = useState(skillsName[0]);
-  const selectedSkills: TSkills[] = skills[selectedSkill];
-
+  const selectedSkills: TSkills[] = (skills as any)[selectedSkill];
   return (
     <div id="myskills" className="lg:my-28 my-20  min-h-20">
       <Container>

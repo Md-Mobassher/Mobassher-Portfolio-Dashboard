@@ -31,7 +31,7 @@ const About = () => {
             </p>
             <div className="lg:mt-10 md:mt-8 mt-5 flex lg: justify-start md:justify-start justify-center">
               <Button
-                link="https://github.com/md-mobassher"
+                link="https://drive.google.com/file/d/1do9DTe38XXl99OyMsRiFROU-yNAzDqUJ/view?usp=sharing"
                 target="__blank"
                 color="white"
                 bgColor="#00cf5d"

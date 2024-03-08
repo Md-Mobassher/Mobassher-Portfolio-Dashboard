@@ -24,7 +24,7 @@ const Intro = () => {
           </div>
           <div className="mt-10">
             <Button
-              link="https://github.com/zonayedpca/zonayed.me/raw/master/src/data/file/MyResume.pdf"
+              link="https://drive.google.com/file/d/1do9DTe38XXl99OyMsRiFROU-yNAzDqUJ/view?usp=sharing"
               target="__blank"
               color="white"
               bgColor="#00cf5d"

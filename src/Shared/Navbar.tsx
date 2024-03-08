@@ -7,7 +7,7 @@ const Navbar = () => {
       <li>
         <a
           href="/#about"
-          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+          className="rounded-lg lg:px-5 md:px-4 px-6 py-3 font-semibold  text-lg uppercase scroll-smooth"
         >
           About
         </a>
@@ -15,7 +15,7 @@ const Navbar = () => {
       <li>
         <a
           href="/#myskills"
-          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth "
+          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth "
         >
           Skills
         </a>
@@ -23,7 +23,7 @@ const Navbar = () => {
       <li>
         <a
           href="/#portfolios"
-          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth"
         >
           Portfolios
         </a>
@@ -31,15 +31,16 @@ const Navbar = () => {
       <li>
         <a
           href="/#contact"
-          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth"
         >
           Contact
         </a>
       </li>
       <li>
         <a
-          href="/"
-          className="rounded-lg lg:px-5 md:px-4 px-3 py-3 font-semibold  text-lg uppercase scroll-smooth"
+          href="https://drive.google.com/file/d/1do9DTe38XXl99OyMsRiFROU-yNAzDqUJ/view?usp=sharing"
+          target="_blank"
+          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth"
         >
           Resume
         </a>
@@ -48,13 +49,13 @@ const Navbar = () => {
   );
 
   return (
-    <header className=" sticky top-0 z-10 bg-white shadow-md">
+    <header className=" sticky top-0 z-10 shadow-md shrink">
       <div className="drawer drawer-end max-w-[1200px] mx-auto ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <nav className="drawer-content lg:flex md:flex flex-col ">
           <div className="w-full h-20 navbar bg-base-100 py-10 ">
             <Link to="/" className="flex-1 px-2 mx-2 text-2xl font-semibold ">
-              <img src={Img} alt="Img" />
+              <img src={Img} alt="Logo Mobassher" />
             </Link>
             <div className="flex-none lg:hidden">
               <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -81,11 +82,9 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <div className="drawer-side z-50 mt-50">
-          <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-60 bg-base-100 ">
-            {navItems}
-          </ul>
+        <div className="drawer-side z-50 top-20 rounded">
+          <label htmlFor="my-drawer-3" className="drawer-overlay "></label>
+          <ul className="menu bg-base-100 w-60 rounded-lg">{navItems}</ul>
         </div>
       </div>
     </header>
