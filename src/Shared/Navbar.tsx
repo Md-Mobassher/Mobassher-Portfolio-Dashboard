@@ -58,12 +58,15 @@ const Navbar = () => {
               <img src={Img} className="w-14" alt="Logo Mobassher" />
             </Link>
             <div className="flex-none lg:hidden">
-              <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+              <label
+                htmlFor="my-drawer-3"
+                className="btn btn-square btn-ghost hover:bg-primary  hover:text-white"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  className="inline-block w-6 h-6 stroke-current"
+                  className="inline-block size-8  stroke-current"
                 >
                   <path
                     strokeLinecap="round"
