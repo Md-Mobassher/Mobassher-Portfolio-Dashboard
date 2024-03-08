@@ -52,7 +52,7 @@ const Projects = () => {
           <div className="flex flex-wrap lg:justify-start md:justify-start justify-center lg:mb-10 mb-7 md:mb-8">
             <button
               onClick={handleAllProjects}
-              className="btn btn-primary hover:btn-secondary text-white mr-1"
+              className="btn btn-primary hover:bg-green-400 text-white mr-1"
             >
               All
             </button>

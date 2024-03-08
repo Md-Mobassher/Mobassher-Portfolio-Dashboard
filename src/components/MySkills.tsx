@@ -20,8 +20,8 @@ const MySkills = () => {
                 onClick={() => setSelectedSkill(name)}
                 className={
                   name === selectedSkill
-                    ? "btn btn-primary bg-primary text-md text-white py-2 lg:px-7 md:px-5 px-4"
-                    : "btn btn-outline btn-primary py-2 lg:px-7 md:px-5 px-4 text-black hover:text-white"
+                    ? "btn btn-primary text-md text-white py-2 hover:bg-green-400 lg:px-7 md:px-5 px-4"
+                    : "btn btn-outline btn-primary py-2 lg:px-7 md:px-5 px-4 text-black hover:text-white hover:bg-green-400 "
                 }
                 key={name}
               >

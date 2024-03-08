@@ -199,9 +199,9 @@ const Contact = () => {
                       </label>
                     </div>
 
-                    <div className="flex lg:justify-end md:justify-end justify-center mt-2">
+                    <div className="flex lg:justify-end md:justify-end justify-center mt-2 hover:text-white">
                       <input
-                        className="btn px-10  btn-primary hover:btn-secondary border-0 text-center text-white "
+                        className="btn px-10  btn-primary hover:bg-green-400 border-0 text-center text-white "
                         type="submit"
                         value="Contact"
                       />
