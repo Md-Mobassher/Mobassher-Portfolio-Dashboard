@@ -49,7 +49,7 @@ const Navbar = () => {
   );
 
   return (
-    <header className=" sticky top-0 z-10 shadow-md shrink">
+    <header className=" sticky top-0 z-10 shadow-md">
       <div className="drawer drawer-end max-w-[1200px] mx-auto ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <nav className="drawer-content lg:flex md:flex flex-col ">

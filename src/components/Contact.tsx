@@ -19,13 +19,11 @@ const Contact = () => {
 
   const onSubmit = async (data: Record<string, string>) => {
     try {
-      await emailjs.send(
-        "service_6ioyfyn",
-        "template_vcxutb8",
-        data,
-        "O14vl6cRB93Me-2ZS"
-      );
-      toast.success("Contact successfully");
+      console.log(data);
+      await emailjs.send("service_6ioyfyn", "template_vcxutb8", data, {
+        publicKey: "KYzXXSYc5Sml-ySqX",
+      });
+      toast.success("Successfully Contacted.");
       reset();
     } catch (err) {
       if (err instanceof Error) {
@@ -73,7 +71,7 @@ const Contact = () => {
                   <TbPhoneCall className="w-10 h-10 mr-6 text-primary"></TbPhoneCall>
                 </div>
                 <div>
-                  <h2 className="font-bold">Call Me</h2>
+                  <h2 className="font-bold">Call / WhatsApp</h2>
                   <h2 className="text-primary font-semibold">
                     <a href="tell:+8801706060647" className=" text-primary">
                       +88-01706060647
