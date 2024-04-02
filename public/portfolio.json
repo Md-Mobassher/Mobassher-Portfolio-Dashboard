@@ -1,7 +1,7 @@
 [
   {
     "name": "Bike Management System",
-    "type": "Full stack",
+    "type": "Full-stack",
 
     "description": "Created Bike Management System with real-time updates, CRUD, advanced filtering, secure JWT. Used RTK Query, Redux, ensuring responsive UI.",
     "details1": "Developed the Bike Management System, an open-source platform for bike inventory, featuring real-time updates, CRUD, and advanced filtering.",
@@ -19,15 +19,15 @@
     "server": "https://github.com/Md-Mobassher/Bike_management_server"
   },
   {
-    "name": "Groca-Grocery",
-    "type": "Grocery stock website (Full-Stack)",
+    "name": "Grocery Management System",
+    "type": "Full-Stack",
 
     "description": "A smart solution for effortless inventory management, ensuring a smoother and more organized grocery shopping experience.",
     "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
     "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
     "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
 
-    "technology": "React, React-bootstrap, Node, Express, MongoDB, Firebase, Vercel.",
+    "technology": "React, Redux, TypeScript, Node, Express, MongoDB, Ant Design, Firebase, Vercel.",
 
     "img": "yes",
     "img1": "https://i.ibb.co/qkZ7V8x/groca1.png",

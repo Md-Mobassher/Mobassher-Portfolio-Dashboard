@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-gray-200 text-base-content rounded p-12 mt-14">
+    <footer className="footer footer-center rounded p-12 mt-14">
       <div>
-        <p className="font-bold">
+        <p className="font-semibold mb-3">
           <Link to="/" className=" ">
             <img src={logo} alt="logo" className=" mx-auto " />
           </Link>
@@ -17,7 +17,7 @@ const Footer = () => {
         <UseIcon></UseIcon>
 
         <p className="text-center font-semibold mt-3">
-          Copyright &copy; {new Date().getFullYear()} all right reserved to
+          Copyright &copy; {new Date().getFullYear()}. All right reserved to
           <span className="text-secondary">
             {" "}
             Developer Md Mobassher Hossain

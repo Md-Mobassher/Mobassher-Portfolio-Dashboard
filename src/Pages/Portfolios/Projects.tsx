@@ -59,7 +59,7 @@ const Projects = () => {
 
             <select
               onChange={handleCategoryChange}
-              className="select select-primary "
+              className="select select-primary bg-gray-800"
             >
               <option disabled selected>
                 Select Technology

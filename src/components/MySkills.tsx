@@ -10,7 +10,7 @@ const MySkills = () => {
   const [selectedSkill, setSelectedSkill] = useState(skillsName[0]);
   const selectedSkills: TSkills[] = (skills as any)[selectedSkill];
   return (
-    <div id="myskills" className="lg:my-28 my-20  min-h-20">
+    <div id="myskills" className="lg:my-28 my-20  min-h-20 ">
       <Container>
         <Title title="My Skills" />
         <div className="lg:px-20 md:px-14 lg:mt-10 mt-8">
@@ -21,7 +21,7 @@ const MySkills = () => {
                 className={
                   name === selectedSkill
                     ? "btn btn-primary text-md text-white py-2 hover:bg-green-400 lg:px-7 md:px-5 px-4"
-                    : "btn btn-outline btn-primary py-2 lg:px-7 md:px-5 px-4 text-black hover:text-white hover:bg-green-400 "
+                    : "btn btn-outline border-primary py-2 bg-gray-800 lg:px-7 md:px-5 px-4 text-white hover:text-white hover:bg-green-400 "
                 }
                 key={name}
               >
@@ -35,7 +35,7 @@ const MySkills = () => {
           {selectedSkills.map(({ name, percent }) => (
             <div
               key={name}
-              className="bg-gray-200  rounded-md flex-col justify-between items-end p-0 m-0"
+              className="bg-slate-800  rounded-md flex-col justify-between items-end p-0 m-0"
             >
               <div className="flex justify-between lg:p-4 md:p-3 p-2">
                 <h4 className="lg:text-xl md:text-lg text-md font-bold ">

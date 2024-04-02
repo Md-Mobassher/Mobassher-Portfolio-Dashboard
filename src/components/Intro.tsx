@@ -33,6 +33,8 @@ const Intro = () => {
             <Button
               clickEvent
               link="#about"
+              color="white"
+              bgColor="#1F2937"
               margin="0 0 0 15px"
               title="About Me"
             />

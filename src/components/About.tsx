@@ -6,7 +6,7 @@ import Title from "./common/Title";
 
 const About = () => {
   return (
-    <div id="about" className="lg:pb-14">
+    <div id="about" className="lg:pb-14 ">
       <Container>
         <Title title="About Me" />
         <div className="lg:flex sm:flex-row-reverse  md:flex  items-center justify-between">
@@ -41,6 +41,8 @@ const About = () => {
               <Button
                 clickEvent
                 link="#myskills"
+                color="white"
+                bgColor="#1F2937"
                 margin="0 0 0 15px"
                 title="My Skills"
               />

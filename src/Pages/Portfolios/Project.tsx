@@ -11,8 +11,8 @@ const Project = ({ project }: { project: TProject }) => {
   };
 
   return (
-    <div className="card bg-white  rounded-md  max-w-sm mx-auto shadow-2xl">
-      <div className="h-44 border-b">
+    <div className="card bg-slate-800 rounded-md  max-w-sm mx-auto shadow-2xl">
+      <div className="h-44 ">
         <figure className="h-full">
           <img
             className="w-full h-full object-cover object-center "
@@ -22,21 +22,23 @@ const Project = ({ project }: { project: TProject }) => {
         </figure>
       </div>
 
-      <div className="card-body bg-base-100 px-5 pt-5 pb-6 justify-between items-between">
-        <div className="bg-base-100">
-          <h2 className="text-justify mb-1 text-xl font-bold text-primary hover:text-secondary bg-base-100">
+      <div className="card-body px-5 pt-5 pb-6 justify-between items-between">
+        <div className="">
+          <h2 className="text-justify mb-1 text-xl font-bold  hover:text-secondary ">
             {name}
           </h2>
-          <p className="text-justify bg-base-100 text-sm mt-2">{description}</p>
+          <p className="text-justify text-sm mt-2 text-gray-300">
+            {description}
+          </p>
         </div>
 
         <div className="">
-          <div className="card-actions justify-between items-center bg-base-100 mt-3">
+          <div className="card-actions justify-between items-center  mt-3">
             <div className="flex gap-3 ">
               {client && (
                 <div className="group  relative">
                   <a target="_blank" href={client}>
-                    <FaGithub className="size-6  hover:text-primary transition duration-400"></FaGithub>
+                    <FaGithub className="size-6  hover:text-primary  transition duration-400"></FaGithub>
                     <div className="absolute bottom-7 left-20 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-primary text-white text-center p-1 w-36 rounded-sm  transition-opacity duration-300 ">
                       Client Site Code
                     </div>
@@ -68,14 +70,14 @@ const Project = ({ project }: { project: TProject }) => {
             </div>
             <div
               onClick={(name) => navigateToProjectDetail(name)}
-              className="border-primary border px-2 rounded-sm transition text-md text-black font-bold hover:text-white hover:bg-primary duration-300 cursor-pointer"
+              className="border-primary border px-2 rounded-sm transition text-md font-bold hover:text-white hover:bg-primary  duration-300 cursor-pointer"
             >
               Details
             </div>
           </div>
 
           <div className="pt-4">
-            <p className="text-sm ">{technology}</p>
+            <p className="text-sm text-slate-300">{technology}</p>
           </div>
         </div>
       </div>
