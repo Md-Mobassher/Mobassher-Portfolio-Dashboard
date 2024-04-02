@@ -11,7 +11,8 @@ export const skills = {
     { name: "MongoDB", percent: 90 },
     { name: "Redux", percent: 80 },
     { name: "TypeScript", percent: 85 },
-    { name: "Mongoose", percent: 70 },
+    { name: "Mongoose", percent: 80 },
+    { name: "Prisma", percent: 85 },
   ],
   Others: [
     { name: "WordPress", percent: 85 },

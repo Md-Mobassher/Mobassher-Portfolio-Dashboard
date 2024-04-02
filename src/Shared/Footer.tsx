@@ -11,7 +11,7 @@ const Footer = () => {
             <img src={logo} alt="logo" className=" mx-auto " />
           </Link>
           <br />
-          Providing reliable tech since 2021
+          Providing reliable tech since 2022
         </p>
 
         <UseIcon></UseIcon>

@@ -39,25 +39,6 @@
   },
 
   {
-    "name": "Motor-Parts",
-    "type": "Parts manufacture (Full-Stack)",
-
-    "description": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
-    "details1": "Developed a project where user can create their profile, and update their profile, make a review & order products.",
-    "details2": "Integrated Admin role, admin can manage or remove a user, make the user an admin, add a product, or delete products.",
-    "details3": "Used firebase, JWT for authentication.",
-
-    "technology": "React, Tailwind, Daisy UI, JWT, React-router, Node, Express, MongoDB, Firebase, Heroku.",
-
-    "img": "yes",
-    "img1": "https://i.ibb.co/7j3HGfJ/motor1.png",
-    "img2": " https://i.ibb.co/7j3HGfJ/motor1.png ",
-
-    "live": "https://motor-parts-bd.web.app/",
-    "client": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-client",
-    "server": "https://github.com/Md-Mobassher/motor-parts-manufacturer-bd-server"
-  },
-  {
     "name": "Watts Basketball",
     "type": "Basketball Institute Website (Front-End)",
 
@@ -124,7 +105,7 @@
 
     "description": "Developed a Dawah Institute website using Wordpress, Astra theme, Elementor",
 
-    "technology": "Wordpress, Elementor, Astra Theme.",
+    "technology": "Wordpress, Elementor",
 
     "img": "Yes",
     "img1": "https://i.ibb.co/k6X1hWt/Ad-doha-Institute-An-educational-research-dawah-and-service-institution-1.png",
