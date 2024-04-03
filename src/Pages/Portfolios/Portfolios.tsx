@@ -8,7 +8,7 @@ const Portfolios = () => {
     navigate("/portfolios");
   };
   return (
-    <div>
+    <div className="lg:mt-28 md:mt-20 mt-14">
       <Projects />
       <div className=" lg:mt-10 mt-8 flex justify-center">
         <button

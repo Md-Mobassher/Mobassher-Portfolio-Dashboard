@@ -5,15 +5,15 @@ import Button from "./common/Button";
 const Intro = () => {
   return (
     <Container>
-      <div className="min-h-screen flex items-center -mt-10">
+      <div className="min-h-screen flex items-center -mt-12">
         <div className="text-center md:text-start lg:text-start">
-          <p className="lg:text-2xl md:text-xl text-xl font-semibold text-[#00cf5d]">
+          <p className="lg:text-2xl md:text-xl text-xl font-semibold text-primary">
             Hello! I am
           </p>
-          <h1 className="lg:text-[78px] md:text-[70px] text-[60px] font-extrabold lg:mb-5 mb-2">
+          <h1 className="lg:text-[78px] md:text-[70px] text-[55px] font-extrabold lg:mb-5 mb-2">
             Md Mobassher Hossain
           </h1>
-          <h3 className="text-primary text-2xl font-semibold  text-[#00cf5d]">
+          <h3 className=" text-2xl font-semibold  text-primary">
             Full Stack Developer
           </h3>
           <div className="flex flex-start gap-5 lg:justify-start  md:justify-start justify-center items-center">
@@ -39,7 +39,7 @@ const Intro = () => {
               title="About Me"
             />
           </div>
-          <div className="lg:mt-12 mt-10 flex lg:justify-start md:justify-start  justify-center">
+          <div className="lg:mt-12 mt-10 flex lg:justify-start md:justify-start  justify-center mb-2">
             <h4 className="lg:text-2xl md:text-xl text-xl  font-semibold divider lg:divider-start md:divider-start lg:w-1/3 md:w-1/3 w-2/3 divider-primary">
               Follow Me
             </h4>

@@ -47,7 +47,7 @@ const AllProjects = () => {
   return (
     <div id="portfolios" className=" ">
       <Container>
-        <Title title="Portfolios" />
+        <Title title="All Portfolios" />
         <div className="lg:px-20 md:px-14 lg:mt-10 mt-8">
           <div className="flex flex-wrap lg:justify-start md:justify-start justify-center lg:mb-10 mb-7 md:mb-8">
             <button

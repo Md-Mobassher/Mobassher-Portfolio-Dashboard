@@ -10,7 +10,7 @@ const MySkills = () => {
   const [selectedSkill, setSelectedSkill] = useState(skillsName[0]);
   const selectedSkills: TSkills[] = (skills as any)[selectedSkill];
   return (
-    <div id="myskills" className="lg:my-28 my-20  min-h-20 ">
+    <div id="myskills" className="lg:mt-28 md:mt-20 mt-14  min-h-20 ">
       <Container>
         <Title title="My Skills" />
         <div className="lg:px-20 md:px-14 lg:mt-10 mt-8">

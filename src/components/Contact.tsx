@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="lg:mt-20 md:mt-18 mt-10 py-6 lg:px-20 ">
+    <div id="contact" className="lg:mt-28 md:mt-20 mt-14 lg:px-20 ">
       <Container>
         <Title title="Hire Me" />
         <div className="lg:flex md:flex lg:mt-10 mt-6 justify-center items-start">
@@ -43,8 +43,8 @@ const Contact = () => {
             <h1 className="lg:text-3xl md:text-2xl text-xl font-semibold text-center">
               Contact <span className="text-primary"> Info</span>
             </h1>
-            <div className="max-w-sm mx-auto mt-6">
-              <div className="flex justify-start max-w-sm items-center lg:mt-12 mt-6">
+            <div className="max-w-sm mx-auto lg:mt-10 mt-6">
+              <div className="flex justify-start max-w-sm items-center ">
                 <div>
                   <FcManager className="w-10 h-10 mr-6 text-primary"></FcManager>
                 </div>
@@ -101,7 +101,7 @@ const Contact = () => {
             <h1 className="lg:text-3xl md:text-2xl text-xl font-semibold text-center ">
               Contact <span className="text-primary"> Me</span>
             </h1>
-            <div className=" max-w-sm mx-auto mt-6">
+            <div className=" max-w-sm mx-auto lg:mt-10 mt-6">
               <div className="">
                 <div className="">
                   <form onSubmit={handleSubmit(onSubmit)}>
@@ -109,7 +109,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Your Name"
-                        className="input input-bordered input-primary w-full bg-slate-800"
+                        className="input input-bordered input-primary text-sm w-full bg-slate-800"
                         {...register("name", {
                           required: {
                             value: true,
@@ -130,7 +130,7 @@ const Contact = () => {
                       <input
                         type="email"
                         placeholder="Your Email"
-                        className="input input-bordered input-primary w-full bg-slate-800"
+                        className="input input-bordered input-primary text-sm w-full bg-slate-800"
                         {...register("email", {
                           required: {
                             value: true,
@@ -160,7 +160,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Subject"
-                        className="input input-bordered input-primary w-full bg-slate-800 "
+                        className="input input-bordered input-primary text-sm w-full bg-slate-800 "
                         {...register("subject", {
                           required: {
                             value: true,
@@ -179,8 +179,8 @@ const Contact = () => {
 
                     <div className="form-control w-full ">
                       <textarea
-                        placeholder="Message"
-                        className="textarea textarea-bordered textarea-primary h-24 w-full bg-slate-800"
+                        placeholder="Your Message"
+                        className="textarea  textarea-bordered textarea-primary text-md  w-full bg-slate-800"
                         {...register("message", {
                           required: {
                             value: true,

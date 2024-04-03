@@ -6,7 +6,7 @@ import Title from "./common/Title";
 
 const About = () => {
   return (
-    <div id="about" className="lg:pb-14">
+    <div id="about" className="lg:mt-28 md:mt-20 mt-14">
       <Container>
         <Title title="About Me" />
         <div className="lg:flex sm:flex-row-reverse  md:flex  items-center justify-between">
