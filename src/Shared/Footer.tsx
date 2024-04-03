@@ -1,14 +1,14 @@
 import UseIcon from "../components/common/UseIcon";
-import logo from "../Assets/Images/logo.png";
+import Flogo from "../Assets/Images/Flogo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer footer-center rounded p-12 mt-14">
       <div>
-        <p className="font-semibold mb-3">
+        <p className=" mb-3">
           <Link to="/" className=" ">
-            <img src={logo} alt="logo" className=" mx-auto " />
+            <img src={Flogo} alt="logo" className=" mx-auto h-20" />
           </Link>
           <br />
           Providing reliable tech since 2022
@@ -16,9 +16,9 @@ const Footer = () => {
 
         <UseIcon></UseIcon>
 
-        <p className="text-center font-semibold mt-3">
+        <p className="text-center  mt-3">
           Copyright &copy; {new Date().getFullYear()}. All right reserved to
-          <span className="text-secondary">
+          <span className="text-primary font-semibold">
             {" "}
             Developer Md Mobassher Hossain
           </span>

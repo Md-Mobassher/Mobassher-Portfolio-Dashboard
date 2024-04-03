@@ -35,10 +35,10 @@ const MySkills = () => {
           {selectedSkills.map(({ name, percent }) => (
             <div
               key={name}
-              className="bg-slate-800  rounded-md flex-col justify-between items-end p-0 m-0"
+              className="bg-slate-700  rounded-md flex-col justify-between items-end p-0 m-0"
             >
               <div className="flex justify-between lg:p-4 md:p-3 p-2">
-                <h4 className="lg:text-xl md:text-lg text-md font-bold ">
+                <h4 className="lg:text-xl md:text-lg text-lg font-bold ">
                   {name}
                 </h4>
                 <p className="lg:text-xl md:text-lg text-md font-bold px-2 bg-primary rounded-md text-white">

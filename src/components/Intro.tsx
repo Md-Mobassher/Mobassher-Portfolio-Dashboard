@@ -5,7 +5,7 @@ import Button from "./common/Button";
 const Intro = () => {
   return (
     <Container>
-      <div className="min-h-screen flex items-center -mt-10 ">
+      <div className="min-h-screen flex items-center -mt-10">
         <div className="text-center md:text-start lg:text-start">
           <p className="lg:text-2xl md:text-xl text-xl font-semibold text-[#00cf5d]">
             Hello! I am

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Img from "../Assets/Images/MLogo.png";
+import logo from "../Assets/Images/logo.png";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -61,13 +61,13 @@ const Navbar = () => {
         <nav className="drawer-content lg:flex md:flex flex-col ">
           <div className="w-full h-20 navbar  py-10">
             <Link to="/" className="flex-1 px-2 mx-2 text-2xl font-semibold ">
-              <img src={Img} className="w-14" alt="Logo Mobassher" />
+              <img src={logo} className="w-14" alt="Logo Mobassher" />
             </Link>
             <div className="flex-none lg:hidden mr-6">
               <label
                 htmlFor="my-drawer-3"
                 onClick={toggleButton}
-                className="btn btn-square btn-ghost text-white border border-white hover:bg-primary  hover:text-white"
+                className="btn btn-square btn-ghost border hover:border-white bg-primary  "
               >
                 {isToggled ? (
                   <FaTimes className="size-6" />

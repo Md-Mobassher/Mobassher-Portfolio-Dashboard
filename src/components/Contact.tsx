@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-bold text-primary">Name</h2>
-                  <h2 className=" font-semibold">Md Mobassher Hossain</h2>
+                  <h2 className="">Md Mobassher Hossain</h2>
                 </div>
               </div>
               <div className="flex justify-start max-w-sm items-center mt-7">
@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-bold text-primary ">Location</h2>
-                  <h2 className="font-semibold">
+                  <h2 className="">
                     Tograihat, Rajarhat, Kurigram, Bangladesh-5600.
                   </h2>
                 </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-bold text-primary">Call / WhatsApp</h2>
-                  <h2 className=" font-semibold">
+                  <h2 className="">
                     <a href="tell:+8801706060647" className=" ">
                       +88-01706060647
                     </a>
@@ -83,7 +83,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className="font-bold text-primary">Email</h2>
-                  <h2 className=" font-semibold">
+                  <h2 className="">
                     <a
                       target="_black"
                       href="mailto:mdmobassherhossain1@gmail.com"
