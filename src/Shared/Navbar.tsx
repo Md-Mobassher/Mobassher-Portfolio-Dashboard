@@ -5,9 +5,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
-  const toggleButton = () => {
-    setIsToggled(!isToggled);
-  };
   const navItems = (
     <>
       <li className="hover:bg-green-500 rounded-lg">
@@ -66,8 +63,8 @@ const Navbar = () => {
             <div className="flex-none lg:hidden mr-6">
               <label
                 htmlFor="my-drawer-3"
-                onClick={toggleButton}
-                className="btn btn-square btn-ghost border hover:border-white bg-primary  "
+                onClick={() => setIsToggled(!isToggled)}
+                className="btn btn-square text-white hover:text-black bg-primary border-0 hover:bg-slate-200 "
               >
                 {isToggled ? (
                   <FaTimes className="size-6" />

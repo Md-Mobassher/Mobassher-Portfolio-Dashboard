@@ -47,4 +47,4 @@ While this portfolio primarily showcases my work, I welcome any feedback, sugges
 
 Thank you for visiting my portfolio!
 
-**[Md Mobassher Hossain]** [Portfolio Link] (https://dev-mobassher.web.app)
+**[Md Mobassher Hossain]** [Portfolio Link](https://dev-mobassher.web.app)
