@@ -20,8 +20,8 @@ const MySkills = () => {
                 onClick={() => setSelectedSkill(name)}
                 className={
                   name === selectedSkill
-                    ? "btn btn-primary text-md text-white py-2 hover:bg-green-400 lg:px-7 md:px-5 px-4"
-                    : "btn btn-outline border-primary py-2 bg-gray-800 lg:px-7 md:px-5 px-4 text-white hover:text-white hover:bg-green-400 "
+                    ? " text-md text-white py-2  btn btn-primary hover:bg-green-400 transition duration-500 lg:px-7 md:px-5 px-4"
+                    : "btn btn-outline border-primary py-2 bg-gray-800 lg:px-7 md:px-5 px-4 text-white hover:text-white hover:bg-green-400  transition duration-500"
                 }
                 key={name}
               >
@@ -35,7 +35,7 @@ const MySkills = () => {
           {selectedSkills.map(({ name, percent }) => (
             <div
               key={name}
-              className="bg-slate-700  rounded-md flex-col justify-between items-end p-0 m-0"
+              className="bg-gray-700  rounded-md flex-col justify-between items-end p-0 m-0"
             >
               <div className="flex justify-between lg:p-4 md:p-3 p-2">
                 <h4 className="lg:text-xl md:text-lg text-lg font-bold ">

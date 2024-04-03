@@ -40,13 +40,13 @@ const ProjectDetails = () => {
             </svg>
           </button>
 
-          <div className="dropdown-content max-w-5xl bg-slate-200 border border-primary rounded-lg mt-1 z-0">
+          <div className="dropdown-content max-w-5xl bg-gray-700 border border-primary rounded-lg mt-1 z-0">
             <div className="items-center text-justify justify-start  lg:pt-10 p-5 lg:px-20 ">
               {name && (
                 <div className="flex">
                   <p className="mb-3 font-bold lg:text-xl">
                     Project Name:
-                    <span className=" ml-2 text-primary font-semibold lg:text-xl">
+                    <span className="text-white ml-2 font-semibold lg:text-xl">
                       {name}
                     </span>
                   </p>
@@ -56,7 +56,7 @@ const ProjectDetails = () => {
                 <div className="flex">
                   <p className="mb-3 font-bold lg:text-xl">
                     Project Type:
-                    <span className=" ml-2 text-primary font-semibold lg:text-xl">
+                    <span className=" ml-2 font-semibold lg:text-xl">
                       {type}
                     </span>
                   </p>
@@ -65,8 +65,8 @@ const ProjectDetails = () => {
               {details1 && (
                 <div className="">
                   <p className="mb-1 font-bold lg:text-xl ">Project Details:</p>
-                  <p className="mb-3 ml-5 font-semibold text-md ">
-                    <ul className="list-inside  list-disc mb-5">
+                  <p className="mb-3 ml-5 ">
+                    <ul className="list-outside  list-disc mb-5">
                       {details1 && <li>{details1}</li>}
                       {details2 && <li>{details2}</li>}
                       {details3 && <li>{details3}</li>}
@@ -81,7 +81,7 @@ const ProjectDetails = () => {
                 <div className="flex">
                   <p className="mb-3 font-bold lg:text-xl ">
                     Technology:{" "}
-                    <span className=" ml-2 font-semibold text-primary lg:text-lg">
+                    <span className=" ml-2 font-semibold lg:text-lg">
                       {technology}
                     </span>{" "}
                   </p>
@@ -94,7 +94,7 @@ const ProjectDetails = () => {
                   <a
                     target="_black"
                     href={live}
-                    className="btn  btn-primary hover:btn-secondary transition duration-500 ml-auto] text-white"
+                    className=" btn btn-primary hover:bg-green-400 transition duration-500 ml-auto text-white"
                   >
                     Click here{" "}
                   </a>
@@ -106,7 +106,7 @@ const ProjectDetails = () => {
                   <a
                     target="_black"
                     href={client}
-                    className="btn btn-primary hover:btn-secondary transition duration-500 ml-auto text-white"
+                    className=" btn btn-primary hover:bg-green-400 transition duration-500 ml-auto text-white"
                   >
                     Click here{" "}
                   </a>
@@ -118,7 +118,7 @@ const ProjectDetails = () => {
                   <a
                     target="_black"
                     href={server}
-                    className="btn  btn-primary hover:btn-secondary transition duration-500 ml-auto text-white"
+                    className=" btn btn-primary hover:bg-green-400 transition duration-500 ml-auto text-white"
                   >
                     Click here{" "}
                   </a>

@@ -52,7 +52,7 @@ const Projects = () => {
           <div className="flex flex-wrap lg:justify-start md:justify-start justify-center lg:mb-10 mb-7 md:mb-8">
             <button
               onClick={handleAllProjects}
-              className="btn btn-primary hover:bg-green-400 text-white mr-1"
+              className=" btn btn-primary hover:bg-green-400 transition duration-500 text-white mr-1"
             >
               All
             </button>
@@ -77,7 +77,7 @@ const Projects = () => {
         </div>
 
         <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 md:gap-7 gap-6">
             {filteredProjects.slice(0, 9).map((project: TProject) => (
               <Project key={project?.name} project={project}></Project>
             ))}

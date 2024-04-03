@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
   const navItems = (
     <>
-      <li className="hover:bg-green-500 rounded-lg">
+      <li className="hover:bg-green-500  transition duration-300 rounded-lg">
         <a
           href="/#about"
           className="rounded-lg lg:px-5 md:px-4 px-6 py-3 font-semibold  text-lg uppercase scroll-smooth"
@@ -15,7 +15,7 @@ const Navbar = () => {
           About
         </a>
       </li>
-      <li className="hover:bg-green-500 rounded-lg">
+      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
         <a
           href="/#myskills"
           className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth "
@@ -23,7 +23,7 @@ const Navbar = () => {
           Skills
         </a>
       </li>
-      <li className="hover:bg-green-500 rounded-lg">
+      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
         <a
           href="/#portfolios"
           className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth"
@@ -31,7 +31,7 @@ const Navbar = () => {
           Portfolios
         </a>
       </li>
-      <li className="hover:bg-green-500 rounded-lg">
+      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
         <a
           href="/#contact"
           className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth"
@@ -39,7 +39,7 @@ const Navbar = () => {
           Contact
         </a>
       </li>
-      <li className="hover:bg-green-500 rounded-lg">
+      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
         <a
           href="https://drive.google.com/file/d/1do9DTe38XXl99OyMsRiFROU-yNAzDqUJ/view?usp=sharing"
           target="_blank"

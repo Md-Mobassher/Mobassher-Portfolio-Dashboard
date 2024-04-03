@@ -12,7 +12,7 @@ const Portfolios = () => {
       <Projects />
       <div className=" lg:mt-10 mt-8 flex justify-center">
         <button
-          className="btn btn-primary hover:bg-green-400  text-white lg:px-10 px-8"
+          className=" btn btn-primary hover:bg-green-400 transition duration-500  text-white lg:px-10 px-8"
           onClick={handleNavigateAllProjects}
         >
           View all Projects

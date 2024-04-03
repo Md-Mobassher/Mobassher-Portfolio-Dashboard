@@ -15,7 +15,7 @@ const Project = ({ project }: { project: TProject }) => {
       <div className="h-44 ">
         <figure className="h-full">
           <img
-            className="w-full h-full object-cover object-center "
+            className="w-full h-full object-cover object-center rounded-t-md "
             src={img1}
             alt={img1}
           />
