@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-[#111A28] text-slate-200">
+    <div className="bg-[#111A28] text-slate-100">
       <Navbar />
       <Outlet />
       <Footer />
