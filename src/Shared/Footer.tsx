@@ -20,7 +20,9 @@ const Footer = () => {
           Copyright &copy; {new Date().getFullYear()}. All right reserved to
           <span className="text-primary font-semibold">
             {" "}
-            Developer Md Mobassher Hossain
+            <Link to="/" className=" ">
+              Developer Md Mobassher Hossain
+            </Link>
           </span>
         </p>
       </div>

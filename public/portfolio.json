@@ -127,6 +127,20 @@
 
     "live": "https://savehumanitytrust.org"
   },
+  {
+    "name": "MM IT Solution",
+    "type": "IT Service (WordPress)",
+
+    "description": "Developed a IT website using Wordpress, Elementor",
+
+    "technology": "Wordpress, Elementor",
+
+    "img": "Yes",
+    "img1": "https://i.ibb.co/TtW140Z/MM-IT-Solution-Welcome-to-MM-IT-Solutions-your-trusted-partner-for-all-your-web-development-and-IT-s.png",
+    "img2": "https://i.ibb.co/zX8pzPw/MM-IT-Solution-Welcome-to-MM-IT-Solutions-your-trusted-partner-for-all-your-web-development-and-IT-s.png",
+
+    "live": "https://mmitsolution.com"
+  },
 
   {
     "name": "IRDF Bangladesh",
