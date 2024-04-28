@@ -64,14 +64,16 @@ const Projects = () => {
               <option disabled selected>
                 Select Technology
               </option>
-              <option value="react">React JS</option>
+              <option value="react">React.js</option>
+              <option value="next">Next.js</option>
               <option value="redux">Redux</option>
               <option value="typescript">TypeScript</option>
-              <option value="node">Node JS</option>
-              <option value="express">Express JS</option>
+              <option value="node">Node.js</option>
+              <option value="express">Express.js</option>
               <option value="wordpress">WordPress</option>
-              <option value="bootstrap">Bootstrap</option>
               <option value="tailwind">Tailwind</option>
+              <option value="bootstrap">Bootstrap</option>
+              <option value="html">HTML, CSS</option>
             </select>
           </div>
         </div>

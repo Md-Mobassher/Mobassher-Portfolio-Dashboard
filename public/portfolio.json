@@ -1,5 +1,24 @@
 [
   {
+    "name": "Grocery Management System",
+    "type": "Full-Stack",
+
+    "description": "A smart solution for effortless inventory management, ensuring a smoother and more organized grocery shopping experience.",
+    "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
+    "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
+    "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
+
+    "technology": "React, Redux, TypeScript, Node, Express, MongoDB, Mongoose, Tailwind, Ant Design, Firebase, Vercel.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/F5FXCNd/Grocery-Management.png",
+    "img2": "https://i.ibb.co/tcKx7Qh/groca.png",
+
+    "live": "https://groca-grocery.web.app/",
+    "client": "https://github.com/Md-Mobassher/groca-grocery-client",
+    "server": "https://github.com/Md-Mobassher/groca-grocery-server"
+  },
+  {
     "name": "Bike Management System",
     "type": "Full-stack",
 
@@ -8,7 +27,7 @@
     "details2": "Enhanced security with JWT for authentication and role-based access, supporting features for both buyers and sellers.",
     "details3": "Utilized RTK Query and Redux for efficient data management and a mobile-responsive UI, ensuring smooth performance on all devices.",
 
-    "technology": "React, Redux, TypeScript, Node, Express, Mongoose.",
+    "technology": "React, Redux, TypeScript, Node, Express, MongoDB, Mongoose, Tailwind, Ant Design, Vercel.",
 
     "img": "yes",
     "img1": "https://i.ibb.co/BN4p25t/Bike-Managemt.png",
@@ -19,25 +38,23 @@
     "server": "https://github.com/Md-Mobassher/Bike_management_server"
   },
   {
-    "name": "Grocery Management System",
-    "type": "Full-Stack",
+    "name": "ngit-research-foundation",
+    "type": "Research Foundation (Front-End)",
 
-    "description": "A smart solution for effortless inventory management, ensuring a smoother and more organized grocery shopping experience.",
-    "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
-    "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
-    "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
+    "description": "Dynamic and efficient research foundation website powered by Next.js and TypeScript for seamless navigation and enhanced user experience.",
+    "details1": "Leveraging Next.js framework with TypeScript to ensure robustness, scalability, and maintainability of the project codebase, facilitating seamless development and bug tracking.",
+    "details2": "Implementing dynamic content management features to enable easy updating of research publications, events, and news, ensuring the website stays current and engaging for visitors.",
+    "details3": "Prioritizing user experience through intuitive navigation, responsive design, and fast loading times, optimizing accessibility and engagement for both researchers and the public.",
 
-    "technology": "React, Redux, TypeScript, Node, Express, MongoDB, Ant Design, Firebase, Vercel.",
+    "technology": "Next.js, TypeScript, Tailwind, Vercel.",
 
     "img": "yes",
-    "img1": "https://i.ibb.co/F5FXCNd/Grocery-Management.png",
-    "img2": "https://i.ibb.co/tcKx7Qh/groca.png",
+    "img1": "https://i.ibb.co/XsgZN5B/NGIT-Research-Foundation-1-1.png",
+    "img2": " https://i.ibb.co/tp16KNF/NGIT-Research-Foundation-2.png",
 
-    "live": "https://groca-grocery.web.app/",
-    "client": "https://github.com/Md-Mobassher/groca-grocery-client",
-    "server": "https://github.com/Md-Mobassher/groca-grocery-server"
+    "live": "https://ngit-research-foundation.vercel.app",
+    "client": "https://github.com/Md-Mobassher/ngit-research-foundation-client"
   },
-
   {
     "name": "Watts Basketball",
     "type": "Basketball Institute Website (Front-End)",
@@ -176,5 +193,23 @@
     "img2": "https://i.ibb.co/VmJ2yYD/home.png",
 
     "live": "https://sahanutrust.org"
+  },
+  {
+    "name": "Influencer-gear",
+    "type": "Front-end",
+
+    "description": "This is an HTML and CSS Landing Page. Only front-end design was added here. There is no functionality added to this project now.",
+    "details1": "This is an HTML and CSS Landing Page. Only front-end design was added here. There is no functionality added to this project now.",
+    "details2": "",
+    "details3": "",
+
+    "technology": "HTML, CSS",
+
+    "img": "Yes",
+    "img1": "https://i.ibb.co/6W1HKwS/Screenshot-2024-04-27-072123.png",
+    "img2": "https://i.ibb.co/Y7bZL3M/Welcome-to-Influencer-Gear-1.png",
+
+    "live": "https://influencer-gear-mobassher.netlify.app/",
+    "client": "https://github.com/Md-Mobassher/influencer-gear"
   }
 ]
