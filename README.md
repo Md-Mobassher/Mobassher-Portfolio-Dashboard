@@ -2,6 +2,10 @@
 
 Welcome to my portfolio website! This space showcases my skills, projects, and experiences. It's designed to provide an overview of my capabilities as a developer.
 
+## Deployment
+
+- [Live Link](https://dev-mobassher.web.app)
+
 ## Overview
 
 This portfolio website serves the following purposes:
@@ -20,7 +24,7 @@ Explore a curated selection of my projects, each accompanied by a brief descript
 
 ### 2. Skill Set
 
-Discover the technologies and tools I'm skilled in. From programming languages like JavaScript and Python to frameworks like React and Django, this section provides an overview of my technical expertise.
+Discover the technologies and tools I'm skilled in. From programming languages like JavaScript and Python to frameworks like React and Next.js, this section provides an overview of my technical expertise.
 
 ### 3. Resume
 
@@ -32,14 +36,14 @@ Connect with me! Whether you have a project in mind, a job opportunity, or just 
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript, React, TypeScript, Tailwind
+- **Frontend**: HTML, CSS, JavaScript, React, TypeScript, Tailwind, DaisyUI
 - **Deployment**: Firebase
 
 ## How to Use
 
 1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Run the development server using `npm start`.
+2. Install dependencies using `npm install` or `yarn`.
+3. Run the development server using `npm run dev` or `yarn dev`.
 
 ## Contributions
 
