@@ -1,23 +1,24 @@
 [
   {
-    "name": "Grocery Management System",
+    "name": "Pet Adoption Platform",
     "type": "Full-Stack",
 
-    "description": "A smart solution for effortless inventory management, ensuring a smoother and more organized grocery shopping experience.",
-    "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
-    "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
-    "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
+    "description": "Developed a comprehensive platform for pet adoption with advanced search and filtering options, enhancing the user experience and facilitating the adoption process.",
+    "details1": "Developed a comprehensive platform for pet adoption with advanced search and filtering options, enhancing the user experience and facilitating the adoption process.",
+    "details2": "Implemented a secure authentication system with role-based access for users and administrators, ensuring data protection and streamlined management.",
+    "details3": "Designed a responsive UI using Next.js, TypeScript, Tailwind CSS, and Next UI, providing an optimal experience across all devices.",
 
-    "technology": "React, Redux, TypeScript, Node, Express, MongoDB, Mongoose, Tailwind, Ant Design, Firebase, Vercel.",
+    "technology": "Next.js, TypeScript, Tailwind, NextUI, Node, Express, PostgreSQL, Prisma, Vercel.",
 
     "img": "yes",
-    "img1": "https://i.ibb.co/F5FXCNd/Grocery-Management.png",
-    "img2": "https://i.ibb.co/fpdffDv/Grocery-Management-System-1.png",
+    "img1": "https://i.ibb.co/3mTSSb6/Pet-Adoption-Platform-2.png",
+    "img2": "https://i.ibb.co/G52VpdZ/Pet-Adoption-Platform-1.png",
 
-    "live": "https://groca-grocery.web.app/",
-    "client": "https://github.com/Md-Mobassher/groca-grocery-client",
-    "server": "https://github.com/Md-Mobassher/groca-grocery-server"
+    "live": "https://pet-adoption-platform-sand.vercel.app",
+    "client": "https://github.com/Md-Mobassher/Pet_Adoption_Platform",
+    "server": "https://github.com/Md-Mobassher/Pet_Adoption_Server"
   },
+
   {
     "name": "Bike Management System",
     "type": "Full-stack",
@@ -53,10 +54,30 @@
     "img2": "https://i.ibb.co/g7YxPb2/Ad-doha-Institutefull-1.png",
 
     "live": "https://ad-doha-institute.vercel.app",
-    "client": "https://github.com/Md-Mobassher/Ad-doha-Institute-Client"
+    "client": "https://github.com/Md-Mobassher/Ad-doha-Institute-Client",
+    "server": "https://github.com/Md-Mobassher/Ad-doha_Institute_Server"
   },
   {
-    "name": "ngit-research-foundation",
+    "name": "Grocery Management System",
+    "type": "Full-Stack",
+
+    "description": "A smart solution for effortless inventory management, ensuring a smoother and more organized grocery shopping experience.",
+    "details1": "Developed a project where users can Sign up, Log in, order products, restock products, etc.",
+    "details2": "Integrated Admin role, An admin can manage products, delete products, add products.",
+    "details3": "Used firebase and JWT for authentication and hosting, and deploy the server to Heroku.",
+
+    "technology": "React, Redux, TypeScript, Node, Express, MongoDB, Mongoose, Tailwind, Ant Design, Firebase, Vercel.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/F5FXCNd/Grocery-Management.png",
+    "img2": "https://i.ibb.co/fpdffDv/Grocery-Management-System-1.png",
+
+    "live": "https://groca-grocery.web.app/",
+    "client": "https://github.com/Md-Mobassher/groca-grocery-client",
+    "server": "https://github.com/Md-Mobassher/groca-grocery-server"
+  },
+  {
+    "name": "NGIT Research Foundation",
     "type": "Research Foundation (Front-end)",
 
     "description": "Dynamic and efficient research foundation website powered by Next.js and TypeScript for seamless navigation and enhanced user experience.",
@@ -74,50 +95,22 @@
     "client": "https://github.com/Md-Mobassher/ngit-research-foundation-client"
   },
   {
-    "name": "Watts Basketball",
-    "type": "Basketball Institute Website (Front-End)",
+    "name": "Project Management Dashboard",
+    "type": "Project Management (Front-end)",
 
-    "description": "Dive into the basketball world with watts-basketball, a dynamic React JS and Tailwind CSS project offering an immersive experience with its standout design and user-friendly features.",
+    "description": "Developed a project management dashboard with robust task and project management features, enhancing productivity and organization.",
+    "details1": "Developed a project management dashboard with robust task and project management features, enhancing productivity and organization.",
+    "details2": "Implemented advanced state management with Zustand and React Query, ensuring efficient data fetching, state handling, and caching.",
+    "details3": "Designed a responsive and interactive UI using Next.js, Ant Design, and Tailwind CSS, providing an intuitive user experience across all devices.",
 
-    "technology": "React, Tailwind, Netlify.",
-
-    "img": "yes",
-    "img1": "https://i.ibb.co/pbq8M7j/Watts-basketball.png",
-    "img2": " https://i.ibb.co/9vQxtzq/Watts-basketball-1.png",
-
-    "live": "https://wattsbasketball.netlify.app",
-    "client": "https://github.com/Md-Mobassher/wattsbasketball"
-  },
-  {
-    "name": "Outrival Media Tailwind",
-    "type": "Media Website (Front-End)",
-
-    "description": "Developed a website using Html, CSS, Tailwind CSS and DaisyUI. Backend is not included now. ",
-
-    "technology": "HTML, CSS, Tailwind, Daisyui.",
+    "technology": "Next.js, Zustand, React Query, Ant Design, Tailwind CSS, Vercel.",
 
     "img": "yes",
-    "img1": "https://i.ibb.co/b3MfMJN/media.png",
-    "img2": "https://i.ibb.co/Dt5sYbB/media.png",
+    "img1": "https://i.ibb.co/129Gs3N/Project-Management-Dashboard-2.png",
+    "img2": "https://i.ibb.co/tCZSggT/Project-Management-Dashboard-1.png",
 
-    "live": "https://outrival-media-tailwind.netlify.app/",
-    "client": "https://github.com/Md-Mobassher/Outrival-media-tailwind"
-  },
-
-  {
-    "name": "Mobile App Bootstrap",
-    "type": "Mobile app website (Front-End)",
-
-    "description": "Developed a website using Html, CSS, Bootstrap. It is a front end project. Backend is not included. ",
-
-    "technology": "HTML, CSS, Bootstrap.",
-
-    "img": "yes",
-    "img1": "https://i.ibb.co/Ykxg8Kx/mobileapp.png",
-    "img2": "https://i.ibb.co/6FSKTMF/home.png",
-
-    "live": "https://mobile-app-mobassher.netlify.app/",
-    "client": "https://github.com/Md-Mobassher/mobile-app"
+    "live": "https://project-management-dashboard-nu.vercel.app",
+    "client": "https://github.com/Md-Mobassher/project-management-dashboard"
   },
 
   {
@@ -163,7 +156,6 @@
 
     "live": "https://mmitsolution.com"
   },
-
   {
     "name": "IRDF Bangladesh",
     "type": "Charity Foundation (WordPress)",
@@ -180,6 +172,21 @@
     "img2": "https://i.ibb.co/HtkC4Vz/irdf.png",
 
     "live": "https://irdfbd.com"
+  },
+  {
+    "name": "Mobile App Bootstrap",
+    "type": "Mobile app website (Front-End)",
+
+    "description": "Developed a website using Html, CSS, Bootstrap. It is a front end project. Backend is not included. ",
+
+    "technology": "HTML, CSS, Bootstrap.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/Ykxg8Kx/mobileapp.png",
+    "img2": "https://i.ibb.co/6FSKTMF/home.png",
+
+    "live": "https://mobile-app-mobassher.netlify.app/",
+    "client": "https://github.com/Md-Mobassher/mobile-app"
   },
 
   {
@@ -198,6 +205,36 @@
     "img2": "https://i.ibb.co/VmJ2yYD/home.png",
 
     "live": "https://sahanutrust.org"
+  },
+  {
+    "name": "Watts Basketball",
+    "type": "Basketball Institute Website (Front-End)",
+
+    "description": "Dive into the basketball world with watts-basketball, a dynamic React JS and Tailwind CSS project offering an immersive experience with its standout design and user-friendly features.",
+
+    "technology": "React, Tailwind, Netlify.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/pbq8M7j/Watts-basketball.png",
+    "img2": " https://i.ibb.co/9vQxtzq/Watts-basketball-1.png",
+
+    "live": "https://wattsbasketball.netlify.app",
+    "client": "https://github.com/Md-Mobassher/wattsbasketball"
+  },
+  {
+    "name": "Outrival Media Tailwind",
+    "type": "Media Website (Front-End)",
+
+    "description": "Developed a website using Html, CSS, Tailwind CSS and DaisyUI. Backend is not included now. ",
+
+    "technology": "HTML, CSS, Tailwind, Daisyui.",
+
+    "img": "yes",
+    "img1": "https://i.ibb.co/b3MfMJN/media.png",
+    "img2": "https://i.ibb.co/Dt5sYbB/media.png",
+
+    "live": "https://outrival-media-tailwind.netlify.app/",
+    "client": "https://github.com/Md-Mobassher/Outrival-media-tailwind"
   },
   {
     "name": "Influencer-gear",
