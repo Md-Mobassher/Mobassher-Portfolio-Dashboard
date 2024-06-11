@@ -1,22 +1,30 @@
 import Container from "@/components/common/Container";
-import { useLocation } from "react-router-dom";
+import { portfolios } from "@/data/portfolios";
+import { TPortfolio } from "@/type/type";
+import { BiRightArrow } from "react-icons/bi";
+import { useParams } from "react-router-dom";
 
 const ProjectDetails = () => {
-  const { state } = useLocation();
+  const { projectName } = useParams();
+  const project = portfolios.find(
+    (portfolio) => portfolio.name.split(" ").join("-") === projectName
+  );
+
+  if (!project) {
+    return (
+      <div className="container mx-auto text-center">Project not found</div>
+    );
+  }
   const {
     name,
     type,
-    details1,
-    details2,
-    details3,
-    details4,
-    details5,
-    live,
-    server,
-    client,
+    description,
+    image,
     technology,
-    img2,
-  } = state;
+    liveUrl,
+    clientUrl,
+    serverUrl,
+  } = project as TPortfolio;
 
   return (
     <section id="details" className="py-10 min-h-screen">
@@ -62,22 +70,26 @@ const ProjectDetails = () => {
                   </p>
                 </div>
               )}
-              {details1 && (
+              {description.length > 0 && (
                 <div className="">
                   <p className="mb-1 font-bold lg:text-xl ">Project Details:</p>
-                  <p className="mb-3 ml-5 ">
-                    <ul className="list-outside  list-disc mb-5">
-                      {details1 && <li>{details1}</li>}
-                      {details2 && <li>{details2}</li>}
-                      {details3 && <li>{details3}</li>}
-                      {details4 && <li>{details4}</li>}
-                      {details5 && <li>{details5}</li>}
-                    </ul>
-                  </p>
+                  <div className="mb-3 ml-5 ">
+                    {description.map((item, index) => (
+                      <div
+                        key={index}
+                        className="flex justify-start items-start gap-3"
+                      >
+                        <div className="flex justify-center items-center mt-2">
+                          <BiRightArrow />
+                        </div>
+                        <div>{item}</div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
 
-              {technology && (
+              {technology.length > 0 && (
                 <div className="flex">
                   <p className="mb-3 font-bold lg:text-xl ">
                     Technology:{" "}
@@ -88,36 +100,36 @@ const ProjectDetails = () => {
                 </div>
               )}
 
-              {live && (
+              {liveUrl && (
                 <p className="mb-3 mt-5 font-bold  lg:text-xl">
                   Go to Live site -{" "}
                   <a
                     target="_black"
-                    href={live}
+                    href={liveUrl}
                     className=" btn btn-primary hover:bg-green-400 transition duration-500 ml-auto text-white"
                   >
                     Click here{" "}
                   </a>
                 </p>
               )}
-              {client && (
+              {clientUrl && (
                 <p className="mb-3 mt-5 font-bold  lg:text-xl">
                   Client-Side code -{" "}
                   <a
                     target="_black"
-                    href={client}
+                    href={clientUrl}
                     className=" btn btn-primary hover:bg-green-400 transition duration-500 ml-auto text-white"
                   >
                     Click here{" "}
                   </a>
                 </p>
               )}
-              {server && (
+              {serverUrl && (
                 <p className="mb-3 mt-5 font-bold  lg:text-xl">
                   Server-Side code -{" "}
                   <a
                     target="_black"
-                    href={server}
+                    href={serverUrl}
                     className=" btn btn-primary hover:bg-green-400 transition duration-500 ml-auto text-white"
                   >
                     Click here{" "}
@@ -127,7 +139,11 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-        <img src={img2} className="w-full shadow-2xl" alt={img2} />
+        <img
+          src={image.landing}
+          className="w-full shadow-2xl rounded-md"
+          alt={name}
+        />
       </Container>
     </section>
   );

@@ -1,13 +1,22 @@
 import { useNavigate } from "react-router-dom";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
-import { TProject } from "../../type/type";
+import { TPortfolio } from "../../type/type";
 
-const Project = ({ project }: { project: TProject }) => {
-  const { img1, name, live, client, server, technology, description } = project;
+const Project = ({ project }: { project: TPortfolio }) => {
+  const {
+    image,
+    name,
+    liveUrl,
+    clientUrl,
+    serverUrl,
+    technology,
+    description,
+  } = project;
   const navigate = useNavigate();
 
-  const navigateToProjectDetail = (name: Partial<TProject>) => {
-    navigate(`/portfolios/${name}`, { state: project });
+  const navigateToProjectDetail = (projectName: string) => {
+    console.log(projectName);
+    navigate(`/portfolios/${projectName.split(" ").join("-")}`);
   };
 
   return (
@@ -16,8 +25,8 @@ const Project = ({ project }: { project: TProject }) => {
         <figure className="h-full">
           <img
             className="w-full h-full object-cover object-center rounded-t-md "
-            src={img1}
-            alt={img1}
+            src={image.cover}
+            alt={name}
           />
         </figure>
       </div>
@@ -28,16 +37,16 @@ const Project = ({ project }: { project: TProject }) => {
             {name}
           </h2>
           <p className="text-justify text-sm mt-2 text-gray-300">
-            {description}
+            {description[0]}
           </p>
         </div>
 
         <div className="">
           <div className="card-actions justify-between items-center  mt-3">
             <div className="flex gap-3 ">
-              {client && (
+              {clientUrl && (
                 <div className="group  relative">
-                  <a target="_blank" href={client}>
+                  <a target="_blank" href={clientUrl}>
                     <FaGithub className="size-6  hover:text-primary  transition duration-400"></FaGithub>
                     <div className="absolute bottom-7 left-20 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-primary text-white text-center p-1 w-36 rounded-sm  transition-opacity duration-300 ">
                       Client Site Code
@@ -46,9 +55,9 @@ const Project = ({ project }: { project: TProject }) => {
                 </div>
               )}
 
-              {server && (
+              {serverUrl && (
                 <div className="group  relative">
-                  <a target="_blank" href={server}>
+                  <a target="_blank" href={serverUrl}>
                     <FaGithub className="size-6  hover:text-primary transition duration-400"></FaGithub>
                     <div className="absolute bottom-7 left-20 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-primary text-white text-center p-1 w-36 rounded-sm  transition-opacity duration-300">
                       Server Site Code
@@ -57,9 +66,9 @@ const Project = ({ project }: { project: TProject }) => {
                 </div>
               )}
 
-              {live && (
+              {liveUrl && (
                 <div className="group  relative">
-                  <a target="_blank" href={live}>
+                  <a target="_blank" href={liveUrl}>
                     <FaShareSquare className="size-6  hover:text-primary transition duration-400"></FaShareSquare>
                     <div className="absolute bottom-7 left-12 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-primary text-white text-center p-1 w-20 rounded-sm  transition-opacity duration-300">
                       Live Site
@@ -69,7 +78,7 @@ const Project = ({ project }: { project: TProject }) => {
               )}
             </div>
             <div
-              onClick={(name) => navigateToProjectDetail(name)}
+              onClick={() => navigateToProjectDetail(project.name)}
               className="border-primary border px-2 rounded-sm transition text-md font-bold hover:text-white hover:bg-primary  duration-300 cursor-pointer"
             >
               Details
@@ -77,7 +86,13 @@ const Project = ({ project }: { project: TProject }) => {
           </div>
 
           <div className="pt-4">
-            <p className="text-sm text-slate-300">{technology}</p>
+            <div className="text-sm text-slate-300 flex flex-wrap justify-start items-center gap-1">
+              {technology.map((item, index) => (
+                <span key={index} className="">
+                  {item},
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

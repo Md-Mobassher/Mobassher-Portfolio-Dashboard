@@ -1,19 +1,4 @@
 import assets from "@/assets";
-export type TImage = {
-  cover: string;
-  landing: string;
-};
-
-export type TPortfolio = {
-  name: string;
-  type: string;
-  description: string[];
-  technology: string[];
-  image: TImage;
-  liveUrl: string;
-  clientUrl: string;
-  serverUrl: string;
-};
 
 export const portfolios = [
   {
@@ -210,6 +195,19 @@ export const portfolios = [
     liveUrl: "https://irdfbd.com",
   },
   {
+    name: "SAHANU Trust",
+    type: "University Trust (WordPress)",
+    description: [
+      "Developed a University Trust website using Wordpress, Phlox theme, Elementor.",
+    ],
+    technology: ["Wordpress", "Elementor", "Phlox Theme"],
+    image: {
+      cover: assets.portfolio.sahanutrustCover,
+      landing: assets.portfolio.sahanutrustFull,
+    },
+    liveUrl: "https://sahanutrust.org",
+  },
+  {
     name: "NGIT Research Foundation",
     type: "Research Foundation (Front-end)",
     description: [
@@ -253,19 +251,7 @@ export const portfolios = [
     liveUrl: "https://mobile-app-mobassher.netlify.app/",
     clientUrl: "https://github.com/Md-Mobassher/mobile-app",
   },
-  {
-    name: "SAHANU Trust",
-    type: "University Trust (WordPress)",
-    description: [
-      "Developed a University Trust website using Wordpress, Phlox theme, Elementor.",
-    ],
-    technology: ["Wordpress", "Elementor", "Phlox Theme"],
-    image: {
-      cover: assets.portfolio.sahanutrustCover,
-      landing: assets.portfolio.sahanutrustFull,
-    },
-    liveUrl: "https://sahanutrust.org",
-  },
+
   {
     name: "Watts Basketball",
     type: "Landing Page (Front-end)",

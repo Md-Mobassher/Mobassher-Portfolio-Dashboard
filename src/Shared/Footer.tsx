@@ -1,6 +1,6 @@
 import UseIcon from "../components/common/UseIcon";
-import Flogo from "../Assets/Images/Flogo.png";
 import { Link } from "react-router-dom";
+import assets from "@/assets";
 
 const Footer = () => {
   return (
@@ -8,7 +8,11 @@ const Footer = () => {
       <div>
         <p className=" mb-3">
           <Link to="/" className=" ">
-            <img src={Flogo} alt="logo" className=" mx-auto h-20" />
+            <img
+              src={assets.image.Flogo}
+              alt="logo"
+              className=" mx-auto h-20"
+            />
           </Link>
           <br />
           Providing reliable tech since 2022

@@ -1,15 +1,13 @@
-export type TProject = {
+export type TPortfolio = {
   name: string;
-  type?: string;
-  description?: string;
-  details1?: string;
-  details2?: string;
-  details3?: string;
-  technology: string;
-  img?: string;
-  img1?: string;
-  img2?: string;
-  live?: string;
-  client?: string;
-  server?: string;
+  type: string;
+  description: string[];
+  technology: string[];
+  image: {
+    cover: string;
+    landing: string;
+  };
+  liveUrl: string;
+  clientUrl?: string;
+  serverUrl?: string;
 };

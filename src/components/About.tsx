@@ -1,4 +1,4 @@
-import profile from "../Assets/Images/mobassher.png";
+import assets from "@/assets";
 import Button from "./common/Button";
 
 import Container from "./common/Container";
@@ -15,7 +15,7 @@ const About = () => {
               <img
                 className="w-[320px] rounded-xl transform scale-[0.95] filter grayscale hover:scale-[1] hover:grayscale-0 transition-all duration-1000 z-0"
                 alt="profile"
-                src={profile}
+                src={assets.image.mobassher}
               />
             </div>
           </div>

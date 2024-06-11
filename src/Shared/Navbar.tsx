@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import logo from "../Assets/Images/logo.png";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import assets from "@/assets";
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -58,7 +58,11 @@ const Navbar = () => {
         <nav className="drawer-content lg:flex md:flex flex-col ">
           <div className="w-full h-20 navbar  py-10">
             <Link to="/" className="flex-1 px-2 mx-2 text-2xl font-semibold ">
-              <img src={logo} className="w-14" alt="Logo Mobassher" />
+              <img
+                src={assets.image.logo}
+                className="w-14"
+                alt="Logo Mobassher"
+              />
             </Link>
             <div className="flex-none lg:hidden mr-6">
               <label

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import notFound from "../Assets/Images/notFound.png";
+import assets from "@/assets";
 
 const NotFound = () => {
   return (
@@ -7,7 +7,7 @@ const NotFound = () => {
       className="min-h-screen flex-col bg-[#011F41] text-slate-200 flex justify-center items-center
     "
     >
-      <img className="flex" src={notFound} alt="" />
+      <img className="flex" src={assets.image.notFound} alt="" />
       <div className="flex justify-center mt-16">
         <p>
           Go Back to

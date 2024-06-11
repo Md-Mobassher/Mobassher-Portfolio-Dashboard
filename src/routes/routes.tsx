@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <AllProjects />,
       },
       {
-        path: "portfolios/:name",
+        path: "portfolios/:projectName",
         element: <ProjectDetails />,
       },
     ],
