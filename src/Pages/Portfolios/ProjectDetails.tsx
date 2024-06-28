@@ -79,7 +79,7 @@ const ProjectDetails = () => {
                         key={index}
                         className="flex justify-start items-start gap-3"
                       >
-                        <div className="flex justify-center items-center mt-2">
+                        <div className="flex justify-center items-center mt-1">
                           <BiRightArrow />
                         </div>
                         <div>{item}</div>

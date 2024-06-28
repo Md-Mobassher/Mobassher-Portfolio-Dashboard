@@ -66,7 +66,14 @@ export const portfolios = [
       "The website features various functionalities such as real-time updates, CRUD operations, advanced filtering, and secure JWT authentication, making it a comprehensive solution.",
       "Additionally, the website's integration of Next.js optimizes performance and enables server-side rendering for improved SEO and faster page loads.",
     ],
-    technology: ["Next.js", "TypeScript", "Tailwind", "DaisyUI", "Vercel"],
+    technology: [
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Tailwind",
+      "DaisyUI",
+      "Vercel",
+    ],
     image: {
       cover: assets.portfolio.dohaCover,
       landing: assets.portfolio.masfbdFull,
