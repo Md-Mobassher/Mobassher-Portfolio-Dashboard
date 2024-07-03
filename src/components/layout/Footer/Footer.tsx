@@ -1,4 +1,4 @@
-import UseIcon from "../components/common/UseIcon";
+import UseIcon from "../../common/UseIcon";
 import { Link } from "react-router-dom";
 import assets from "@/assets";
 

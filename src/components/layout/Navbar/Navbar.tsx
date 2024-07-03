@@ -48,6 +48,22 @@ const Navbar = () => {
           Resume
         </a>
       </li>
+      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
+        <a
+          href="/dashboard"
+          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center"
+        >
+          Dashboard
+        </a>
+      </li>
+      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
+        <a
+          href="/login"
+          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center"
+        >
+          Login
+        </a>
+      </li>
     </>
   );
 
@@ -85,9 +101,10 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
+
         <div className="drawer-side z-50 top-20 rounded">
           <label htmlFor="my-drawer-3" className="drawer-overlay "></label>
-          <ul className="menu bg-slate-700 w-60 rounded-lg p-0 m-0">
+          <ul className="menu bg-slate-700 w-60 rounded-lg p-0 m-0 ">
             {navItems}
           </ul>
         </div>

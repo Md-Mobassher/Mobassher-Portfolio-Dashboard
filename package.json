@@ -1,7 +1,7 @@
 {
-  "name": "dev-mobassher",
+  "name": "mobassher-portfolio-dashboard",
   "private": true,
-  "description": "My personal portfolio website",
+  "description": "Mobassher personal portfolio website dashboard",
   "version": "1.0.0",
   "author": "Md Mobassher Hossain <mdmobassherhossain1@gmail.com>",
   "type": "module",
