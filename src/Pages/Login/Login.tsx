@@ -3,6 +3,8 @@ import { setUser } from "@/redux/features/auth/authSlice";
 import { useAppDispatch } from "@/redux/hooks";
 import { verifyToken } from "@/utils/verifyToken";
 import { FieldValues, useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const dispatch = useAppDispatch();
@@ -12,21 +14,23 @@ const Login = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const navigate = useNavigate();
 
   const [login] = useLoginMutation();
 
   const onSubmit = async (data: FieldValues) => {
+    toast("Logging in...");
     const userInfo = {
       email: data.email,
       password: data.password,
     };
-    console.log(data);
 
     const res = await login(userInfo).unwrap();
-    console.log(res);
     const user = verifyToken(res.data.accessToken);
     reset();
+    toast(res?.data?.message || "User is logged in succesfully!");
     dispatch(setUser({ user: user, token: res.data.accessToken }));
+    navigate("/dashboard");
   };
 
   return (

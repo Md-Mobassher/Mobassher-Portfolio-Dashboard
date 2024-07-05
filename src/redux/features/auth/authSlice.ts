@@ -1,5 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
+
+export type TUser = {
+  email: string;
+  role: string;
+  iat: number;
+  exp: number;
+  data?: any;
+};
 
 type TAuthState = {
   user: null | object;
