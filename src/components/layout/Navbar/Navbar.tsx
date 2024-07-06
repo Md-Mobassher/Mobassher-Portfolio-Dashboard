@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import assets from "@/assets";
+import { logout, selectCurrentUser } from "@/redux/features/auth/authSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 
 const Navbar = () => {
+  const user = useAppSelector(selectCurrentUser);
+  const dispatch = useAppDispatch();
   const [isToggled, setIsToggled] = useState(false);
   const navItems = (
     <>
@@ -48,22 +52,36 @@ const Navbar = () => {
           Resume
         </a>
       </li>
-      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
-        <a
-          href="/dashboard"
-          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center"
-        >
-          Dashboard
-        </a>
-      </li>
-      <li className="hover:bg-green-500 transition duration-300 rounded-lg">
-        <a
-          href="/login"
-          className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center"
-        >
-          Login
-        </a>
-      </li>
+      {user && (
+        <li className="hover:bg-green-500 transition duration-300 rounded-lg">
+          <a
+            href="/dashboard"
+            className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center"
+          >
+            Dashboard
+          </a>
+        </li>
+      )}
+
+      {user ? (
+        <li className="hover:bg-green-500 transition duration-300 rounded-lg">
+          <p
+            onClick={() => dispatch(logout())}
+            className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center"
+          >
+            Logout
+          </p>
+        </li>
+      ) : (
+        <li className="hover:bg-green-500 transition duration-300 rounded-lg">
+          <a
+            href="/login"
+            className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center"
+          >
+            Login
+          </a>
+        </li>
+      )}
     </>
   );
 

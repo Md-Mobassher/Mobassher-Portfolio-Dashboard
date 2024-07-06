@@ -5,7 +5,7 @@ import AllProjects from "@/Pages/Portfolios/AllProjects";
 import ProjectDetails from "@/Pages/Portfolios/ProjectDetails";
 import NotFound from "@/components/NotFound";
 import DashboardLayout from "@/components/layout/DashboardLayout";
-// import ProtectedRoute from "@/components/layout/ProtectedRoute";
+import ProtectedRoute from "@/components/layout/ProtectedRoute";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -34,24 +34,16 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: (
-      // <ProtectedRoute role={`${"admin" || "super_admin"}`}>
-      <DashboardLayout />
-      // </ProtectedRoute>
+      <ProtectedRoute role="super_admin">
+        <DashboardLayout />
+      </ProtectedRoute>
     ),
-    // children: [
-    //   {
-    //     index: true,
-    //     element: <AdminDashboard />,
-    //   },
-    //   {
-    //     path: "dashboard", // it shows in /admin/dashboard route
-    //     element: <AdminDashboard />,
-    //   },
-    //   {
-    //     path: "crate-admin",
-    //     element: <CreateAdmin />,
-    //   },
-    // ],
+    children: [
+      {
+        path: "portfolios",
+        element: <AllProjects />,
+      },
+    ],
   },
 
   {

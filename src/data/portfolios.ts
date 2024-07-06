@@ -71,7 +71,11 @@ export const portfolios = [
       "TypeScript",
       "Redux",
       "Tailwind",
-      "DaisyUI",
+      "Material UI",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Mongoose",
       "Vercel",
     ],
     image: {

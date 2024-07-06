@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import {
   TUser,
@@ -16,24 +16,26 @@ type TProtectedRoute = {
 const ProtectedRoute = ({ children, role }: TProtectedRoute) => {
   const navigate = useNavigate();
   const token = useAppSelector(selectCurrentToken);
-
-  let user: TUser | undefined;
-
-  if (token) {
-    user = verifyToken(token as string) as TUser;
-  }
-
   const dispatch = useAppDispatch();
 
-  if (role !== undefined && role !== (user?.role as string)) {
-    dispatch(logout());
-    return navigate("/login");
-  }
-  if (!token) {
-    return navigate("/login");
-  }
+  useEffect(() => {
+    if (!token) {
+      navigate("/login");
+      return;
+    }
 
-  return children;
+    let user: TUser | undefined;
+    if (token) {
+      user = verifyToken(token as string) as TUser;
+    }
+
+    if (role !== undefined && role !== (user?.role as string)) {
+      dispatch(logout());
+      navigate("/login");
+    }
+  }, [token, role, dispatch, navigate]);
+
+  return <>{children}</>;
 };
 
 export default ProtectedRoute;
