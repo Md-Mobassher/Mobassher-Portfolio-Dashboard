@@ -1,4 +1,11 @@
 import App from "@/App";
+import BlogManagement from "@/Pages/Admin/BlogManagement";
+import ContactManagement from "@/Pages/Admin/ContactManagement";
+import ProjectManagement from "@/Pages/Admin/ProjectManagement";
+import SkillManagement from "@/Pages/Admin/SkillManagement";
+import TestimonialManagement from "@/Pages/Admin/TestimonialManagement";
+import UserManagement from "@/Pages/Admin/UserManagement";
+import Dashboard from "@/Pages/Dashboard/Dashboard";
 import Home from "@/Pages/Home/Home";
 import Login from "@/Pages/Login/Login";
 import AllProjects from "@/Pages/Portfolios/AllProjects";
@@ -40,8 +47,32 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "portfolios",
-        element: <AllProjects />,
+        path: "",
+        element: <Dashboard />,
+      },
+      {
+        path: "skill-management",
+        element: <SkillManagement />,
+      },
+      {
+        path: "project-management",
+        element: <ProjectManagement />,
+      },
+      {
+        path: "testimonials-management",
+        element: <TestimonialManagement />,
+      },
+      {
+        path: "user-management",
+        element: <UserManagement />,
+      },
+      {
+        path: "blog-management",
+        element: <BlogManagement />,
+      },
+      {
+        path: "contact-management",
+        element: <ContactManagement />,
       },
     ],
   },

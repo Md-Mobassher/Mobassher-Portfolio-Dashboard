@@ -22,23 +22,28 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
       </div>
       <nav>
         <ul>
-          <li className="py-2">
-            <a href="/">Dashboard</a>
+          <li className="py-2 hover:bg-green-500 pl-2">
+            <a href="/dashboard">Dashboard</a>
           </li>
-          <li className="py-2">
-            <a href="/skill-management">Skills Management</a>
+          <li className="py-2 hover:bg-green-500 pl-2">
+            <a href="/dashboard/skill-management">Skills Management</a>
           </li>
-          <li className="py-2">
-            <a href="/project-management">Project Management</a>
+          <li className="py-2 hover:bg-green-500 pl-2">
+            <a href="/dashboard/project-management">Project Management</a>
           </li>
-          <li className="py-2">
-            <a href="/blog-management">Blog Management</a>
+          <li className="py-2 hover:bg-green-500 pl-2">
+            <a href="/dashboard/blog-management">Blog Management</a>
           </li>
-          <li className="py-2">
-            <a href="/testimonials-management">Testimonials Management</a>
+          <li className="py-2 hover:bg-green-500 pl-2">
+            <a href="/dashboard/testimonials-management">
+              Testimonials Management
+            </a>
           </li>
-          <li className="py-2">
-            <a href="/testimonials-management">User Management</a>
+          <li className="py-2 hover:bg-green-500 pl-2">
+            <a href="/dashboard/user-management">User Management</a>
+          </li>
+          <li className="py-2 hover:bg-green-500 pl-2">
+            <a href="/dashboard/contact-management">Contact Management</a>
           </li>
         </ul>
       </nav>
