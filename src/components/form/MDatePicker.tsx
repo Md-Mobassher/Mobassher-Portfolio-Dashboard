@@ -1,5 +1,5 @@
-import { DatePicker, Form } from "antd";
 import { Controller } from "react-hook-form";
+import { Form } from "../ui/form";
 
 type TDatePickerProps = {
   name: string;
@@ -12,14 +12,14 @@ const MDatePicker = ({ name, label }: TDatePickerProps) => {
       <Controller
         name={name}
         render={({ field }) => (
-          <Form.Item label={label} className="font-semibold mb-5">
+          <Form label={label} className="font-semibold mb-5">
             <DatePicker
               {...field}
               size="large"
               style={{ width: "100%" }}
               className=" font-normal font-mono"
             />
-          </Form.Item>
+          </Form>
         )}
       />
     </div>

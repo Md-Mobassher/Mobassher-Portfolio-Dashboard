@@ -1,5 +1,6 @@
-import { Form, Select } from "antd";
 import { Controller } from "react-hook-form";
+import { FormItem } from "../ui/form";
+import { Select } from "../ui/select";
 
 type TPHSelectProps = {
   label: string;
@@ -22,7 +23,7 @@ const MSelect = ({
     <Controller
       name={name}
       render={({ field, fieldState: { error } }) => (
-        <Form.Item label={label} className="font-semibold mb-5">
+        <FormItem label={label} className="font-semibold mb-5">
           <Select
             placeholder={placeholder}
             className="font-normal font-mono"
@@ -34,7 +35,7 @@ const MSelect = ({
             disabled={disabled}
           />
           {error && <small style={{ color: "red" }}>{error.message}</small>}
-        </Form.Item>
+        </FormItem>
       )}
     />
   );

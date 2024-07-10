@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Form } from "antd";
 import { ReactNode } from "react";
 import {
   FieldValues,
@@ -32,15 +31,14 @@ const MForm = ({ onSubmit, children, defaultValues, resolver }: TFormProps) => {
   const methods = useForm(formConfig);
 
   const submit: SubmitHandler<FieldValues> = (data) => {
+    // console.log(data);
     onSubmit(data);
     methods.reset();
   };
 
   return (
     <FormProvider {...methods}>
-      <Form layout="vertical" onFinish={methods.handleSubmit(submit)}>
-        {children}
-      </Form>
+      <form onSubmit={methods.handleSubmit(submit)}>{children}</form>
     </FormProvider>
   );
 };

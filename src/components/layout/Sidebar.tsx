@@ -28,29 +28,29 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
           </a>
         </div>
         <ul>
-          <li className="py-2 hover:bg-green-500 px-4">
-            <a href="/dashboard">Dashboard</a>
-          </li>
-          <li className="py-2 hover:bg-green-500 px-4">
-            <a href="/dashboard/skill-management">Skills Management</a>
-          </li>
-          <li className="py-2 hover:bg-green-500 px-4">
-            <a href="/dashboard/project-management">Project Management</a>
-          </li>
-          <li className="py-2 hover:bg-green-500 px-4">
-            <a href="/dashboard/blog-management">Blog Management</a>
-          </li>
-          <li className="py-2 hover:bg-green-500 px-4">
-            <a href="/dashboard/testimonials-management">
+          <a href="/dashboard">
+            <li className="py-2 hover:bg-green-500 px-4">Dashboard</li>
+          </a>
+          <a href="/dashboard/skill-management">
+            <li className="py-2 hover:bg-green-500 px-4">Skills Management</li>
+          </a>
+          <a href="/dashboard/project-management">
+            <li className="py-2 hover:bg-green-500 px-4">Project Management</li>
+          </a>{" "}
+          <a href="/dashboard/blog-management">
+            <li className="py-2 hover:bg-green-500 px-4">Blog Management</li>
+          </a>{" "}
+          <a href="/dashboard/testimonials-management">
+            <li className="py-2 hover:bg-green-500 px-4">
               Testimonials Management
-            </a>
-          </li>
-          <li className="py-2 hover:bg-green-500 px-4">
-            <a href="/dashboard/user-management">User Management</a>
-          </li>
-          <li className="py-2 hover:bg-green-500 px-4">
-            <a href="/dashboard/contact-management">Contact Management</a>
-          </li>
+            </li>
+          </a>{" "}
+          <a href="/dashboard/user-management">
+            <li className="py-2 hover:bg-green-500 px-4">User Management</li>
+          </a>{" "}
+          <a href="/dashboard/contact-management">
+            <li className="py-2 hover:bg-green-500 px-4">Contact Management</li>
+          </a>
         </ul>
       </nav>
     </div>
