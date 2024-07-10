@@ -25,8 +25,17 @@ const EditSkillModal: React.FC<EditSkillModalProps> = ({
   }, [skill]);
 
   const handleSubmit = async (data: FieldValues) => {
+    const id = skill._id;
+    const updatedData = {
+      name: data.name,
+      proficiencyLevel: data.proficiencyLevel,
+      category: data.category,
+    };
+
+    console.log(id);
+    console.log(updatedData);
     try {
-      await updateSkill({ ...skill, ...data });
+      await updateSkill({ id, updatedData });
       toast.success("Skill updated successfully.");
       onClose();
     } catch (error) {

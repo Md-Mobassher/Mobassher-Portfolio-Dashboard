@@ -16,7 +16,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useState } from "react";
-import { PenLine, Trash2 } from "lucide-react";
+import { PencilLine, Trash2 } from "lucide-react";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -82,7 +82,7 @@ export function SkillDataTable<TData, TValue>({
                     onClick={() => handleEdit(row.original)}
                     className="mr-5"
                   >
-                    <PenLine />
+                    <PencilLine />
                   </button>
                   <button onClick={() => handleDelete(row.original)}>
                     <Trash2 />

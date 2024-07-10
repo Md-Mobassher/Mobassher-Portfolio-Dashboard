@@ -5,12 +5,11 @@ import { SkillDataTable } from "./SkillDataTable";
 import Loading from "@/components/Loading";
 import { ColumnDef } from "@tanstack/react-table";
 import { useState } from "react";
-import Modal from "@/components/ui/Modal";
 import EditSkillModal from "./EditSkillModal";
+import DeleteSkillModal from "./DeleteSkillModal";
 
 const SkillManagement = () => {
   const { data, isLoading } = useGetAllSkillsQuery(undefined);
-
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [selectedSkill, setSelectedSkill] = useState<any>(null);
@@ -21,6 +20,7 @@ const SkillManagement = () => {
   };
 
   const handleDelete = (row: any) => {
+    console.log(row);
     setSelectedSkill(row);
     setShowDeleteModal(true);
   };
@@ -35,7 +35,7 @@ const SkillManagement = () => {
     return <Loading />;
   }
 
-  console.log("Data:", data);
+  // console.log("Data:", data);
 
   const columns: ColumnDef<any>[] = [
     {
@@ -66,29 +66,11 @@ const SkillManagement = () => {
         )}
       </div>
 
-      {showDeleteModal && (
-        <Modal
-          isOpen={showDeleteModal}
-          onClose={() => setShowDeleteModal(false)}
-          title="Confirm Deletion"
-        >
-          <p>Are you sure you want to delete this skill?</p>
-          <div className="flex gap-5 mt-5">
-            <button
-              onClick={confirmDelete}
-              className="text-white bg-red-600 rounded-lg px-5 py-2"
-            >
-              Confirm
-            </button>
-            <button
-              onClick={() => setShowDeleteModal(false)}
-              className="text-white bg-green-500 rounded-lg px-5 py-2"
-            >
-              Cancel
-            </button>
-          </div>
-        </Modal>
-      )}
+      <DeleteSkillModal
+        isOpen={showDeleteModal}
+        onClose={() => setShowDeleteModal(false)}
+        onConfirm={confirmDelete}
+      />
 
       <EditSkillModal
         isOpen={showEditModal}

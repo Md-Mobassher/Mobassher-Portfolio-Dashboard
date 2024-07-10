@@ -27,10 +27,10 @@ const skillsApi = baseApi.injectEndpoints({
     }),
 
     updateASkill: builder.mutation({
-      query: ({ id, updatedSkill }) => ({
+      query: ({ id, updatedData }) => ({
         url: `skills/${id}`,
         method: "PATCH",
-        body: updatedSkill,
+        body: updatedData,
       }),
       invalidatesTags: ["skill"],
     }),
