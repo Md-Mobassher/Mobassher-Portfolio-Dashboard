@@ -12,7 +12,7 @@ const blogApi = baseApi.injectEndpoints({
 
     addBlog: builder.mutation({
       query: (newBlog) => ({
-        url: "/blogs",
+        url: "/blogs/create",
         method: "POST",
         body: newBlog,
       }),

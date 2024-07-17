@@ -1,5 +1,5 @@
 import App from "@/App";
-import BlogManagement from "@/Pages/Admin/BlogManagement";
+import BlogManagement from "@/Pages/Admin/BlogManagement/BlogManagement";
 import ContactManagement from "@/Pages/Admin/ContactManagement";
 import Dashboard from "@/Pages/Admin/Dashboard";
 import ProjectManagement from "@/Pages/Admin/ProjectManagement/ProjectManagement";
@@ -59,16 +59,16 @@ const router = createBrowserRouter([
         element: <ProjectManagement />,
       },
       {
+        path: "blog-management",
+        element: <BlogManagement />,
+      },
+      {
         path: "testimonials-management",
         element: <TestimonialManagement />,
       },
       {
         path: "user-management",
         element: <UserManagement />,
-      },
-      {
-        path: "blog-management",
-        element: <BlogManagement />,
       },
       {
         path: "contact-management",
