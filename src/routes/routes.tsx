@@ -2,7 +2,7 @@ import App from "@/App";
 import BlogManagement from "@/Pages/Admin/BlogManagement";
 import ContactManagement from "@/Pages/Admin/ContactManagement";
 import Dashboard from "@/Pages/Admin/Dashboard";
-import ProjectManagement from "@/Pages/Admin/ProjectManagement";
+import ProjectManagement from "@/Pages/Admin/ProjectManagement/ProjectManagement";
 import TestimonialManagement from "@/Pages/Admin/TestimonialManagement";
 import UserManagement from "@/Pages/Admin/UserManagement";
 import SkillManagement from "@/Pages/Admin/skillManagement/SkillManagement";

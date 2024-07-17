@@ -2,6 +2,7 @@ import { toast } from "react-toastify";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const uploadImageToCloudinary = async (file: any) => {
+  console.log(file);
   if (!file) {
     toast.error("File not found.");
   }
@@ -17,6 +18,7 @@ export const uploadImageToCloudinary = async (file: any) => {
       body: formData,
     }
   );
+  console.log(res);
 
   const data = await res.json();
   console.log(data);
