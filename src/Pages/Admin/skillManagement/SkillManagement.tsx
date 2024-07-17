@@ -1,5 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useGetAllSkillsQuery } from "@/redux/features/admin/skillManagementApi";
+import {
+  useDeleteASkillMutation,
+  useGetAllSkillsQuery,
+} from "@/redux/features/admin/skillManagementApi";
 import AddSkillModal from "./AddSkillModal";
 import { SkillDataTable } from "./SkillDataTable";
 import Loading from "@/components/Loading";
@@ -7,9 +10,11 @@ import { ColumnDef } from "@tanstack/react-table";
 import { useState } from "react";
 import EditSkillModal from "./EditSkillModal";
 import DeleteSkillModal from "./DeleteSkillModal";
+import { toast } from "react-toastify";
 
 const SkillManagement = () => {
   const { data, isLoading } = useGetAllSkillsQuery(undefined);
+  const [deleteASkill] = useDeleteASkillMutation(undefined);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [selectedSkill, setSelectedSkill] = useState<any>(null);
@@ -20,14 +25,22 @@ const SkillManagement = () => {
   };
 
   const handleDelete = (row: any) => {
-    console.log(row);
+    // console.log(row);
     setSelectedSkill(row);
     setShowDeleteModal(true);
   };
 
-  const confirmDelete = () => {
-    console.log("Confirm deletion:", selectedSkill);
-    // Implement delete logic here
+  const confirmDelete = async () => {
+    // console.log("Confirm deletion:", selectedSkill);
+    try {
+      const res = await deleteASkill(selectedSkill?._id);
+      if (res?.data?.success) {
+        toast.success(res?.data?.message || "Skill Deleted Successfully");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
     setShowDeleteModal(false);
   };
 

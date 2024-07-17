@@ -32,11 +32,13 @@ const EditSkillModal: React.FC<EditSkillModalProps> = ({
       category: data.category,
     };
 
-    console.log(id);
-    console.log(updatedData);
+    // console.log(id);
+    // console.log(updatedData);
     try {
-      await updateSkill({ id, updatedData });
-      toast.success("Skill updated successfully.");
+      const res = await updateSkill({ id, updatedData });
+      if (res?.data?.success) {
+        toast.success("Skill updated successfully.");
+      }
       onClose();
     } catch (error) {
       console.log(error);

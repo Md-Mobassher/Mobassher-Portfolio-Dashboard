@@ -15,9 +15,11 @@ const AddSkillModal = () => {
   const handleSubmit = async (data: FieldValues) => {
     console.log(data);
     try {
-      await addSkill(data);
-
-      toast.success("Skill added successfully.");
+      const res = await addSkill(data);
+      if (res?.data?.success) {
+        toast.success(res?.data?.message || "Skill added successfully.");
+      }
+      closeModal();
     } catch (error) {
       console.log(error);
       toast.error("Skill added Failed.");
@@ -49,7 +51,7 @@ const AddSkillModal = () => {
               type="submit"
               className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 "
             >
-              Add New Skill
+              {isLoading ? "Adding New Skill..." : "Add New Skill"}
             </button>
           ) : (
             <button
