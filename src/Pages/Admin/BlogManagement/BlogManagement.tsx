@@ -56,12 +56,12 @@ const BlogManagement = () => {
       accessorKey: "title",
     },
     {
-      header: "Content",
-      accessorKey: "content",
-    },
-    {
       header: "Category",
       accessorKey: "category",
+    },
+    {
+      header: "Tags",
+      accessorKey: "tags",
     },
   ];
 

@@ -45,9 +45,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
               Testimonials Management
             </li>
           </a>{" "}
-          <a href="/dashboard/user-management">
+          {/* <a href="/dashboard/user-management">
             <li className="py-2 hover:bg-green-500 px-4">User Management</li>
-          </a>{" "}
+          </a>{" "} */}
           <a href="/dashboard/contact-management">
             <li className="py-2 hover:bg-green-500 px-4">Contact Management</li>
           </a>

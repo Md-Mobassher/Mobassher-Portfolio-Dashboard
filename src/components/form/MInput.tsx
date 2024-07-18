@@ -33,7 +33,7 @@ const MInput = ({
               </label>
             )}
             <Input
-              className="font-normal font-mono border-green-400 active:border-green-500 "
+              className="font-normal font-mono border-green-400 active:border-green-500 mt-1"
               {...field}
               type={type}
               id={name}
