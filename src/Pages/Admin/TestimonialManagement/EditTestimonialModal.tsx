@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MForm from "@/components/form/MForm";
 import MInput from "@/components/form/MInput";
 import { FieldValues } from "react-hook-form";
@@ -20,7 +20,8 @@ const EditTestimonialModal: React.FC<EditTestimonialModalProps> = ({
   onClose,
   testimonial,
 }) => {
-  const [updateTestimonial, { isLoading }] = useUpdateATestimonialMutation();
+  const [loading, setLoading] = useState(false);
+  const [updateTestimonial] = useUpdateATestimonialMutation();
 
   useEffect(() => {
     console.log("Selected Testimonial:", testimonial);
@@ -34,6 +35,7 @@ const EditTestimonialModal: React.FC<EditTestimonialModalProps> = ({
   };
 
   const handleSubmit = async (data: FieldValues) => {
+    setLoading(true);
     let imageUrl = testimonial?.coverImage;
 
     // Check if a new image file is provided
@@ -60,10 +62,13 @@ const EditTestimonialModal: React.FC<EditTestimonialModalProps> = ({
       console.log(res);
 
       toast.success(res?.data?.message || "Testimonial updated successfully.");
+      setLoading(false);
       onClose();
     } catch (error) {
       console.log(error);
       toast.error("Testimonial update failed.");
+      setLoading(false);
+      onClose();
     }
   };
 
@@ -78,13 +83,13 @@ const EditTestimonialModal: React.FC<EditTestimonialModalProps> = ({
           <MFileUploader name="file" label="Profile image" />
         </div>
 
-        {isLoading ? (
+        {loading ? (
           <button
             disabled
             type="submit"
             className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mt-10"
           >
-            {isLoading ? "Updating Testimonial..." : "Update Testimonial"}
+            {loading ? "Updating Testimonial..." : "Update Testimonial"}
           </button>
         ) : (
           <button

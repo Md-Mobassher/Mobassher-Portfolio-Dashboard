@@ -2,17 +2,17 @@ import { toast } from "react-toastify";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const uploadImageToCloudinary = async (file: any) => {
-  // console.log(file);
+  console.log(file);
   if (!file) {
     toast.error("File not found.");
   }
 
   const formData = new FormData();
   formData.append("file", file);
-  formData.append("upload_preset", `${process.env.CLOUDINARY_UPLOAD_PRESET}`);
+  formData.append("upload_preset", `mobassher_portfolio`);
 
   const res = await fetch(
-    `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`,
+    `https://api.cloudinary.com/v1_1/dt4e8kgtl/image/upload`,
     {
       method: "POST",
       body: formData,

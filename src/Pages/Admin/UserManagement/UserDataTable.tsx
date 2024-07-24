@@ -21,8 +21,8 @@ import {
   ArrowLeftToLine,
   ArrowRightIcon,
   ArrowRightToLine,
-  PencilLine,
-  Trash2,
+  // PencilLine,
+  // Trash2,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -44,9 +44,9 @@ interface DataTableProps<TData, TValue> {
 export function UserDataTable<TData, TValue>({
   columns,
   data,
-  handleEdit,
-  handleDelete,
-}: DataTableProps<TData, TValue>) {
+}: // handleEdit,
+// handleDelete,
+DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const table = useReactTable({
     data,
@@ -94,7 +94,7 @@ export function UserDataTable<TData, TValue>({
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
                 ))}
-                <TableCell>
+                {/* <TableCell>
                   <button
                     onClick={() => handleEdit(row.original)}
                     className="mr-5"
@@ -104,7 +104,7 @@ export function UserDataTable<TData, TValue>({
                   <button onClick={() => handleDelete(row.original)}>
                     <Trash2 className="hover:text-red-500" />
                   </button>
-                </TableCell>
+                </TableCell> */}
               </TableRow>
             ))
           ) : (

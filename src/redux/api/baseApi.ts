@@ -12,8 +12,8 @@ import { logout, setUser } from "../features/auth/authSlice";
 import { toast } from "react-toastify";
 
 const baseQuery = fetchBaseQuery({
-  // baseUrl: "https://mobassher-portfolio-server.vercel.app/api/v1",
-  baseUrl: "http://localhost:5000/api/v1",
+  baseUrl: `https://mobassher-portfolio-server.vercel.app/api/v1`,
+  // baseUrl: `${process.env.SERVER_LOCAL_URL}`,
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.token;
@@ -49,8 +49,8 @@ const baseQueryWithRefreshToken: BaseQueryFn<
     console.log("Sending refresh token");
 
     const res = await fetch(
-      "https://mobassher-portfolio-server.vercel.app/api/v1",
-      // "http://localhost:5000/api/v1/auth/refresh-token",
+      `${process.env.SERVER_LIVE_URL}/auth/refresh-token`,
+      //`${process.env.SERVER_LOCAL_URL}/auth/refresh-token`,
       {
         method: "POST",
         credentials: "include",

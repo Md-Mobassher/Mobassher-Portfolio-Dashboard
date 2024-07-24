@@ -11,13 +11,15 @@ import { uploadImageToCloudinary } from "@/utils/uploadImageToCloudinary";
 import { useAddTestimonialMutation } from "@/redux/features/admin/testimonialManagementApi";
 
 const AddTestimonialModal = () => {
+  const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [addTestimonial, { isLoading }] = useAddTestimonialMutation();
+  const [addTestimonial] = useAddTestimonialMutation();
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   const handleSubmit = async (data: FieldValues) => {
-    let imageUrl = "https://mobassher.vercel.app";
+    setLoading(true);
+    let imageUrl = "";
     if (data.file) {
       imageUrl = await uploadImageToCloudinary(data.file);
       if (!imageUrl) {
@@ -33,11 +35,13 @@ const AddTestimonialModal = () => {
       console.log(res);
 
       toast.success(res?.data?.message || "Testimonial added successfully.");
-
+      setLoading(false);
       closeModal();
     } catch (error) {
       console.log(error);
       toast.error("Testimonial added Failed.");
+      setLoading(false);
+      closeModal();
     }
   };
 
@@ -68,13 +72,13 @@ const AddTestimonialModal = () => {
             <MFileUploader name="file" label="Profile image" />
           </div>
 
-          {isLoading ? (
+          {loading ? (
             <button
               disabled
               type="submit"
               className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mt-10"
             >
-              {isLoading ? "Adding New Testimonial..." : "Add New Testimonial"}
+              {loading ? "Adding New Testimonial..." : "Add New Testimonial"}
             </button>
           ) : (
             <button

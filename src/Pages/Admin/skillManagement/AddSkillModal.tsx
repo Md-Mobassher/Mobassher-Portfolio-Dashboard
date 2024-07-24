@@ -7,22 +7,27 @@ import { FieldValues } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const AddSkillModal = () => {
+  const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [addSkill, { isLoading }] = useAddSkillMutation();
+  const [addSkill] = useAddSkillMutation();
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   const handleSubmit = async (data: FieldValues) => {
-    console.log(data);
+    setLoading(true);
+    // console.log(data);
     try {
       const res = await addSkill(data);
       if (res?.data?.success) {
         toast.success(res?.data?.message || "Skill added successfully.");
       }
+      setLoading(false);
       closeModal();
     } catch (error) {
       console.log(error);
       toast.error("Skill added Failed.");
+      setLoading(false);
+      closeModal();
     }
   };
 
@@ -45,13 +50,13 @@ const AddSkillModal = () => {
           />
           <MInput name="category" type="text" label="Category" required />
 
-          {isLoading ? (
+          {loading ? (
             <button
               disabled
               type="submit"
               className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 "
             >
-              {isLoading ? "Adding New Skill..." : "Add New Skill"}
+              {loading ? "Adding New Skill..." : "Add New Skill"}
             </button>
           ) : (
             <button

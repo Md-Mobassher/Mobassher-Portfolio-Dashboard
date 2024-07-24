@@ -9,8 +9,8 @@ function App() {
     <>
       <ProtectedRoute role={undefined}>
         <MainLayout />
+        <ToastContainer />
       </ProtectedRoute>
-      <ToastContainer />
     </>
   );
 }

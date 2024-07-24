@@ -1,3 +1,4 @@
+import MFileUploader from "@/components/form/MFileUploader";
 import MForm from "@/components/form/MForm";
 import MInput from "@/components/form/MInput";
 import FullScreenModal from "@/components/ui/FullScreenModal";
@@ -8,14 +9,16 @@ import { FieldValues } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const AddProjectModal = () => {
+  const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [addProject, { isLoading }] = useAddProjectMutation();
+  const [addProject] = useAddProjectMutation();
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   const handleSubmit = async (data: FieldValues) => {
+    setLoading(true);
     // console.log(data);
-    let coverImageUrl = " " || "https://mobassher.vercel.app";
+    let coverImageUrl = "";
     let landingImageUrl = "";
 
     data.description = data.description.split(",") || "";
@@ -24,14 +27,14 @@ const AddProjectModal = () => {
     data.serverUrl = data.serverUrl || "";
     data.clientUrl = data.clientUrl || "";
 
-    if (data.image.cover) {
+    if (data?.image?.cover) {
       coverImageUrl = await uploadImageToCloudinary(data?.image?.cover);
       if (!coverImageUrl) {
         toast.error("Image upload failed.");
         return;
       }
     }
-    if (data.image.landing) {
+    if (data?.image?.landing) {
       landingImageUrl = await uploadImageToCloudinary(data?.image?.landing);
       if (!landingImageUrl) {
         toast.error("Image upload failed.");
@@ -50,10 +53,13 @@ const AddProjectModal = () => {
       if (res && res?.data?.success) {
         toast.success(res?.data?.message || "Project added successfully.");
       }
+      setLoading(false);
       closeModal();
     } catch (error) {
       console.log(error);
       toast.error("Project added Failed.");
+      setLoading(false);
+      closeModal();
     }
   };
 
@@ -89,21 +95,17 @@ const AddProjectModal = () => {
             <MInput name="liveUrl" type="text" label="Live URL" required />
             <MInput name="clientUrl" type="text" label="Client Side Code URL" />
             <MInput name="serverUrl" type="text" label="Server Side Code URL" />
-            <MInput name="image.cover" type="file" label="Select Cover Image" />
-            <MInput
-              name="image.landing"
-              type="file"
-              label="Select Full Image"
-            />
+            <MFileUploader name="image.cover" label="Select Cover Image" />
+            <MFileUploader name="image.landing" label="Select Full Image" />
           </div>
 
-          {isLoading ? (
+          {loading ? (
             <button
               disabled
               type="submit"
               className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex justify-between"
             >
-              {isLoading ? "Adding New Project..." : "Add New Project"}
+              {loading ? "Adding New Project..." : "Add New Project"}
             </button>
           ) : (
             <button

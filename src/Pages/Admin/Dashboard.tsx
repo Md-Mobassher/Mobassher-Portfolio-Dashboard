@@ -10,7 +10,7 @@ const Dashboard = () => {
   if (isLoading) {
     return <Loading />;
   }
-  // console.log(data);
+  console.log(data);
   const {
     totalSkills,
     totalUsers,

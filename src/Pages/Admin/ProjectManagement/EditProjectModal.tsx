@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MForm from "@/components/form/MForm";
 import MInput from "@/components/form/MInput";
 import { FieldValues } from "react-hook-form";
@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { useUpdateAProjectMutation } from "@/redux/features/admin/projectManagemetApi";
 import FullScreenModal from "@/components/ui/FullScreenModal";
 import { uploadImageToCloudinary } from "@/utils/uploadImageToCloudinary";
+import MFileUploader from "@/components/form/MFileUploader";
 
 interface EditProjectModalProps {
   isOpen: boolean;
@@ -20,7 +21,8 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
   project,
 }) => {
   // console.log(project);
-  const [updateProject, { isLoading }] = useUpdateAProjectMutation();
+  const [loading, setLoading] = useState(false);
+  const [updateProject] = useUpdateAProjectMutation();
 
   const projectDefaultValue = {
     name: project?.name,
@@ -37,8 +39,9 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
   }, [project]);
 
   const handleSubmit = async (data: FieldValues) => {
-    let coverImageUrl = project?.cover || "";
-    let landingImageUrl = project?.landing || "";
+    setLoading(true);
+    let coverImageUrl = project?.cover;
+    let landingImageUrl = project?.landing;
 
     if (data.cover) {
       coverImageUrl = await uploadImageToCloudinary(data?.cover);
@@ -70,18 +73,21 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
       },
     };
 
-    console.log(id);
-    console.log(updatedData);
+    // console.log(id);
+    // console.log(updatedData);
     try {
       const res = await updateProject({ id, updatedData });
       console.log(res);
       if (res?.data?.success) {
         toast.success("Project updated successfully.");
       }
+      setLoading(false);
       onClose();
     } catch (error) {
       console.log(error);
       toast.error("Project update Failed.");
+      setLoading(false);
+      onClose();
     }
   };
 
@@ -106,24 +112,24 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
           <MInput name="liveUrl" type="text" label="Live URL" required />
           <MInput name="clientUrl" type="text" label="Client Side Code URL" />
           <MInput name="serverUrl" type="text" label="Server Side Code URL" />
-          <MInput name="cover" type="file" label="Select Cover Image" />
-          <MInput name="landing" type="file" label="Select Full Image" />
+          <MFileUploader name="cover" label="Select Cover Image" />
+          <MFileUploader name="landing" label="Select Full Image" />
         </div>
 
-        {isLoading ? (
+        {loading ? (
           <button
             disabled
             type="submit"
             className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex justify-between"
           >
-            {isLoading ? "Adding New Project..." : "Add New Project"}
+            {loading ? "Updating Project..." : "Update Project"}
           </button>
         ) : (
           <button
             type="submit"
             className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 disabled"
           >
-            Add New Project
+            Update Project
           </button>
         )}
       </MForm>

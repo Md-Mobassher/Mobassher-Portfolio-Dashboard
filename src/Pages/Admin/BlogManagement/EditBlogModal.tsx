@@ -21,8 +21,9 @@ const EditBlogModal: React.FC<EditBlogModalProps> = ({
   onClose,
   blog,
 }) => {
+  const [loading, setLoading] = useState(false);
   const [content, setContent] = useState("");
-  const [updateBlog, { isLoading }] = useUpdateABlogMutation();
+  const [updateBlog] = useUpdateABlogMutation();
 
   useEffect(() => {
     console.log("Selected Blog:", blog);
@@ -41,6 +42,7 @@ const EditBlogModal: React.FC<EditBlogModalProps> = ({
   };
 
   const handleSubmit = async (data: FieldValues) => {
+    setLoading(true);
     let imageUrl = blog?.coverImage;
 
     // Check if a new image file is provided
@@ -67,10 +69,13 @@ const EditBlogModal: React.FC<EditBlogModalProps> = ({
       console.log(res);
 
       toast.success(res?.data?.message || "Blog updated successfully.");
+      setLoading(false);
       onClose();
     } catch (error) {
       console.log(error);
       toast.error("Blog update failed.");
+      setLoading(false);
+      onClose();
     }
   };
 
@@ -94,11 +99,11 @@ const EditBlogModal: React.FC<EditBlogModalProps> = ({
         <button
           type="submit"
           className={`bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mt-10 ${
-            isLoading ? "disabled:opacity-50" : ""
+            loading ? "disabled:opacity-50" : ""
           }`}
-          disabled={isLoading}
+          disabled={loading}
         >
-          {isLoading ? "Updating Blog..." : "Update Blog"}
+          {loading ? "Updating Blog..." : "Update Blog"}
         </button>
       </MForm>
     </FullScreenModal>
