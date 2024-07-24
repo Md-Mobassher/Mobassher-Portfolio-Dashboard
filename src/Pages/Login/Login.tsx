@@ -34,11 +34,11 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-[#111A28] text-white">
+    <div className="min-h-screen justify-center items-center bg-[#111A28] text-white flex flex-col">
+      <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold text-center mb-10">
+        Welcome to Md. Mobassher portfolio
+      </h2>
       <div className="w-[350px] border border-green-500 rounded-lg p-5 pb-8">
-        <h2 className="text-2xl font-bold text-center mb-10">
-          Welcome to Mobassher portfolio Dashboard
-        </h2>
         <h2 className="text-3xl font-bold text-center mb-10">Login</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-control">
@@ -94,7 +94,7 @@ const Login = () => {
 
           <div className="w-full mt-2 hover:text-white">
             <input
-              className="btn px-10 w-full bg-green-500 mt-6 p-3 rounded-md hover:bg-green-400 border-0 text-center text-white "
+              className="btn px-10 w-full bg-green-500 mt-6 p-3 rounded-md hover:bg-green-400 border-0 text-center text-white cursor-pointer"
               type="submit"
               value="Login"
             />
