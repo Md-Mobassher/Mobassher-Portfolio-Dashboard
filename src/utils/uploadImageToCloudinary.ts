@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const uploadImageToCloudinary = async (file: any) => {
-  console.log(file);
+  // console.log(file);
   if (!file) {
     toast.error("File not found.");
   }
@@ -25,6 +25,5 @@ export const uploadImageToCloudinary = async (file: any) => {
   if (!data) {
     toast.error("Failed to upload image");
   }
-  // console.log(data);
   return data?.secure_url;
 };

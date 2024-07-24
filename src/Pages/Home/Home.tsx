@@ -1,20 +1,9 @@
-// import About from "@/components/About";
-// import Intro from "@/components/Intro";
-// import MySkills from "@/components/MySkills";
-// import Contact from "@/components/Contact";
-// import Portfolios from "../Portfolios/Portfolios";
-
-import Login from "../Login/Login";
+import Intro from "@/components/Intro";
 
 const Home = () => {
   return (
-    <div className="flex justify-center items-center">
-      {/* <Intro />
-      <About />
-      <MySkills />
-      <Portfolios />
-      <Contact /> */}
-      <Login />
+    <div className=" max-w-7xl mx-auto lg:px-10 md:px-5 px-4 ">
+      <Intro />
     </div>
   );
 };

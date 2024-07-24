@@ -8,6 +8,8 @@ import { FieldValues } from "react-hook-form";
 import ReactQuill from "react-quill";
 import { toast } from "react-toastify";
 import "react-quill/dist/quill.snow.css";
+import MFileUploader from "@/components/form/MFileUploader";
+import { uploadImageToCloudinary } from "@/utils/uploadImageToCloudinary";
 
 const AddBlogModal = () => {
   const [content, setContent] = useState("");
@@ -21,16 +23,26 @@ const AddBlogModal = () => {
   };
 
   const handleSubmit = async (data: FieldValues) => {
-    data.tags = data.tags.split(",");
+    data.tags = data?.tags?.split(",") || "";
     data.content = content;
+    let imageUrl = "https://mobassher.vercel.app/";
+    if (data.file) {
+      imageUrl = await uploadImageToCloudinary(data.file);
+      if (!imageUrl) {
+        toast.error("Image upload failed.");
+        return;
+      }
+    }
 
-    // console.log(data);
+    data.coverImage = imageUrl;
+    console.log(data);
     try {
       const res = await addBlog(data);
-      // console.log(res);
-      if (res?.data?.success) {
-        toast.success(res?.data?.message || "Blog added successfully.");
-      }
+      console.log(res);
+
+      toast.success(res?.data?.message || "Blog added successfully.");
+      setContent("");
+
       closeModal();
     } catch (error) {
       console.log(error);
@@ -56,19 +68,14 @@ const AddBlogModal = () => {
             <MInput name="title" type="text" label="Blog Title" required />
             <MInput name="category" type="text" label="Category" required />
             <MInput name="tags" type="text" label="Tags" required />
-            <MInput
-              name="coverImage"
-              type="text"
-              label="Cover Image"
-              required
-            />
+            <MFileUploader name="file" label="Cover Image" />
           </div>
 
           <p className="font-semibold mb-1">Blog Content</p>
           <ReactQuill
             value={content}
             onChange={handleContentChange}
-            className="border-green-500 rounded-md"
+            className="border-green-500 rounded-md h-[250px] pb-16"
           />
 
           {isLoading ? (
@@ -82,7 +89,7 @@ const AddBlogModal = () => {
           ) : (
             <button
               type="submit"
-              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mt-10"
+              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
             >
               Add New Blog
             </button>

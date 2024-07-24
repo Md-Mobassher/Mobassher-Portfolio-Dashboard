@@ -11,3 +11,11 @@ export type TPortfolio = {
   clientUrl?: string;
   serverUrl?: string;
 };
+
+export type TContact = {
+  _id?: string;
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};

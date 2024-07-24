@@ -11,10 +11,10 @@ const testimonialsApi = baseApi.injectEndpoints({
     }),
 
     addTestimonial: builder.mutation({
-      query: (newTestimonial) => ({
-        url: "/testimonials",
+      query: (data) => ({
+        url: "/testimonials/create",
         method: "POST",
-        body: newTestimonial,
+        body: data,
       }),
       invalidatesTags: ["testimonial"],
     }),
@@ -27,10 +27,10 @@ const testimonialsApi = baseApi.injectEndpoints({
     }),
 
     updateATestimonial: builder.mutation({
-      query: ({ id, updatedTestimonial }) => ({
+      query: ({ id, updatedData }) => ({
         url: `testimonials/${id}`,
         method: "PATCH",
-        body: updatedTestimonial,
+        body: updatedData,
       }),
       invalidatesTags: ["testimonial"],
     }),

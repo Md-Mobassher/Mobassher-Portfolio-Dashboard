@@ -12,7 +12,7 @@ const projectsApi = baseApi.injectEndpoints({
 
     addProject: builder.mutation({
       query: (newProject) => ({
-        url: "/projects",
+        url: "/projects/create",
         method: "POST",
         body: newProject,
       }),
@@ -27,10 +27,10 @@ const projectsApi = baseApi.injectEndpoints({
     }),
 
     updateAProject: builder.mutation({
-      query: ({ id, updatedProject }) => ({
+      query: ({ id, updatedData }) => ({
         url: `projects/${id}`,
         method: "PATCH",
-        body: updatedProject,
+        body: updatedData,
       }),
       invalidatesTags: ["project"],
     }),

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar/Sidebar";
 import Header from "./Navbar/DashboardHeader";
 import { Outlet } from "react-router-dom";
 
@@ -14,15 +14,15 @@ const Dashboard: React.FC = () => {
     <div className="flex min-h-screen overflow-hidden">
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <div
-        className={`fixed inset-0 bg-[#111A28] bg-opacity-70 lg:hidden ${
+        className={`fixed  bg-[#111A28] bg-opacity-100 lg:hidden ${
           isSidebarOpen ? "block" : "hidden"
         }`}
         onClick={toggleSidebar}
       ></div>
-      <div className="flex-1 ml-0 lg:ml-64">
+      <div className="flex-1 ml-0 lg:ml-64 bg-slate-50">
         <Header toggleSidebar={toggleSidebar} />
-        <main className="p-4">
-          {/* Add your dashboard content here */}
+        <main className="p-5 h-full bg-green-50">
+          {/*dashboard content*/}
           <Outlet />
         </main>
       </div>

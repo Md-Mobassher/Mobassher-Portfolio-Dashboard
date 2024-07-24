@@ -34,10 +34,10 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <div className="w-[350px] border border-green-500 rounded-lg p-5">
+    <div className="min-h-screen flex justify-center items-center bg-[#111A28] text-white">
+      <div className="w-[350px] border border-green-500 rounded-lg p-5 pb-8">
         <h2 className="text-2xl font-bold text-center mb-10">
-          Welcome to Md Mobassher Hossain portfolio Dashboard
+          Welcome to Mobassher portfolio Dashboard
         </h2>
         <h2 className="text-3xl font-bold text-center mb-10">Login</h2>
         <form onSubmit={handleSubmit(onSubmit)}>

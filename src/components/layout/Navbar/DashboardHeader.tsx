@@ -16,20 +16,20 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
       <button className="block lg:hidden" onClick={toggleSidebar}>
         <GiHamburgerMenu className="size-8" />
       </button>
-      <p className="hover:bg-green-500 transition duration-300 rounded-lg">
+      <p className="hover:bg-green-500 transition duration-300 rounded-lg uppercase ml-auto">
         {user ? (
           <p
             onClick={() => dispatch(logout())}
-            className="rounded-lg lg:px-5 md:px-4  px-6 py-2 font-semibold  text-lg uppercase scroll-smooth bg:green-500 text-center cursor-pointer"
+            className="rounded-lg lg:px-5 md:px-4  px-6 py-2 font-semibold  text-lg uppercase scroll-smooth bg:green-500 border-green-500 border text-center cursor-pointer"
           >
-            Logout
+            LOGOUT
           </p>
         ) : (
           <a
             href="/login"
             className="rounded-lg lg:px-5 md:px-4  px-6 py-3 font-semibold  text-lg uppercase scroll-smooth  text-center cursor-pointer"
           >
-            Login
+            LOGIN
           </a>
         )}
       </p>

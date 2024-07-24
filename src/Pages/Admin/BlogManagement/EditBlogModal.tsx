@@ -1,11 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MForm from "@/components/form/MForm";
 import MInput from "@/components/form/MInput";
-import Modal from "@/components/ui/Modal";
 import { FieldValues } from "react-hook-form";
 import { toast } from "react-toastify";
 import { useUpdateABlogMutation } from "@/redux/features/admin/blogManagementApi";
+import MFileUploader from "@/components/form/MFileUploader";
+import ReactQuill from "react-quill";
+import FullScreenModal from "@/components/ui/FullScreenModal";
+import { uploadImageToCloudinary } from "@/utils/uploadImageToCloudinary";
 
 interface EditBlogModalProps {
   isOpen: boolean;
@@ -18,65 +21,87 @@ const EditBlogModal: React.FC<EditBlogModalProps> = ({
   onClose,
   blog,
 }) => {
+  const [content, setContent] = useState("");
   const [updateBlog, { isLoading }] = useUpdateABlogMutation();
 
   useEffect(() => {
     console.log("Selected Blog:", blog);
+    setContent(blog?.content);
   }, [blog]);
 
-  const defaultBolgs = {
+  const defaultBlogs = {
     title: blog?.title,
-    content: blog?.content,
     tags: blog?.tags,
     category: blog?.category,
     coverImage: blog?.coverImage,
-    // blogStatus: blog?.blogStatus,
+  };
+
+  const handleContentChange = (value: any) => {
+    setContent(value);
   };
 
   const handleSubmit = async (data: FieldValues) => {
+    let imageUrl = blog?.coverImage;
+
+    // Check if a new image file is provided
+    if (data.file) {
+      imageUrl = await uploadImageToCloudinary(data.file);
+      if (!imageUrl) {
+        toast.error("Image upload failed.");
+        return;
+      }
+      return imageUrl;
+    }
+
     const id = blog._id;
     const updatedData = {
       title: data?.title,
-      content: data?.content,
-      tags: data?.tags,
+      content: content,
+      tags: (data.tags || "").toString().split(","),
       category: data?.category,
-      coverImage: data?.coverImage,
-      // blogStatus: data?.blogStatus,
+      coverImage: imageUrl,
     };
 
-    console.log(id);
-    console.log(updatedData);
     try {
       const res = await updateBlog({ id, updatedData });
       console.log(res);
-      if (res?.data?.success) {
-        toast.success("Blog updated successfully.");
-      }
+
+      toast.success(res?.data?.message || "Blog updated successfully.");
       onClose();
     } catch (error) {
       console.log(error);
-      toast.error("Blog update Failed.");
+      toast.error("Blog update failed.");
     }
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title="Edit Blog">
-      <MForm onSubmit={handleSubmit} defaultValues={defaultBolgs}>
-        <MInput name="title" type="text" label="Blog Title" required />
-        <MInput name="content" type="text" label="Blog Content" required />
-        <MInput name="tags" type="text" label="Tags" required />
-        <MInput name="category" type="text" label="Category" required />
-        {/* <MInput name="blogStatus" type="text" label="Blog Status" required /> */}
-        <MInput name="coverImage" type="text" label="Cover Image" required />
+    <FullScreenModal isOpen={isOpen} onClose={onClose} title="Edit Blog">
+      <MForm onSubmit={handleSubmit} defaultValues={defaultBlogs}>
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-5">
+          <MInput name="title" type="text" label="Blog Title" required />
+          <MInput name="category" type="text" label="Category" required />
+          <MInput name="tags" type="text" label="Tags" required />
+          <MFileUploader name="file" label="Cover Image" />
+        </div>
+
+        <p className="font-semibold mb-1">Blog Content</p>
+        <ReactQuill
+          value={content}
+          onChange={handleContentChange}
+          className="border-green-500 rounded-md h-[250px] pb-16"
+        />
+
         <button
           type="submit"
-          className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          className={`bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mt-10 ${
+            isLoading ? "disabled:opacity-50" : ""
+          }`}
           disabled={isLoading}
         >
-          {isLoading ? "Updating..." : "Edit Blog"}
+          {isLoading ? "Updating Blog..." : "Update Blog"}
         </button>
       </MForm>
-    </Modal>
+    </FullScreenModal>
   );
 };
 

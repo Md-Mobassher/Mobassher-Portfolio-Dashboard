@@ -12,12 +12,13 @@ const Dashboard = () => {
   }
   // console.log(data);
   const {
+    totalSkills,
     totalUsers,
     totalProjects,
     totalBlogPosts,
     totalTestimonials,
     totalMessages,
-  } = data?.data;
+  } = data?.data || {};
 
   return (
     <div>
@@ -25,9 +26,9 @@ const Dashboard = () => {
         Welcome to Md Mobassher Portfolio Dashboard
       </h2>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
-        <Link to={"/dashboard/user-management"}>
-          <DashboardCard title="Total User" statistic={totalUsers} />
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-5 gap-3 my-10">
+        <Link to={"/dashboard/skill-management"}>
+          <DashboardCard title="Total Skills" statistic={totalSkills} />
         </Link>
 
         <Link to={"/dashboard/project-management"}>
@@ -44,6 +45,9 @@ const Dashboard = () => {
         </Link>
         <Link to={"/dashboard/contact-management"}>
           <DashboardCard title="Total Message" statistic={totalMessages} />
+        </Link>
+        <Link to={"/dashboard/user-management"}>
+          <DashboardCard title="Total User" statistic={totalUsers} />
         </Link>
       </div>
     </div>

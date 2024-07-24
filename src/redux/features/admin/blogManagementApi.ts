@@ -27,10 +27,10 @@ const blogApi = baseApi.injectEndpoints({
     }),
 
     updateABlog: builder.mutation({
-      query: ({ id, updatedBlog }) => ({
+      query: ({ id, updatedData }) => ({
         url: `blogs/${id}`,
         method: "PATCH",
-        body: updatedBlog,
+        body: updatedData,
       }),
       invalidatesTags: ["blog"],
     }),

@@ -6,6 +6,7 @@ import { FieldValues } from "react-hook-form";
 import { toast } from "react-toastify";
 import { useUpdateAProjectMutation } from "@/redux/features/admin/projectManagemetApi";
 import FullScreenModal from "@/components/ui/FullScreenModal";
+import { uploadImageToCloudinary } from "@/utils/uploadImageToCloudinary";
 
 interface EditProjectModalProps {
   isOpen: boolean;
@@ -18,25 +19,62 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
   onClose,
   project,
 }) => {
-  console.log(project);
+  // console.log(project);
   const [updateProject, { isLoading }] = useUpdateAProjectMutation();
+
+  const projectDefaultValue = {
+    name: project?.name,
+    type: project?.type,
+    description: project?.description,
+    technology: project?.technology,
+    liveUrl: project?.liveUrl,
+    clientUrl: project?.clientUrl,
+    serverUrl: project?.serverUrl,
+  };
 
   useEffect(() => {
     console.log("Selected Project:", project);
   }, [project]);
 
   const handleSubmit = async (data: FieldValues) => {
+    let coverImageUrl = project?.cover || "";
+    let landingImageUrl = project?.landing || "";
+
+    if (data.cover) {
+      coverImageUrl = await uploadImageToCloudinary(data?.cover);
+      if (!coverImageUrl) {
+        toast.error("Image upload failed.");
+        return;
+      }
+    }
+    if (data.landing) {
+      landingImageUrl = await uploadImageToCloudinary(data?.landing);
+      if (!landingImageUrl) {
+        toast.error("Image upload failed.");
+        return;
+      }
+    }
+
     const id = project._id;
     const updatedData = {
-      name: data.name,
-      proficiencyLevel: data.proficiencyLevel,
-      category: data.category,
+      name: data?.name,
+      type: data?.type,
+      description: data?.description,
+      technology: data?.technology,
+      liveUrl: data?.liveUrl,
+      clientUrl: data?.clientUrl,
+      serverUrl: data?.serverUrl,
+      image: {
+        cover: coverImageUrl,
+        landing: landingImageUrl,
+      },
     };
 
     console.log(id);
     console.log(updatedData);
     try {
       const res = await updateProject({ id, updatedData });
+      console.log(res);
       if (res?.data?.success) {
         toast.success("Project updated successfully.");
       }
@@ -49,16 +87,16 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
 
   return (
     <FullScreenModal isOpen={isOpen} onClose={onClose} title="Edit Project">
-      <MForm onSubmit={handleSubmit} defaultValues={project}>
+      <MForm onSubmit={handleSubmit} defaultValues={projectDefaultValue}>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-5">
           <MInput name="name" type="text" label="Project Name" required />
           <MInput name="type" type="text" label="Project Type" required />
-          {/* <MInput
+          <MInput
             name="description"
             type="text"
             label="Project Description"
             required
-          /> */}
+          />
           <MInput
             name="technology"
             type="text"
@@ -68,8 +106,8 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
           <MInput name="liveUrl" type="text" label="Live URL" required />
           <MInput name="clientUrl" type="text" label="Client Side Code URL" />
           <MInput name="serverUrl" type="text" label="Server Side Code URL" />
-          <MInput name="image.cover" type="file" label="Select Cover Image" />
-          <MInput name="image.landing" type="file" label="Select Full Image" />
+          <MInput name="cover" type="file" label="Select Cover Image" />
+          <MInput name="landing" type="file" label="Select Full Image" />
         </div>
 
         {isLoading ? (

@@ -61,9 +61,9 @@ export function SkillDataTable<TData, TValue>({
   });
 
   return (
-    <div className="rounded-md border">
+    <div className="rounded-md border border-gray-300">
       <Table>
-        <TableHeader>
+        <TableHeader className="">
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
@@ -87,6 +87,7 @@ export function SkillDataTable<TData, TValue>({
               <TableRow
                 key={row.id}
                 data-state={row.getIsSelected() && "selected"}
+                className="hover:bg-slate-200"
               >
                 {row.getVisibleCells().map((cell) => (
                   <TableCell key={cell.id}>
@@ -96,12 +97,12 @@ export function SkillDataTable<TData, TValue>({
                 <TableCell>
                   <button
                     onClick={() => handleEdit(row.original)}
-                    className="mr-5"
+                    className="mr-5 "
                   >
-                    <PencilLine />
+                    <PencilLine className="hover:text-green-500" />
                   </button>
                   <button onClick={() => handleDelete(row.original)}>
-                    <Trash2 />
+                    <Trash2 className="hover:text-red-500" />
                   </button>
                 </TableCell>
               </TableRow>
@@ -118,7 +119,7 @@ export function SkillDataTable<TData, TValue>({
 
       {/* pagination */}
 
-      <div className="flex items-center space-x-6 lg:space-x-8 justify-center border-t p-5">
+      <div className="flex items-center space-x-6 lg:space-x-8 justify-center border-t border-gray-300 p-5">
         <div className="flex items-center space-x-2">
           <p className="text-sm font-medium">Rows per page</p>
           <Select

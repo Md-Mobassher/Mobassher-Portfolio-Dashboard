@@ -15,16 +15,39 @@ const AddProjectModal = () => {
 
   const handleSubmit = async (data: FieldValues) => {
     // console.log(data);
-    data.description = data.description.split(",");
-    data.technology = data.technology.split(",");
-    // console.log(data);
+    let coverImageUrl = " " || "https://mobassher.vercel.app";
+    let landingImageUrl = "";
 
-    data.image.cover = await uploadImageToCloudinary(data?.image?.cover);
-    data.image.landing = await uploadImageToCloudinary(data?.image?.landing);
+    data.description = data.description.split(",") || "";
+    data.technology = data.technology.split(",") || "";
+    data.clientUrl = data.clientUrl || "";
+    data.serverUrl = data.serverUrl || "";
+    data.clientUrl = data.clientUrl || "";
+
+    if (data.image.cover) {
+      coverImageUrl = await uploadImageToCloudinary(data?.image?.cover);
+      if (!coverImageUrl) {
+        toast.error("Image upload failed.");
+        return;
+      }
+    }
+    if (data.image.landing) {
+      landingImageUrl = await uploadImageToCloudinary(data?.image?.landing);
+      if (!landingImageUrl) {
+        toast.error("Image upload failed.");
+        return;
+      }
+    }
+
+    data.image.cover = coverImageUrl;
+    data.image.landing = landingImageUrl;
+    // console.log(data);
 
     try {
       const res = await addProject(data);
-      if (res?.data?.success) {
+      // console.log(res);
+
+      if (res && res?.data?.success) {
         toast.success(res?.data?.message || "Project added successfully.");
       }
       closeModal();

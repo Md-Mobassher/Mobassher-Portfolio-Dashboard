@@ -12,8 +12,8 @@ import { logout, setUser } from "../features/auth/authSlice";
 import { toast } from "react-toastify";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://mobassher-portfolio-server.vercel.app/api/v1",
-  // baseUrl: "http://localhost:5000/api/v1",
+  // baseUrl: "https://mobassher-portfolio-server.vercel.app/api/v1",
+  baseUrl: "http://localhost:5000/api/v1",
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.token;
@@ -81,6 +81,6 @@ const baseQueryWithRefreshToken: BaseQueryFn<
 export const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: baseQueryWithRefreshToken,
-  tagTypes: ["skill", "testimonial", "blog", "project", "user"],
+  tagTypes: ["skill", "testimonial", "blog", "project", "user", "contact"],
   endpoints: () => ({}),
 });

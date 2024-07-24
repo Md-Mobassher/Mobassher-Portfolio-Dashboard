@@ -1,20 +1,20 @@
 import Modal from "@/components/ui/Modal";
 import { FC } from "react";
 
-interface DeleteSkillModalProps {
+interface DeleteBlogModalProps {
   isOpen: boolean;
   onClose: () => void;
   onConfirm: () => void;
 }
 
-const DeleteSkillModal: FC<DeleteSkillModalProps> = ({
+const DeleteBlogModal: FC<DeleteBlogModalProps> = ({
   isOpen,
   onClose,
   onConfirm,
 }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose} title="Confirm Deletion">
-      <p>Are you sure you want to delete this skill?</p>
+      <p>Are you sure you want to delete this Blog?</p>
       <div className="flex gap-5 mt-5">
         <button
           onClick={onConfirm}
@@ -33,4 +33,4 @@ const DeleteSkillModal: FC<DeleteSkillModalProps> = ({
   );
 };
 
-export default DeleteSkillModal;
+export default DeleteBlogModal;
