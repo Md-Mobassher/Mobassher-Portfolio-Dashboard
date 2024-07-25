@@ -1,3 +1,4 @@
+import assets from "@/assets";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
 import { setUser } from "@/redux/features/auth/authSlice";
 import { useAppDispatch } from "@/redux/hooks";
@@ -36,7 +37,7 @@ const Login = () => {
   return (
     <div className="min-h-screen justify-center items-center bg-[#111A28] text-white flex flex-col">
       <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold text-center mb-10">
-        Welcome to Md. Mobassher portfolio
+        Welcome to Md. Mobassher Portfolio Dashboard
       </h2>
       <div className="w-[350px] border border-green-500 rounded-lg p-5 pb-8">
         <h2 className="text-3xl font-bold text-center mb-10">Login</h2>
@@ -100,6 +101,13 @@ const Login = () => {
             />
           </div>
         </form>
+      </div>
+
+      <div className="flex lg:justify-start md:justify-start justify-center items-center gap-5 mt-10 text-md font-semibold">
+        See Portfolio{" "}
+        <a href="https://mobassher.vercel.app" target="_blank">
+          <img src={assets.image.logo} alt="logo image" className="w-12" />
+        </a>
       </div>
     </div>
   );

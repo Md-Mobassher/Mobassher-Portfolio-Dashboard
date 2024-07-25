@@ -43,8 +43,8 @@ const Intro = () => {
         <UseIcon />
 
         <div className="flex lg:justify-start md:justify-start justify-center items-center gap-5 mt-10 text-md font-semibold">
-          Go to frontend{" "}
-          <a href="https://mobassher.vercel.app">
+          See Portfolio{" "}
+          <a href="https://mobassher.vercel.app" target="_blank">
             <img src={assets.image.logo} alt="logo image" className="w-14" />
           </a>
         </div>
