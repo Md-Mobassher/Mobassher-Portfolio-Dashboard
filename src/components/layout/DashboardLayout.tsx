@@ -21,7 +21,7 @@ const Dashboard: React.FC = () => {
       ></div>
       <div className="flex-1 ml-0 lg:ml-64 bg-slate-50">
         <Header toggleSidebar={toggleSidebar} />
-        <main className="p-5 h-full bg-green-50">
+        <main className="p-5 h-full bg-green-50 overflow-x-scroll">
           {/*dashboard content*/}
           <Outlet />
         </main>
