@@ -66,7 +66,7 @@ const BlogManagement = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       <AddBlogModal />
       <div className="mt-8">
         {data && data?.success && data?.data && (

@@ -50,7 +50,7 @@ const ProjectManagement = () => {
     return <Loading />;
   }
 
-  console.log("Data:", data);
+  // console.log("Data:", data);
 
   const columns: ColumnDef<any>[] = [
     {
@@ -68,7 +68,7 @@ const ProjectManagement = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       <AddProjectModal />
       <div className="mt-8">
         {data && data.success && data.data && (

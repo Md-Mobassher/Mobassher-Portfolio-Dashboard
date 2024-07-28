@@ -36,7 +36,7 @@ const EditTestimonialModal: React.FC<EditTestimonialModalProps> = ({
 
   const handleSubmit = async (data: FieldValues) => {
     setLoading(true);
-    let imageUrl = testimonial?.coverImage;
+    let imageUrl = testimonial?.coverImage || "";
 
     // Check if a new image file is provided
     if (data.file) {
@@ -56,6 +56,7 @@ const EditTestimonialModal: React.FC<EditTestimonialModalProps> = ({
       content: data?.content,
       profileImg: imageUrl,
     };
+    console.log(updatedData);
 
     try {
       const res = await updateTestimonial({ id, updatedData });

@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
       <button className="block lg:hidden" onClick={toggleSidebar}>
         <GiHamburgerMenu className="size-8" />
       </button>
-      <p className="hover:bg-green-500 transition duration-300 rounded-lg uppercase ml-auto">
+      <div className="hover:bg-green-500 transition duration-300 rounded-lg uppercase ml-auto">
         {user ? (
           <p
             onClick={() => dispatch(logout())}
@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
             LOGIN
           </a>
         )}
-      </p>
+      </div>
     </header>
   );
 };

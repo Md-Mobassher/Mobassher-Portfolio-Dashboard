@@ -56,7 +56,7 @@ const AddBlogModal = () => {
   };
 
   return (
-    <div className="">
+    <div className="relative">
       <button
         className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
         onClick={openModal}
@@ -80,7 +80,7 @@ const AddBlogModal = () => {
           <ReactQuill
             value={content}
             onChange={handleContentChange}
-            className="border-green-500 rounded-md h-[250px] pb-16"
+            className="border-green-500 rounded-md h-[300px] pb-16"
           />
 
           {loading ? (
