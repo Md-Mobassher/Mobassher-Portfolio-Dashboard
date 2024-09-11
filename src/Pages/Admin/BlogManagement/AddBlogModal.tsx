@@ -25,7 +25,7 @@ const AddBlogModal = () => {
 
   const handleSubmit = async (data: FieldValues) => {
     setLoading(true);
-    data.tags = data?.tags?.split(",") || "";
+    data.tags = data?.tags?.split("|") || "";
     data.content = content;
     let imageUrl = "";
     if (data.file) {

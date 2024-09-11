@@ -64,7 +64,7 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
       name: data?.name,
       position: String(data?.position),
       type: data?.type,
-      description: data?.description,
+      description: (data.description || "").toString().split("|"),
       technology: data?.technology,
       liveUrl: data?.liveUrl,
       clientUrl: data?.clientUrl,
@@ -76,10 +76,10 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
     };
 
     // console.log(id);
-    console.log(updatedData);
+    // console.log(updatedData);
     try {
       const res = await updateProject({ id, updatedData });
-      console.log(res);
+      // console.log(res);
       if (res?.data?.success) {
         toast.success("Project updated successfully.");
       }

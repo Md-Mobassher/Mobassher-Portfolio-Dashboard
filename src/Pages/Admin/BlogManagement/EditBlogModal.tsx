@@ -52,21 +52,20 @@ const EditBlogModal: React.FC<EditBlogModalProps> = ({
         toast.error("Image upload failed.");
         return;
       }
-      return imageUrl;
     }
 
     const id = blog._id;
     const updatedData = {
       title: data?.title,
       content: content,
-      tags: (data.tags || "").toString().split(","),
+      tags: (data.tags || "").toString().split("|"),
       category: data?.category,
       coverImage: imageUrl,
     };
-
+    // console.log(updatedData);
     try {
       const res = await updateBlog({ id, updatedData });
-      console.log(res);
+      // console.log(res);
 
       toast.success(res?.data?.message || "Blog updated successfully.");
       setLoading(false);

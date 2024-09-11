@@ -21,8 +21,8 @@ const AddProjectModal = () => {
     let coverImageUrl = "";
     let landingImageUrl = "";
 
-    data.description = data.description.split(".");
-    data.technology = data.technology.split(",");
+    data.description = data.description.split("|");
+    data.technology = data.technology.split("|");
     data.clientUrl = data.clientUrl || "";
     data.serverUrl = data.serverUrl || "";
     data.clientUrl = data.clientUrl || "";
