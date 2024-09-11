@@ -26,6 +26,7 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
 
   const projectDefaultValue = {
     name: project?.name,
+    position: project?.position,
     type: project?.type,
     description: project?.description,
     technology: project?.technology,
@@ -40,8 +41,8 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
 
   const handleSubmit = async (data: FieldValues) => {
     setLoading(true);
-    let coverImageUrl = project?.cover;
-    let landingImageUrl = project?.landing;
+    let coverImageUrl = project?.image?.cover || "";
+    let landingImageUrl = project?.image?.landing || "";
 
     if (data.cover) {
       coverImageUrl = await uploadImageToCloudinary(data?.cover);
@@ -61,6 +62,7 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
     const id = project._id;
     const updatedData = {
       name: data?.name,
+      position: String(data?.position),
       type: data?.type,
       description: data?.description,
       technology: data?.technology,
@@ -74,7 +76,7 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
     };
 
     // console.log(id);
-    // console.log(updatedData);
+    console.log(updatedData);
     try {
       const res = await updateProject({ id, updatedData });
       console.log(res);
@@ -96,6 +98,7 @@ const EditProjectModal: React.FC<EditProjectModalProps> = ({
       <MForm onSubmit={handleSubmit} defaultValues={projectDefaultValue}>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-5">
           <MInput name="name" type="text" label="Project Name" required />
+          <MInput name="position" type="number" label="Project Position" />
           <MInput name="type" type="text" label="Project Type" required />
           <MInput
             name="description"

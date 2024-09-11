@@ -79,6 +79,7 @@ const AddProjectModal = () => {
         <MForm onSubmit={handleSubmit}>
           <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-x-5">
             <MInput name="name" type="text" label="Project Name" required />
+            <MInput name="position" type="number" label="Project Position" />
             <MInput name="type" type="text" label="Project Type" required />
             <MInput
               name="description"
@@ -103,14 +104,14 @@ const AddProjectModal = () => {
             <button
               disabled
               type="submit"
-              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex justify-between"
+              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full"
             >
               {loading ? "Adding New Project..." : "Add New Project"}
             </button>
           ) : (
             <button
               type="submit"
-              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 disabled"
+              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full"
             >
               Add New Project
             </button>

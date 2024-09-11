@@ -21,7 +21,7 @@ const ProjectManagement = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const handleEdit = (row: any) => {
-    console.log(row);
+    // console.log(row);
     setSelectedProject(row);
     setShowEditModal(true);
   };
@@ -71,7 +71,7 @@ const ProjectManagement = () => {
     <div className="">
       <AddProjectModal />
       <div className="mt-8">
-        {data && data.success && data.data && (
+        {data && data?.success && data?.data && (
           <ProjectDataTable
             columns={columns}
             data={data?.data}
